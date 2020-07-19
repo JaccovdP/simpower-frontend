@@ -1,0 +1,118 @@
+{
+    "title": "PorscheSport.com Carrera Cup",
+    "description": "Description goes here",
+    "promo_image": "poster.jpeg",
+    "partners": [
+      { "name": "PorscheSport.com", "url": "", "image": "porschesport.png" },
+      { "name": "Alkentech.com", "url": "", "image": "alkentech.png" },
+      { "name": "Racespot TV", "url": "", "image": "racespot.png" }
+    ],
+    "key_info": {
+      "car_classes": [
+        { 
+          "class": "Porsche 911 GT3 Cup",
+          "cars": [
+            { "name": "Porsche 911 GT3 Cup", "image": "" }
+          ]
+        }
+      ],
+      "event_type": "2 heats, 1 consolation, 1 feature",
+      "broadcast": { "text": "Live on Racespot TV", "url": "" },
+      "nr_of_rounds": 7,
+      "overall_prize_pool": 400,
+      "race_prize_pool": 40,
+      "entry_fee": 25
+    },
+    "key_dates": [
+      { "date": "June 11, 2020", "event": "Registration opens" },
+      { "date": "June 20, 2020", "event": "Payment opens" },
+      { "date": "July 10, 2020", "event": "Payment deadline" },
+      { "date": "July 23, 2020", "event": "Paint submission deadline" },
+      { "date": "July 26, 2020", "event": "Round 1" },
+      { "date": "October 19, 2020", "event": "Prize payouts" }
+    ],
+    "schedule": [
+      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
+      { "time": "18:55 UTC", "broadcast": "", "session": "Qualifying" },
+      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
+      { "time": "19:05 UTC", "broadcast": "", "session": "Heats begin" },
+      { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
+    ],
+    "tracks": [
+      {
+        "name": "Nürburgring BES/WEC",
+        "date": "July 26, 2020",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Road America",
+        "date": "August 9, 2020",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Imola GP",
+        "date": "August 23, 2020",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Interlagos",
+        "date": "September 6, 2020",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Circuit Gilles Villeneuve",
+        "date": "September 20, 2020",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Zandvoort GP",
+        "date": "October 4, 2020",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "name": "Spa GP",
+        "date": "October 18, 2020",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      }
+    ],
+    "standings_fields": [
+      { "key": "index", "label": "Pos" }, { "key": "number", "label": "#"}, "name", "team", "wins", "points", "prize_money"
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "Pos" }, "name", "points"
+    ],
+    "team_card_fields": [
+      { "key": "number", "label": "#"}, "name", "wins", "points"
+    ],
+    "teams": [
+      { "name": "RaceKraft Esports", "logo": "racekraft.png", "url": "", "drivers": [
+        { "number": "48", "name": "Diogo Francisco", "wins": 0, "points": 0, "prize_money": 0 },
+        { "number": "2", "name": "Justin Tipton", "wins": 0, "points": 0, "prize_money": 0 }
+      ]},
+      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
+        { "number": "52", "name": "Jak Crawford", "wins": 0, "points": 0, "prize_money": 0 },
+        { "number": "25", "name": "Kevin Zwemstra", "wins": 0, "points": 0, "prize_money": 0 }
+      ]}
+    ]
+  }
