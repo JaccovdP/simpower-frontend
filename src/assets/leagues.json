@@ -18,7 +18,7 @@
         }
       ],
       "event_type": "2 heats, 1 consolation, 1 feature",
-      "broadcast": { "text": "Live on Racespot TV", "url": "" },
+      "broadcast": { "text": "Live on Racespot TV", "url": "https://www.youtube.com/playlist?list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh" },
       "nr_of_rounds": 7,
       "overall_prize_pool": 400,
       "race_prize_pool": 40,
@@ -68,7 +68,8 @@
         "simtime": "09:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_url": ""
+        "results_url": "",
+        "broadcast_url": "https://www.youtube.com/watch?v=KZuRj-HAN1k"
       },
       {
         "type": "practice",
@@ -371,7 +372,7 @@
         { "number": "38", "name": "Gavin Halls", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "225", "name": "Ryan Parkins", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
-      { "name": "Project Dynamic Engineering", "logo": "", "url": "", "drivers": [
+      { "name": "Project Dynamic Engineering", "logo": "PDE.png", "url": "", "drivers": [
         { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Effect eSports", "logo": "", "url": "", "drivers": [

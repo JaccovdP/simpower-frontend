@@ -54,9 +54,14 @@
                     <strong>Event type</strong><br>
                     {{ data.key_info.event_type }}
                   </div>
-                  <div class="mb-2">
+                  <div class="mb-2" v-if="data.key_info.broadcast.text">
                     <strong>Broadcast</strong><br>
-                    {{ data.key_info.broadcast.text }}
+                    <span v-if="data.key_info.broadcast.url">
+                      <b-link :href="data.key_info.broadcast.url" target="_blank">{{ data.key_info.broadcast.text }}</b-link>
+                    </span>
+                    <span v-else>
+                      {{ data.key_info.broadcast.text }}
+                    </span>
                   </div>
                   <div class="mb-2">
                     <strong>Number of rounds</strong><br>
@@ -104,11 +109,17 @@
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
-                            <span v-if="session.results">
+                            <span v-if="session.broadcast_url && session.type == 'race'">
+                              <b-link :href="session.broadcast_url" target="_blank">Broadcast</b-link> |
+                            </span>
+                            <span v-if="!session.broadcast_url && session.type == 'race'">
+                              <b-link disabled>Broadcast</b-link> |
+                            </span>
+                            <span v-if="session.results && session.type == 'race'">
                               <b-link @click="openResults(session.results)">Open results</b-link>
                             </span>
-                            <span v-else>
-                              <b-link disabled>Results not available yet</b-link>
+                            <span v-if="!session.results && session.type == 'race'">
+                              <b-link disabled>Results</b-link>
                             </span>
                           </b-card-text>
                           <template v-slot:footer>
