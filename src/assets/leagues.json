@@ -39,58 +39,212 @@
       { "time": "19:05 UTC", "broadcast": "", "session": "Heats begin" },
       { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
     ],
-    "tracks": [
+    "sessions": [
       {
-        "name": "Nürburgring BES/WEC",
-        "date": "July 26, 2020",
+        "type": "practice",
+        "name": "FP1: Nürburgring BES/WEC",
+        "date": "July 24, 2020",
+        "time": "18:00 UTC",
         "simtime": "09:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Road America",
-        "date": "August 9, 2020",
+        "type": "practice",
+        "name": "FP2: Nürburgring BES/WEC",
+        "date": "July 25, 2020",
+        "time": "18:00 UTC",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Nürburgring BES/WEC",
+        "date": "July 26, 2020",
+        "time": "18:00 UTC",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Road America",
+        "date": "August 7, 2020",
+        "time": "18:00 UTC",
         "simtime": "13:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Imola GP",
-        "date": "August 23, 2020",
+        "type": "practice",
+        "name": "FP2: Road America",
+        "date": "August 8, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Road America",
+        "date": "August 9, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Imola GP",
+        "date": "August 21, 2020",
+        "time": "18:00 UTC",
         "simtime": "17:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Interlagos",
-        "date": "September 6, 2020",
+        "type": "practice",
+        "name": "FP2: Imola GP",
+        "date": "August 22, 2020",
+        "time": "18:00 UTC",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Imola GP",
+        "date": "August 23, 2020",
+        "time": "18:00 UTC",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Interlagos",
+        "date": "September 4, 2020",
+        "time": "18:00 UTC",
         "simtime": "16:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Circuit Gilles Villeneuve",
-        "date": "September 20, 2020",
+        "type": "practice",
+        "name": "FP2: Interlagos",
+        "date": "September 5, 2020",
+        "time": "18:00 UTC",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Interlagos",
+        "date": "September 6, 2020",
+        "time": "18:00 UTC",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Circuit Gilles Villeneuve",
+        "date": "September 18, 2020",
+        "time": "18:00 UTC",
         "simtime": "07:30",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Zandvoort GP",
-        "date": "October 4, 2020",
+        "type": "practice",
+        "name": "FP2: Circuit Gilles Villeneuve",
+        "date": "September 19, 2020",
+        "time": "18:00 UTC",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Circuit Gilles Villeneuve",
+        "date": "September 20, 2020",
+        "time": "18:00 UTC",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Zandvoort GP",
+        "date": "October 2, 2020",
+        "time": "18:00 UTC",
         "simtime": "13:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_url": ""
       },
       {
-        "name": "Spa GP",
+        "type": "practice",
+        "name": "FP2: Zandvoort GP",
+        "date": "October 3, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Zandvoort GP",
+        "date": "October 4, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP1: Spa GP",
+        "date": "October 16, 2020",
+        "time": "18:00 UTC",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "practice",
+        "name": "FP2: Spa GP",
+        "date": "October 17, 2020",
+        "time": "18:00 UTC",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_url": ""
+      },
+      {
+        "type": "race",
+        "name": "Race: Spa GP",
         "date": "October 18, 2020",
+        "time": "18:00 UTC",
         "simtime": "14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
@@ -182,7 +336,7 @@
         { "number": "6", "name": "Freddie Skitini", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
       { "name": "Shark Team Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Oscar Wilkens", "wins": 0, "points": 0, "prize_money": 0 },
+        { "number": "33", "name": "Oscar Wilkens", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "5", "name": "Alexis Dias", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
       { "name": "SRB TEAM", "logo": "srb.png", "url": "", "drivers": [
@@ -219,13 +373,15 @@
       { "name": "Project Dynamic Engineering", "logo": "", "url": "", "drivers": [
         { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
+      { "name": "Team Effect eSports", "logo": "", "url": "", "drivers": [
+        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "prize_money": 0 }
+      ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "225", "name": "Ryan Parkins", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "42", "name": "Mark Phillips7", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "prize_money": 0 },
@@ -274,7 +430,7 @@
       { "time": "20:10 UTC", "broadcast": "", "session": "Race 2" },
       { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
     ],
-    "tracks": [
+    "sessions": [
       {
         "name": "Indianapolis GP",
         "date": "May 20, 2020",
@@ -425,7 +581,7 @@
       { "time": "19:10 UTC", "broadcast": "", "session": "Race begin" },
       { "time": "20:55 UTC", "broadcast": "Interviews", "session": "" }
     ],
-    "tracks": [
+    "sessions": [
       {
         "name": "Indianapolis GP",
         "date": "May 27, 2020",

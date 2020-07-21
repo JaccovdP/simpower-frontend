@@ -85,24 +85,35 @@
             <b-tab title="Schedule">
               <b-row>
                 <b-col md="12" lg="8" sm="12">
-                  <h3 class="text-left">Tracks</h3>
-                  <b-card class="mb-2" v-for="track in data.tracks" :key="track.name">
+                  <h3 class="text-left">Sessions <span style="float:right;"><b-button @click="hidePractice = !hidePractice" size="sm">{{ hidePractice ? "Show" : "Hide" }} practice</b-button></span></h3>
+                  <b-card class="mb-2" v-for="session in filteredSessions" :key="session.name" 
+                    header-tag="header" 
+                    :border-variant="session.type == 'race' ? 'primary' : 'none'" 
+                    :header-bg-variant="session.type == 'race' ? 'primary' : 'none'"
+                    :header-text-variant="session.type == 'race' ? 'white' : 'none'">
+                    <template v-slot:header>
+                      <h5 class="mb-0">{{ session.name }}</h5>
+                    </template>
                     <b-row no-gutters>
                       <b-col cols="3">
                         <h1><b-icon icon="calendar3"></b-icon></h1>
-                        {{ track.date }}
+                        {{ session.date }}
                       </b-col>
                       <b-col>
-                        <b-card-body :title="track.name">
+                        <b-card-body class="text-left">
                           <b-card-text>
-                            Sim Time {{ track.simtime }} | {{ track.weather }} | {{ track.sky }} | 
-                            <span v-if="track.results">
-                              <b-link @click="openResults(track.results)">Results</b-link>
+                            <strong>Session start time</strong> {{ session.time }}<br>
+                            Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
+                            <span v-if="session.results">
+                              <b-link @click="openResults(session.results)">Open results</b-link>
                             </span>
                             <span v-else>
-                              <b-link disabled>Results</b-link>
+                              <b-link disabled>Results not available yet</b-link>
                             </span>
                           </b-card-text>
+                          <template v-slot:footer>
+                            <em>Footer Slot</em>
+                          </template>
                         </b-card-body>
                       </b-col>
                     </b-row>
@@ -241,6 +252,16 @@ export default {
       return teams.filter(function(team) {
         return team.name == "Privateer"
       })
+    },
+    filteredSessions () {
+      let sessions = this.data.sessions
+      if (this.hidePractice) {
+        return sessions.filter(function(session) {
+          return session.type == "race"
+        })
+      } else{
+        return sessions
+      }
     }
   },
   methods: {
@@ -273,6 +294,7 @@ export default {
   },
   data: function() {
     return {
+      hidePractice: true,
       tabIndex: 0,
       tabDict: {
         0: "info",
