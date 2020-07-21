@@ -294,7 +294,7 @@ export default {
   },
   data: function() {
     return {
-      hidePractice: true,
+      hidePractice: false,
       tabIndex: 0,
       tabDict: {
         0: "info",
