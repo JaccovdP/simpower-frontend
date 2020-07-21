@@ -102,7 +102,7 @@
                       <b-col>
                         <b-card-body class="text-left">
                           <b-card-text>
-                            <strong>Session start time</strong> {{ session.time }}<br>
+                            <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
                             <span v-if="session.results">
                               <b-link @click="openResults(session.results)">Open results</b-link>
