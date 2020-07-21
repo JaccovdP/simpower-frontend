@@ -1,3 +1,5 @@
+![Deploy](https://github.com/JaccovdP/simpower-frontend/workflows/Deploy/badge.svg)
+
 # Simpower website repository
 
 ## Website
