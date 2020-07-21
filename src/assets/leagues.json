@@ -432,6 +432,7 @@
     ],
     "sessions": [
       {
+        "type": "race",
         "name": "Indianapolis GP",
         "date": "May 20, 2020",
         "simtime": "12:30",
@@ -440,6 +441,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Suzuka GP",
         "date": "June 3, 2020",
         "simtime": "17:00",
@@ -448,6 +450,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Silverstone GP",
         "date": "June 17, 2020",
         "simtime": "17:00",
@@ -456,6 +459,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Philip Island",
         "date": "July 1, 2020",
         "simtime": "11:00",
@@ -464,6 +468,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Nurburgring GP",
         "date": "July 15, 2020",
         "simtime": "16:30",
@@ -472,6 +477,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Monza GP",
         "date": "July 29, 2020",
         "simtime": "14:00",
@@ -480,6 +486,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Spa GP",
         "date": "August 12, 2020",
         "simtime": "06:30",
@@ -488,6 +495,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Interlagos",
         "date": "August 26, 2020",
         "simtime": "10:00",
@@ -583,6 +591,7 @@
     ],
     "sessions": [
       {
+        "type": "race",
         "name": "Indianapolis GP",
         "date": "May 27, 2020",
         "simtime": "12:30",
@@ -591,6 +600,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Suzuka GP",
         "date": "June 10, 2020",
         "simtime": "17:00",
@@ -599,6 +609,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Silverstone GP",
         "date": "June 24, 2020",
         "simtime": "17:00",
@@ -607,6 +618,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Philip Island",
         "date": "July 8, 2020",
         "simtime": "11:00",
@@ -615,6 +627,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Nurburgring GP",
         "date": "July 22, 2020",
         "simtime": "16:30",
@@ -623,6 +636,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Monza GP",
         "date": "August 5, 2020",
         "simtime": "14:00",
@@ -631,6 +645,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Spa GP",
         "date": "August 19, 2020",
         "simtime": "06:30",
@@ -639,6 +654,7 @@
         "results_url": ""
       },
       {
+        "type": "race",
         "name": "Interlagos",
         "date": "September 9, 2020",
         "simtime": "10:00",
