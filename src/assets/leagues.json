@@ -22,7 +22,8 @@
       "nr_of_rounds": 7,
       "overall_prize_pool": 400,
       "race_prize_pool": 40,
-      "entry_fee": 25
+      "entry_fee": 25,
+      "regulations_url": "https://docs.google.com/document/d/1XOphVOZajm8P6rFvaM5ZjfCjsZqN7GpxZqsXl3MwFw8/"
     },
     "key_dates": [
       { "date": "June 11, 2020", "event": "Registration opens" },
@@ -353,7 +354,7 @@
       { "name": "Team Redline", "logo": "", "url": "", "drivers": [
         { "number": "54", "name": "Alexander Thiebe", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
-      { "name": "Laps @ iRacing", "logo": "lapsracing.png", "url": "", "drivers": [
+      { "name": "Laps @ Racing", "logo": "lapsracing.png", "url": "", "drivers": [
         { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
       { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
