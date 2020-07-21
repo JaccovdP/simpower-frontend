@@ -216,13 +216,15 @@
       { "name": "PorscheSport", "logo": "porschesport.png", "url": "", "drivers": [
         { "number": "38", "name": "Gavin Halls", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
+      { "name": "Project Dynamic Engineering", "logo": "", "url": "", "drivers": [
+        { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "prize_money": 0 }
+      ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "225", "name": "Ryan Parkins", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "42", "name": "Mark Phillips7", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "prize_money": 0 },
