@@ -181,7 +181,7 @@
         { "number": "36", "name": "Dane Baird", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "", "name": "Ivan Harasta", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
-      { "name": "4ELEMENTS Racing Team", "logo": "", "url": "", "drivers": [
+      { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
         { "number": "6", "name": "Freddie Skitini", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
       { "name": "Shark Team Racing", "logo": "", "url": "", "drivers": [
@@ -201,7 +201,10 @@
       { "name": "Team Redline", "logo": "", "url": "", "drivers": [
         { "number": "54", "name": "Alexander Thiebe", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
-      { "name": "Wild Animals", "logo": "", "url": "", "drivers": [
+      { "name": "Laps @ iRacing", "logo": "lapsracing.png", "url": "", "drivers": [
+        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "prize_money": 0 }
+      ]},
+      { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
         { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "555", "name": "Kirill Kolobuxov", "wins": 0, "points": 0, "prize_money": 0 }
       ]},
@@ -225,8 +228,7 @@
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "prize_money": 0 },
         { "number": "", "name": "Martin Spalek", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "", "name": "Onuray Sahin", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "", "name": "Onuray Sahin", "wins": 0, "points": 0, "prize_money": 0 }
       ]}
     ]
   }},
@@ -338,28 +340,28 @@
     ],
     "teams": [
       { "name": "DataWire Racing", "logo": "", "url": "", "drivers": [
-        { "number": "11", "name": "Dries Vanderyt", "points": 449, "warnings": 0 },
+        { "number": "11", "name": "Dries Vanderyt", "points": 445, "warnings": 0 },
         { "number": "3", "name": "Kristof Rampelberg", "points": 175, "warnings": 0 }
       ]},
-      { "name": "Fiercely Forward", "logo": "", "url": "", "drivers": [
-        { "number": "99", "name": "Josh Clogg", "points": 845, "warnings": 0 },
-        { "number": "", "name": "Taylor Lane", "points": 250, "warnings": 0 }
+      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
+        { "number": "99", "name": "Josh Clogg", "points": 682, "warnings": 0 },
+        { "number": "", "name": "Taylor Lane", "points": 219, "warnings": 0 }
       ]},
       { "name": "Radar Racing", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Patrick Charlton", "points": 330, "warnings": 0 }
       ]},
       { "name": "Belgian iRacing Team", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Pierre Cousin", "points": 305, "warnings": 0 }
+        { "number": "", "name": "Pierre Cousin", "points": 269, "warnings": 0 }
       ]},
       { "name": "Desk Chair Racing", "logo": "", "url": "", "drivers": [
-        { "number": "21", "name": "Michael Schieber", "points": 293, "warnings": 0 },
+        { "number": "21", "name": "Michael Schieber", "points": 251, "warnings": 0 },
         { "number": "6", "name": "Freddie Skitini", "points": 267, "warnings": 0 }
       ]},
       { "name": "T.C.R", "logo": "", "url": "", "drivers": [
         { "number": "4", "name": "William Paisley", "points": 290, "warnings": 0 }
       ]},
       { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "22", "name": " Matthew Birkett", "points": 254, "warnings": 0 }
+        { "number": "22", "name": " Matthew Birkett", "points": 229, "warnings": 0 }
       ]},
       { "name": "Klub_Karacho", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 0 }
@@ -375,7 +377,7 @@
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "28", "name": "Silas Krag-Volijk", "points": 650, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 673, "warnings": 0 },
+        { "number": "57", "name": "Jacco van der Plaat", "points": 571, "warnings": 0 },
         { "number": "", "name": "Russell Barnes", "points": 449, "warnings": 0 },
         { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 0 },
         { "number": "44", "name": "Stephen Grabowski", "points": 355, "warnings": 0 },

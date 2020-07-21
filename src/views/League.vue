@@ -109,7 +109,7 @@
                   </b-card>
                 </b-col>
                 <b-col class="text-left" md="12" lg="4" sm="12">
-                  <h3>Broadcast schedule</h3>
+                  <h3>Session schedule</h3>
                   <b-table striped small borderless :items="data.schedule"></b-table>
                 </b-col>
               </b-row>
