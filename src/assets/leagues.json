@@ -36,13 +36,13 @@
       { "label": "Driver", "description": "Driver name" },
       { "label": "Team", "description": "Driver is member of this team." },
       { "label": "Points", "description": "Number of points the driver has scored during the season." },
-      { "label": "G/L", "description": "Number of positions the driver has gained or lost in heat races during the season." },
+      { "label": "G/L", "description": "Number of positions the driver has gained or lost in heat races during the season. (AlkenTech.com Simulation Trophy)" },
       { "label": "Wins", "description": "Number of races the driver has won this season." }
     ],
     "team_table_info": [
       { "label": "Team", "description": "Team name"},
       { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
-      { "label": "G/L", "description": "Combined number of positions the drivers in the team have gained or lost  in heat races during the season."}
+      { "label": "G/L", "description": "Combined number of positions the drivers in the team have gained or lost  in heat races during the season. (AlkenTech.com Simulation Trophy)"}
     ],
     "key_dates": [
       { "date": "June 11, 2020", "event": "Registration opens" },
