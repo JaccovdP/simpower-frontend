@@ -525,7 +525,7 @@
         { "number": "21", "name": "Michael Schieber", "points": 251, "warnings": 0 },
         { "number": "6", "name": "Freddie Skitini", "points": 267, "warnings": 0 }
       ]},
-      { "name": "T.C.R", "logo": "", "url": "", "drivers": [
+      { "name": "T.C.R", "logo": "tcrlogored.png", "url": "", "drivers": [
         { "number": "4", "name": "William Paisley", "points": 290, "warnings": 0 }
       ]},
       { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
