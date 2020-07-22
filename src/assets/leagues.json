@@ -25,6 +25,25 @@
       "entry_fee": 25,
       "regulations_url": "https://docs.google.com/document/d/1XOphVOZajm8P6rFvaM5ZjfCjsZqN7GpxZqsXl3MwFw8/"
     },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, "team", { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "G/L", "sortable": true }, { "key": "wins", "label": "Wins", "sortable": true }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "G/L", "sortable": true }
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "G/L", "description": "Number of positions the driver has gained or lost in heat races during the season." },
+      { "label": "Wins", "description": "Number of races the driver has won this season." }
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
+      { "label": "G/L", "description": "Combined number of positions the drivers in the team have gained or lost  in heat races during the season."}
+    ],
     "key_dates": [
       { "date": "June 11, 2020", "event": "Registration opens" },
       { "date": "June 20, 2020", "event": "Payment opens" },
@@ -255,140 +274,140 @@
     ],
     "teams": [
       { "name": "B-Sport", "logo": "", "url": "", "drivers": [
-        { "number": "242", "name": "Aden Brand", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "242", "name": "Aden Brand", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "cartribute", "logo": "", "url": "", "drivers": [
-        { "number": "23", "name": "Hugo Gallo", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "23", "name": "Hugo Gallo", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Deep Eddy Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Alan Powell", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "", "name": "Alan Powell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "E-sport Performance Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "3", "name": "Thomas Guldalian", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "3", "name": "Thomas Guldalian", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "13", "name": "Josh Clogg", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "25", "name": "Kevin Zwemstra", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "13", "name": "Josh Clogg", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "25", "name": "Kevin Zwemstra", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "FTR eSports", "logo": "", "url": "", "drivers": [
-        { "number": "92", "name": "Rolf Andersen", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "92", "name": "Rolf Andersen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Gone Rogue Motorsports", "logo": "", "url": "", "drivers": [
-        { "number": "58", "name": "Jack G Boyd", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "58", "name": "Jack G Boyd", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "GOTeam Racing", "logo": "got.png", "url": "", "drivers": [
-        { "number": "44", "name": "Robin Östlund", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "44", "name": "Robin Östlund", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "HM Engineering", "logo": "hmengineering.png", "url": "", "drivers": [
-        { "number": "729", "name": "Maxim Ramsteijn", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "9", "name": "Kieran Harrison", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "729", "name": "Maxim Ramsteijn", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "9", "name": "Kieran Harrison", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Impulse Racing", "logo": "", "url": "", "drivers": [
-        { "number": "15", "name": "Tobias Maisel", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "15", "name": "Tobias Maisel", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "KAST", "logo": "", "url": "", "drivers": [
-        { "number": "17", "name": "Martin Donati", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "37", "name": "Clément Andrieu", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "17", "name": "Martin Donati", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "37", "name": "Clément Andrieu", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "LuxSim24 eSports", "logo": "lux.png", "url": "", "drivers": [
-        { "number": "791", "name": "Alex Kraeter", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "791", "name": "Alex Kraeter", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "LXP SimRacingTeam", "logo": "", "url": "", "drivers": [
-        { "number": "259", "name": "Tiago Mendes", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "259", "name": "Tiago Mendes", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Maniti Racing", "logo": "maniti.png", "url": "", "drivers": [
-        { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "19", "name": "Yoep de Ligt", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "19", "name": "Yoep de Ligt", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Maniti Racing #2", "logo": "maniti.png", "url": "", "drivers": [
-        { "number": "8", "name": "Tim Matzke", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "8", "name": "Tim Matzke", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Meraki Racing", "logo": "", "url": "", "drivers": [
-        { "number": "97", "name": "Lewis Ward", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "117", "name": "Tom Metherell", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "97", "name": "Lewis Ward", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "117", "name": "Tom Metherell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Optimal Simracing", "logo": "", "url": "", "drivers": [
-        { "number": "98", "name": "Bastien Mattler", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "919", "name": "Nelson Costa De Sousa", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "98", "name": "Bastien Mattler", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "919", "name": "Nelson Costa De Sousa", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Panda Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Positively Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Ivo Laubscher", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "", "name": "Ivo Laubscher", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "RaceKraft Esports", "logo": "racekraft.png", "url": "", "drivers": [
-        { "number": "48", "name": "Diogo Francisco", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "2", "name": "Justin Tipton", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "48", "name": "Diogo Francisco", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "2", "name": "Justin Tipton", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "RaceKraft Esports #2", "logo": "racekraft.png", "url": "", "drivers": [
-        { "number": "777", "name": "Jonathon White", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "777", "name": "Jonathon White", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Rev It Up Racing Esports Team", "logo": "", "url": "", "drivers": [
-        { "number": "22", "name": "Jack Godden", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "22", "name": "Jack Godden", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "RodgersA51", "logo": "", "url": "", "drivers": [
-        { "number": "18", "name": "Tristan Martz", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "18", "name": "Tristan Martz", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Kairos Competition", "logo": "kairos.png", "url": "", "drivers": [
-        { "number": "36", "name": "Dane Baird", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "63", "name": "Ivan Harasta", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "36", "name": "Dane Baird", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "63", "name": "Ivan Harasta", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
-        { "number": "6", "name": "Freddie Skitini", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "6", "name": "Freddie Skitini", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Shark Team Racing", "logo": "", "url": "", "drivers": [
-        { "number": "33", "name": "Oscar Wilkens", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "5", "name": "Alexis Dias", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "33", "name": "Oscar Wilkens", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "5", "name": "Alexis Dias", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "SRB TEAM", "logo": "srb.png", "url": "", "drivers": [
-        { "number": "", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Bergen", "logo": "", "url": "", "drivers": [
-        { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Blacksnow Racing", "logo": "", "url": "", "drivers": [
-        { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Redline", "logo": "", "url": "", "drivers": [
-        { "number": "54", "name": "Alexander Thiebe", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "54", "name": "Alexander Thiebe", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Laps @ Racing", "logo": "lapsracing.png", "url": "", "drivers": [
-        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
-        { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "555", "name": "Kirill Kolobuxov", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "555", "name": "Kirill Kolobuxov", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "WoIP.com Volante Racing 1", "logo": "", "url": "", "drivers": [
-        { "number": "199", "name": "Michael Pedersen3", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "28", "name": "Sam Kuitert", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "199", "name": "Michael Pedersen3", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "28", "name": "Sam Kuitert", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "WoIP.com Volante Racing 2", "logo": "", "url": "", "drivers": [
-        { "number": "198", "name": "Jordan A Pearce", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "911", "name": "Noah Watt", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "198", "name": "Jordan A Pearce", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "911", "name": "Noah Watt", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "PorscheSport", "logo": "porschesport.png", "url": "", "drivers": [
-        { "number": "38", "name": "Gavin Halls", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "225", "name": "Ryan Parkins", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "38", "name": "Gavin Halls", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "225", "name": "Ryan Parkins", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Project Dynamic Engineering", "logo": "PDE.png", "url": "", "drivers": [
-        { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Effect eSports", "logo": "", "url": "", "drivers": [
-        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "42", "name": "Mark Phillips7", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "prize_money": 0 },
-        { "number": "", "name": "Onuray Sahin", "wins": 0, "points": 0, "prize_money": 0 }
+        { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "42", "name": "Mark Phillips7", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "", "name": "Onuray Sahin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]}
     ]
   }},
@@ -414,6 +433,23 @@
       "overall_prize_pool": 400,
       "entry_fee": 20
     },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "Wins", "description": "Number of races the driver has won this season." }
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
+    ],
     "key_dates": [
       { "date": "April 2, 2020", "event": "Registration opens" },
       { "date": "April 26, 2020", "event": "Payment opens" },
@@ -576,6 +612,23 @@
       "overall_prize_pool": 700,
       "entry_fee": 20
     },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "Wins", "description": "Number of races the driver has won this season." }
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
+    ],
     "key_dates": [
       { "date": "April 2, 2020", "event": "Registration opens" },
       { "date": "April 26, 2020", "event": "Payment opens" },

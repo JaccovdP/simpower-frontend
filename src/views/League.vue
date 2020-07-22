@@ -178,9 +178,19 @@
             </b-tab>
             <b-tab title="Standings">
               <b-row class="text-left">
-                <b-col cols="12" lg="8" md="12">
-                  <h3>Driver standings</h3>
-                  <b-table striped outlined :items="standings.driver" :fields="standings_fields" sort-by="points" sort-desc responsive>
+                <b-col align-self="stretch" cols="12" lg="8" md="12">
+                  <h3>Driver standings <span style="float:right;"><b-button v-b-modal.driverTableInfo size="sm">Table info</b-button></span></h3>
+                  <b-table 
+                    striped 
+                    small 
+                    outlined
+                    no-border-collapse
+                    :items="standings.driver" 
+                    :fields="data.standings_fields" 
+                    sort-by="points" 
+                    sort-desc
+                    sort-icon-left
+                    responsive>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
                     </template>
@@ -188,8 +198,18 @@
                 </b-col>
 
                 <b-col lg="4">
-                  <h3>Team standings</h3>
-                  <b-table striped outlined :items="standings.team" :fields="team_standings_fields" sort-by="points" sort-desc>
+                  <h3>Team standings <span style="float:right;"><b-button v-b-modal.teamTableInfo size="sm">Table info</b-button></span></h3>
+                  <b-table 
+                    striped 
+                    small 
+                    outlined
+                    no-border-collapse
+                    :items="standings.team"
+                    :fields="data.team_standings_fields" 
+                    sort-by="points"
+                    sort-desc
+                    sort-icon-left
+                    responsive>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
                     </template>
@@ -215,6 +235,34 @@
       </template>
     </b-modal>
 
+    <b-modal id="driverTableInfo" title="Table info" size="lg">
+
+      <b-table v-if="data"
+        small
+        borderless
+        :items="data.driver_table_info"
+      ></b-table>
+
+      <template v-slot:modal-footer>
+        <div>
+        </div>
+      </template>
+    </b-modal>
+
+    <b-modal id="teamTableInfo" title="Table info" size="lg">
+
+      <b-table v-if="data"
+        small
+        borderless
+        :items="data.team_table_info"
+      ></b-table>
+
+      <template v-slot:modal-footer>
+        <div>
+        </div>
+      </template>
+    </b-modal>
+
   </div>
 </template>
 
@@ -231,6 +279,7 @@ export default {
       for(let i = 0; i < this.data.teams.length; i++) {
         let team = this.data.teams[i]
         let team_points = 0
+        let team_sec_points = 0
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
           driver_standings.push({
@@ -239,14 +288,17 @@ export default {
             team: team.name,
             wins: driver.wins,
             points: driver.points,
+            secondary_points: driver.secondary_points,
             prize_money: driver.prize_money
           })
           team_points += driver.points
+          team_sec_points += driver.secondary_points
         }
         if(team.name != "Privateer") {
           team_standings.push({
             name: team.name,
-            points: team_points
+            points: team_points,
+            secondary_points: team_sec_points
           })
         }
       }
@@ -290,6 +342,7 @@ export default {
     }
   },
   mounted: function() {
+    this.data = null
     let data = this.filterData(leagueData, this.$route.params.slug)
     this.data = data[0].details
     this.setTab(this.$route.params.tab)
@@ -297,6 +350,7 @@ export default {
   watch: {
     $route(from, to) {
       if(from.params.slug != to.params.slug) {
+        this.data = null
         let data = this.filterData(leagueData, this.$route.params.slug)
         this.data = data[0].details
       }
@@ -316,12 +370,6 @@ export default {
       },
       leagueData,
       data: null,
-      "standings_fields": [
-        { "key": "index", "label": "Pos", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", "wins", "points", { "key": "prize_money", "label": "Prizes" }
-      ],
-      "team_standings_fields": [
-        { "key": "index", "label": "Pos", "stickyColumn": true }, "name", "points"
-      ],
       "team_card_fields": [
         { "key": "number", "label": "#"}, "name", "wins", "points"
       ],
