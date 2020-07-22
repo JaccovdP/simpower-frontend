@@ -19,9 +19,14 @@
             <b-nav-item to="/">Home</b-nav-item>
 
             <b-nav-item-dropdown text="Leagues" left>
-              <b-dropdown-item to="/league/carrera-cup/info">Carrera Cup</b-dropdown-item>
-              <b-dropdown-item to="/league/f3-pro/info">Formula 3 Pro Championship</b-dropdown-item>
-              <b-dropdown-item to="/league/f3-evo/info">Formula 3 Evo Championship</b-dropdown-item>
+              <template v-for="league in leagueData">
+                <b-dropdown-item 
+                  :key="league.details.name" 
+                  v-if="league.details.visible" 
+                  :to="'/league/' + league.key + '/info'">
+                  {{ league.details.menu_title }}
+                </b-dropdown-item>
+              </template>
             </b-nav-item-dropdown>
 
             <b-nav-item href="https://discord.gg/6B67YnY" target="_blank">Discord</b-nav-item>
@@ -41,9 +46,14 @@
           <b-nav-item to="/">Home</b-nav-item>
 
           <b-nav-item-dropdown text="Leagues" left>
-            <b-dropdown-item to="/league/carrera-cup/info">Carrera Cup</b-dropdown-item>
-            <b-dropdown-item to="/league/f3-pro/info">Formula 3 Pro Championship</b-dropdown-item>
-            <b-dropdown-item to="/league/f3-evo/info">Formula 3 Evo Championship</b-dropdown-item>
+            <template v-for="league in leagueData">
+              <b-dropdown-item 
+                :key="league.details.name" 
+                v-if="league.details.visible" 
+                :to="'/league/' + league.key + '/info'">
+                {{ league.details.menu_title }}
+              </b-dropdown-item>
+            </template>
           </b-nav-item-dropdown>
 
           <b-nav-item href="https://discord.gg/6B67YnY" target="_blank">Discord</b-nav-item>
@@ -83,10 +93,12 @@
 </template>
 
 <script>
+import leagueData from './assets/leagues.json'
+
 export default {
     data: function () {
         return {
-            
+            leagueData
         }
     }
 }

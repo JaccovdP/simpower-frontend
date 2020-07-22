@@ -75,6 +75,10 @@
                     <strong>Entry fee</strong><br>
                     &euro;{{ data.key_info.entry_fee }}
                   </div>
+                  <div class="mb-2" v-if="data.key_info.regulations_url">
+                    <strong>Regulations</strong><br>
+                    <b-link :href="data.key_info.regulations_url" target="_blank">Regulations</b-link>
+                  </div>
                 </b-col>
                 <b-col lg="4" md="12">
                   <h3>Key dates</h3>
@@ -115,10 +119,10 @@
                             <span v-if="!session.broadcast_url && session.type == 'race'">
                               <b-link disabled>Broadcast</b-link> |
                             </span>
-                            <span v-if="session.results && session.type == 'race'">
-                              <b-link @click="openResults(session.results)">Open results</b-link>
+                            <span v-if="session.results_files.length > 0">
+                              <b-link @click="openResults(session.results_files)">Results</b-link>
                             </span>
-                            <span v-if="!session.results && session.type == 'race'">
+                            <span v-if="!session.results_files.length > 0">
                               <b-link disabled>Results</b-link>
                             </span>
                           </b-card-text>
@@ -225,16 +229,6 @@
       </b-row>
     </b-container>
 
-    <b-modal id="results" title="Results" size="xl" scrollable>
-
-      {{ results }}
-
-      <template v-slot:modal-footer>
-        <div>
-        </div>
-      </template>
-    </b-modal>
-
     <b-modal id="driverTableInfo" title="Table info" size="lg">
 
       <b-table v-if="data"
@@ -263,12 +257,42 @@
       </template>
     </b-modal>
 
+    <b-modal id="results" title="Results" size="xl">
+
+      <b-tabs v-if="this.results.length > 0 && !resultsLoading" v-model="resultsTabIndex" pills>
+        <b-tab 
+          v-for="result in results" 
+          :key="result.name" 
+          :title="result.name">
+          <b-table
+            striped 
+            small 
+            outlined
+            responsive
+            :items="result.results"
+            class="mt-2"
+          ></b-table>
+        </b-tab>
+      </b-tabs>
+
+      <div v-if="resultsLoading">
+        <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
+      </div>
+
+      <template v-slot:modal-footer>
+        <div>
+        </div>
+      </template>
+    </b-modal>
+
   </div>
 </template>
 
 <script>
 
 import leagueData from '../assets/leagues.json'
+
+const Papa = require('papaparse')
 
 export default {
   name: 'league',
@@ -333,8 +357,73 @@ export default {
         return object.key == key
       })
     },
-    openResults(results) {
-      this.results = results
+    getDriverInfoByNumber(nr) {
+      let driver = this.standings["driver"].find(x => x.number == nr)
+      return { "name": driver ? driver.name : "Unknown", "team": driver ? driver.team : "Unknown" }
+    },
+    processResults(info, results) {
+
+      let formattedResults = []
+
+      for(let i = 0; i < results.length; i++) {
+        let row = results[i]
+        let formattedRow = {}
+        let driver = this.getDriverInfoByNumber(row["Car #"])
+        if(parseInt(row["Start Pos"]) != 0) {
+          formattedRow = {
+            "Pos": row["Fin Pos"],
+            "#": row["Car #"],
+            "Driver": driver.name,
+            "Team": driver.team,
+            "Start Pos": row["Start Pos"],
+            "G/L": parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"]),
+            "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
+            "Laps Led": row["Laps Led"],
+            "Avg. Lap time": row["Average Lap Time"],
+            "Fastest Lap Time": row["Fastest Lap Time"],
+            "Fast Lap #": row["Fast Lap#"],
+            "Incidents": row["Inc"],
+            "Points": row["League Points"]
+          }
+        } else {
+          formattedRow = {
+            "Pos": row["Fin Pos"],
+            "#": row["Car #"],
+            "Driver": driver.name,
+            "Team": driver.team,
+            "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
+            "Avg. Lap time": row["Average Lap Time"],
+            "Fastest Lap Time": row["Fastest Lap Time"],
+            "Fast Lap #": row["Fast Lap#"],
+          }
+        }
+
+        formattedResults.push(formattedRow)
+      }
+
+      if (info.default) {
+        this.resultsTabIndex = info.index
+      }
+      this.results.push({ "name": info.name, "index": info.index, "results": formattedResults })
+      this.results = this.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
+      if (this.numberOfResults == this.results.length) this.resultsLoading = false
+    },
+    openResults(files) {
+      this.resultsLoading = true
+      this.results = []
+      this.numberOfResults = files.length
+      for(let i = 0; i < files.length; i++) {
+        let path = "/results/" + files[i].file
+        Papa.parse(path, { 
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: (results) => {
+            this.processResults(files[i], results.data)
+          }
+        })
+      }
+
       this.$bvModal.show('results')
     },
     setTab(tab) {
@@ -346,6 +435,7 @@ export default {
     let data = this.filterData(leagueData, this.$route.params.slug)
     this.data = data[0].details
     this.setTab(this.$route.params.tab)
+
   },
   watch: {
     $route(from, to) {
@@ -360,7 +450,9 @@ export default {
   data: function() {
     return {
       hidePractice: false,
+      resultsLoading: false,
       tabIndex: 0,
+      resultsTabIndex: 0,
       tabDict: {
         0: "info",
         1: "schedule",
@@ -373,7 +465,7 @@ export default {
       "team_card_fields": [
         { "key": "number", "label": "#"}, "name", "wins", "points"
       ],
-      results: null
+      results: []
     }
   }
 }
