@@ -359,7 +359,7 @@ export default {
     },
     getDriverInfoByNumber(nr) {
       let driver = this.standings["driver"].find(x => x.number == nr)
-      return { "name": driver ? driver.name : "Unknown", "team": driver ? driver.team : "Unknown" }
+      return { "name": driver ? driver.name : "Unknown", "team": driver ? driver.team : "" }
     },
     processResults(info, results) {
 
@@ -373,7 +373,7 @@ export default {
           formattedRow = {
             "Pos": row["Fin Pos"],
             "#": row["Car #"],
-            "Driver": driver.name,
+            "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
             "Team": driver.team,
             "Start Pos": row["Start Pos"],
             "G/L": parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"]),
@@ -389,7 +389,7 @@ export default {
           formattedRow = {
             "Pos": row["Fin Pos"],
             "#": row["Car #"],
-            "Driver": driver.name,
+            "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
             "Team": driver.team,
             "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
             "Avg. Lap time": row["Average Lap Time"],

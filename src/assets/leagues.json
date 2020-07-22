@@ -382,11 +382,11 @@
         { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "555", "name": "Kirill Kolobuxov", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "WoIP.com Volante Racing 1", "logo": "", "url": "", "drivers": [
+      { "name": "WoIP.com Volante Racing 1", "logo": "volante.png", "url": "", "drivers": [
         { "number": "199", "name": "Michael Pedersen3", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "28", "name": "Sam Kuitert", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "WoIP.com Volante Racing 2", "logo": "", "url": "", "drivers": [
+      { "name": "WoIP.com Volante Racing 2", "logo": "volante.png", "url": "", "drivers": [
         { "number": "198", "name": "Jordan A Pearce", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "911", "name": "Noah Watt", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
@@ -694,7 +694,11 @@
         "simtime": "16:30",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Qualifying", "index": 0, "file": "r5-quali.csv" },
+          { "name": "Race", "index": 1, "default": true, "file": "r5-race.csv" }
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=tOF2v4V703g"
       },
       {
         "type": "race",
