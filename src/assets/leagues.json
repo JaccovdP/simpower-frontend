@@ -335,7 +335,7 @@
         { "number": "98", "name": "Bastien Mattler", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "919", "name": "Nelson Costa De Sousa", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Panda Racing Team", "logo": "", "url": "", "drivers": [
+      { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
         { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Positively Racing", "logo": "positively.jpg", "url": "", "drivers": [
