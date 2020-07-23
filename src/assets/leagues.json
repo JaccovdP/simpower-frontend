@@ -358,12 +358,12 @@
       { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
         { "number": "6", "name": "Freddie Skitini", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Shark Team Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Shark Team Racing", "logo": "shark.png", "url": "", "drivers": [
         { "number": "33", "name": "Oscar Wilkens", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "5", "name": "Alexis Dias", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "SRB TEAM", "logo": "srb.png", "url": "", "drivers": [
-        { "number": "", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "119", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Bergen", "logo": "", "url": "", "drivers": [
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
@@ -409,7 +409,7 @@
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
-        { "number": "", "name": "Onuray Sahin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "78", "name": "Onuray Sahin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]}
     ]
   }},
