@@ -369,7 +369,7 @@
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Team Blacksnow Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Team Blacksnow Racing", "logo": "blacksnow.png", "url": "", "drivers": [
         { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Team Redline", "logo": "", "url": "", "drivers": [
