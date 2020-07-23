@@ -1,10 +1,9 @@
 <template>
   <div class="home">
-    <!-- {{ data }} -->
-    <b-container class="mt-2" v-if="data == null">
+    <b-container class="mt-2" v-if="loading">
       <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
     </b-container>
-    <b-container fluid="lg" class="mt-2" v-if="data != null">
+    <b-container fluid="lg" class="mt-2" v-if="data != null && !loading">
       <b-row>
         <b-col>
           <b-nav pills class="largeNav">
@@ -184,7 +183,11 @@
               <b-row class="text-left">
                 <b-col align-self="stretch" cols="12" lg="8" md="12">
                   <h3>Driver standings <span style="float:right;"><b-button v-b-modal.driverTableInfo size="sm">Table info</b-button></span></h3>
-                  <b-table 
+                  <b-container class="mt-2" v-if="resultsLoading">
+                    <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
+                  </b-container>
+                  <b-table
+                    v-if="!resultsLoading"
                     striped 
                     small 
                     outlined
@@ -203,7 +206,11 @@
 
                 <b-col lg="4">
                   <h3>Team standings <span style="float:right;"><b-button v-b-modal.teamTableInfo size="sm">Table info</b-button></span></h3>
-                  <b-table 
+                  <b-container class="mt-2" v-if="resultsLoading">
+                    <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
+                  </b-container>
+                  <b-table
+                    v-if="!resultsLoading"
                     striped 
                     small 
                     outlined
@@ -259,7 +266,10 @@
 
     <b-modal id="results" title="Results" size="xl">
 
-      <b-tabs v-if="visibleResults.results && visibleResults.results.length > 0" v-model="resultsTabIndex" pills>
+      <b-container class="mt-2" v-if="resultsLoading">
+        <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
+      </b-container>
+      <b-tabs v-if="visibleResults.results && visibleResults.results.length > 0 && !resultsLoading" v-model="resultsTabIndex" pills>
         <b-tab 
           v-for="result in visibleResults.results" 
           :key="result.name" 
@@ -349,6 +359,9 @@ export default {
       } else{
         return sessions
       }
+    },
+    resultsLoading () {
+      return this.nrOfResultsToLoad > 0
     }
   },
   methods: {
@@ -489,6 +502,7 @@ export default {
     },
     loadResults() {
       this.results = []
+      this.nrOfResultsToLoad = 0
       let sessions = this.data.sessions
 
       for(let i = 0; i < sessions.length; i++) {
@@ -503,6 +517,8 @@ export default {
           let sessionResults = { "key": sessions[i].name, "default": 0, "results": []}
           let files = sessions[i].results_files
 
+          this.nrOfResultsToLoad += files.length
+
           for(let j = 0; j < files.length; j++) {
             if(files[j].default) sessionResults.default = files[j].index
 
@@ -514,12 +530,11 @@ export default {
               complete: (results) => {
                 sessionResults.results.push(this.processResults(files[j], multiplier, results.data))
                 sessionResults.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
+                this.nrOfResultsToLoad -= 1
               }
             })
           }
-
           this.results.push(sessionResults)
-
         }
       }
     }
@@ -539,8 +554,9 @@ export default {
   },
   data: function() {
     return {
-      hidePractice: false,
       loading: false,
+      nrOfResultsToLoad: 0,
+      hidePractice: false,
       tabIndex: 0,
       resultsTabIndex: 0,
       visibleResults: [],
