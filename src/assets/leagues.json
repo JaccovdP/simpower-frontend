@@ -3,6 +3,8 @@
     "title": "PorscheSport.com Carrera Cup",
     "menu_title": "PorscheSport Carrera Cup",
     "visible": true,
+    "automatic_standings": true,
+    "fastest_lap_bonus": 1,
     "description": "",
     "promo_image": "poster.jpeg",
     "partners": [
@@ -31,7 +33,7 @@
       { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, "team", { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "G/L", "sortable": true }, { "key": "wins", "label": "Wins", "sortable": true }
     ],
     "team_standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "G/L", "sortable": true }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
     ],
     "driver_table_info": [
       { "label": "#", "description": "Driver number" },
@@ -271,6 +273,7 @@
         "simtime": "14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
+        "points_multiplier": 2,
         "results_files": []
       }
     ],
@@ -599,6 +602,8 @@
     "menu_title": "Alkentech Formula Pro Championship",
     "visible": true,
     "description": "",
+    "fastest_lap_bonus": 1,
+    "automatic_standings": false,
     "promo_image": "f3poster.png",
     "partners": [
       { "name": "Alkentech.com", "url": "", "image": "alkentech.png" }
@@ -696,7 +701,7 @@
         "sky": "Dynamic Sky",
         "results_files": [
           { "name": "Qualifying", "index": 0, "file": "r5-quali.csv" },
-          { "name": "Race", "index": 1, "default": true, "file": "r5-race.csv" }
+          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "r5-race.csv" }
         ],
         "broadcast_url": "https://www.youtube.com/watch?v=tOF2v4V703g"
       },

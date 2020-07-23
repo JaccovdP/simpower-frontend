@@ -120,7 +120,7 @@
                               <b-link disabled>Broadcast</b-link> |
                             </span>
                             <span v-if="session.results_files.length > 0">
-                              <b-link @click="openResults(session.results_files)">Results</b-link>
+                              <b-link @click="openResults(session.name)">Results</b-link>
                             </span>
                             <span v-if="!session.results_files.length > 0">
                               <b-link disabled>Results</b-link>
@@ -259,9 +259,9 @@
 
     <b-modal id="results" title="Results" size="xl">
 
-      <b-tabs v-if="this.results.length > 0 && !resultsLoading" v-model="resultsTabIndex" pills>
+      <b-tabs v-if="visibleResults.results && visibleResults.results.length > 0" v-model="resultsTabIndex" pills>
         <b-tab 
-          v-for="result in results" 
+          v-for="result in visibleResults.results" 
           :key="result.name" 
           :title="result.name">
           <b-table
@@ -272,12 +272,13 @@
             :items="result.results"
             class="mt-2"
           ></b-table>
+          <template v-if="result.fastest_lap">
+            <strong>Fastest lap</strong> <small>({{ result.fastest_lap.points > 1 ? result.fastest_lap.points + " points" : result.fastest_lap.points + " point"}})</small> <br>
+            {{ result.fastest_lap.driver }} - {{ result.fastest_lap.laptime }}
+          </template>
         </b-tab>
-      </b-tabs>
 
-      <div v-if="resultsLoading">
-        <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
-      </div>
+      </b-tabs>
 
       <template v-slot:modal-footer>
         <div>
@@ -300,8 +301,8 @@ export default {
     standings () {
       let driver_standings = []
       let team_standings = []
-      for(let i = 0; i < this.data.teams.length; i++) {
-        let team = this.data.teams[i]
+      for(let i = 0; i < this.entries.length; i++) {
+        let team = this.entries[i]
         let team_points = 0
         let team_sec_points = 0
         for(let j = 0; j < team.drivers.length; j++) {
@@ -312,8 +313,7 @@ export default {
             team: team.name,
             wins: driver.wins,
             points: driver.points,
-            secondary_points: driver.secondary_points,
-            prize_money: driver.prize_money
+            secondary_points: driver.secondary_points
           })
           team_points += driver.points
           team_sec_points += driver.secondary_points
@@ -329,13 +329,13 @@ export default {
       return { driver: driver_standings, team: team_standings}
     },
     teams () {
-      let teams = this.data.teams
+      let teams = this.entries
       return teams.filter(function(team) {
         return team.name != "Privateer"
       })
     },
     privateers () {
-      let teams = this.data.teams
+      let teams = this.entries
       return teams.filter(function(team) {
         return team.name == "Privateer"
       })
@@ -361,88 +361,178 @@ export default {
       let driver = this.standings["driver"].find(x => x.number == nr)
       return { "name": driver ? driver.name : "Unknown", "team": driver ? driver.team : "" }
     },
-    processResults(info, results) {
+    getDriverIndexByNumber(nr) {
+      let teamIndex = -1;
+      let driverIndex = -1;
+      for(let i = 0; i < this.entries.length; i++) {
+        let team = this.entries[i]
+        for(let j = 0; j < team.drivers.length; j++) {
+          let driver = team.drivers[j]
+          if(driver.number == nr) {
+            teamIndex = i
+            driverIndex = j
+          }
+        }
+      }
+
+      return { "teamIndex": teamIndex, "driverIndex": driverIndex }
+    },
+    processResults(info, multiplier, results) {
 
       let formattedResults = []
 
       for(let i = 0; i < results.length; i++) {
         let row = results[i]
         let formattedRow = {}
-        let driver = this.getDriverInfoByNumber(row["Car #"])
+        let indexes = this.getDriverIndexByNumber(row["Car #"])
+        let team = indexes.teamIndex > -1 ? this.entries[indexes.teamIndex] : { "name": "" }
+        let driver = indexes.teamIndex > -1 ? this.entries[indexes.teamIndex].drivers[indexes.driverIndex] : { "name": row["Name"] }
         if(parseInt(row["Start Pos"]) != 0) {
+          let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
+          let pointsScored = parseInt(row["League Points"]) * multiplier
+
           formattedRow = {
             "Pos": row["Fin Pos"],
             "#": row["Car #"],
-            "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
-            "Team": driver.team,
+            "Driver": driver.name,
+            "Team": team.name,
             "Start Pos": row["Start Pos"],
-            "G/L": parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"]),
+            "G/L": positionsGained,
             "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
             "Laps Led": row["Laps Led"],
             "Avg. Lap time": row["Average Lap Time"],
-            "Fastest Lap Time": row["Fastest Lap Time"],
-            "Fast Lap #": row["Fast Lap#"],
+            "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
             "Incidents": row["Inc"],
-            "Points": row["League Points"]
+            "Points": pointsScored
           }
+
+          if(this.data.automatic_standings) {
+            driver.points += pointsScored
+            if(info.counts_for_secondary_points) {
+              let secondaryPointsLabel = this.data.standings_fields.find(x => x.key == "secondary_points").label
+              if(formattedRow[secondaryPointsLabel]) {
+                let secondaryPointsScored = parseInt(formattedRow[secondaryPointsLabel])
+                driver.secondary_points += secondaryPointsScored
+              }
+            }
+          }
+
         } else {
           formattedRow = {
             "Pos": row["Fin Pos"],
             "#": row["Car #"],
             "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
-            "Team": driver.team,
+            "Team": team.name,
             "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
             "Avg. Lap time": row["Average Lap Time"],
-            "Fastest Lap Time": row["Fastest Lap Time"],
-            "Fast Lap #": row["Fast Lap#"],
+            "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
+            "Points": 0
           }
         }
 
         formattedResults.push(formattedRow)
       }
 
-      if (info.default) {
-        this.resultsTabIndex = info.index
-      }
-      this.results.push({ "name": info.name, "index": info.index, "results": formattedResults })
-      this.results = this.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
-      if (this.numberOfResults == this.results.length) this.resultsLoading = false
-    },
-    openResults(files) {
-      this.resultsLoading = true
-      this.results = []
-      this.numberOfResults = files.length
-      for(let i = 0; i < files.length; i++) {
-        let path = "/results/" + files[i].file
-        Papa.parse(path, { 
-          download: true,
-          header: true,
-          skipEmptyLines: true,
-          complete: (results) => {
-            this.processResults(files[i], results.data)
+      let returnObject
+
+      if(this.data.fastest_lap_bonus > 0 && info.fastest_lap_bonus_enabled) {
+        let fastestLapBonus
+        let fastestLapRow
+        let currentFastestLap = 99999999999999
+        for(let i = 0; i < formattedResults.length; i++) {
+          let row = formattedResults[i]
+          let lap = row["Fastest Lap Time"] ? row["Fastest Lap Time"].split(" ")[0].replace(":","").replace(".","") : null
+          if (lap && lap < currentFastestLap) {
+            fastestLapRow = row
+            currentFastestLap = lap
           }
-        })
+        }
+        fastestLapBonus = this.data.fastest_lap_bonus * multiplier
+        fastestLapRow.Points += fastestLapBonus
+
+        if(this.data.automatic_standings) {
+          let indexes = this.getDriverIndexByNumber(fastestLapRow["#"])
+          if (indexes.teamIndex > -1) {
+            let driver = this.entries[indexes.teamIndex].drivers[indexes.driverIndex]
+            driver.points += this.data.fastest_lap_bonus * multiplier
+          }
+        }
+
+
+        returnObject = { "name": info.name, "index": info.index, "results": formattedResults, "fastest_lap": { "points": fastestLapBonus, "driver": fastestLapRow["Driver"], "laptime": fastestLapRow["Fastest Lap Time"].split(" ")[0] } }
+
+      } else {
+        returnObject = { "name": info.name, "index": info.index, "results": formattedResults }
       }
 
+      return returnObject
+    },
+    openResults(key) {
+      this.visibleResults = this.results.find(x => x.key == key)
+      this.resultsTabIndex = this.visibleResults.default
       this.$bvModal.show('results')
     },
     setTab(tab) {
       this.tabIndex = parseInt(Object.keys(this.tabDict).find(key => this.tabDict[key] === tab))
+    },
+    loadData(key) {
+      this.loading = true
+      this.data = null
+      let data = this.filterData(leagueData, key)
+      this.data = data[0].details
+      this.loadEntries()
+      this.loadResults()
+      this.loading = false
+    },
+    loadEntries() {
+      this.entries = JSON.parse(JSON.stringify(this.data.teams))
+    },
+    loadResults() {
+      this.results = []
+      let sessions = this.data.sessions
+
+      for(let i = 0; i < sessions.length; i++) {
+
+        let multiplier = 1
+        if(sessions[i].points_multiplier) {
+          multiplier = parseInt(sessions[i].points_multiplier)
+        }
+
+        if(sessions[i].results_files.length > 0) {
+
+          let sessionResults = { "key": sessions[i].name, "default": 0, "results": []}
+          let files = sessions[i].results_files
+
+          for(let j = 0; j < files.length; j++) {
+            if(files[j].default) sessionResults.default = files[j].index
+
+            let path = "/results/" + files[j].file
+            Papa.parse(path, { 
+              download: true,
+              header: true,
+              skipEmptyLines: true,
+              complete: (results) => {
+                sessionResults.results.push(this.processResults(files[j], multiplier, results.data))
+                sessionResults.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
+              }
+            })
+          }
+
+          this.results.push(sessionResults)
+
+        }
+      }
     }
   },
   mounted: function() {
-    this.data = null
-    let data = this.filterData(leagueData, this.$route.params.slug)
-    this.data = data[0].details
+    this.loadData(this.$route.params.slug)
     this.setTab(this.$route.params.tab)
 
   },
   watch: {
     $route(from, to) {
       if(from.params.slug != to.params.slug) {
-        this.data = null
-        let data = this.filterData(leagueData, this.$route.params.slug)
-        this.data = data[0].details
+        this.loadData(this.$route.params.slug)
       }
       this.setTab(this.$route.params.tab)
     }
@@ -450,9 +540,10 @@ export default {
   data: function() {
     return {
       hidePractice: false,
-      resultsLoading: false,
+      loading: false,
       tabIndex: 0,
       resultsTabIndex: 0,
+      visibleResults: [],
       tabDict: {
         0: "info",
         1: "schedule",
@@ -465,7 +556,8 @@ export default {
       "team_card_fields": [
         { "key": "number", "label": "#"}, "name", "wins", "points"
       ],
-      results: []
+      results: [],
+      entries: []
     }
   }
 }
@@ -491,9 +583,5 @@ export default {
     .team-card {
       min-width: 60%;
     }
-
-    /* .largeNav {
-      display: none !important;
-    } */
   }
 </style>
