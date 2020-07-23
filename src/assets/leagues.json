@@ -372,7 +372,7 @@
       { "name": "Team Blacksnow Racing", "logo": "blacksnow.png", "url": "", "drivers": [
         { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Team Redline", "logo": "", "url": "", "drivers": [
+      { "name": "Team Redline", "logo": "redline.jpg", "url": "", "drivers": [
         { "number": "54", "name": "Alexander Thiebe", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Laps @ Racing", "logo": "lapsracing.png", "url": "", "drivers": [
