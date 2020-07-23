@@ -37,7 +37,7 @@ To add a logo to a team, do the following:
 - Change the "results_files" property for the session in [the JSON](src/assets/leagues.json) to look similar to this:
 ```JSON
 "results_files": [
-  { "name": "Qualifying", "index": 0, "file": "filename.csv" },
+  { "name": "Qualifying", "index": 0, "fastest_lap_bonus_enabled": true, "file": "filename.csv" },
   { "name": "Heat 1", "index": 1, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "filename.csv" },
   { "name": "Heat 2", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "filename.csv" },
   { "name": "Consolation", "index": 3, "fastest_lap_bonus_enabled": true, "file": "filename.csv" },
