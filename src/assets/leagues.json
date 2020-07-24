@@ -367,7 +367,7 @@
       { "name": "SRB TEAM", "logo": "srb.png", "url": "", "drivers": [
         { "number": "119", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Team Bergen", "logo": "", "url": "", "drivers": [
+      { "name": "Team Bergen", "logo": "teambergen.png", "url": "", "drivers": [
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
