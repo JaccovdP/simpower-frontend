@@ -280,7 +280,7 @@
       { "name": "B-Sport", "logo": "", "url": "", "drivers": [
         { "number": "242", "name": "Aden Brand", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "cartribute", "logo": "", "url": "", "drivers": [
+      { "name": "cartribute", "logo": "cartribute.png", "url": "", "drivers": [
         { "number": "23", "name": "Hugo Gallo", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Deep Eddy Racing", "logo": "", "url": "", "drivers": [
