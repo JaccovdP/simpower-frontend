@@ -390,7 +390,7 @@ export default {
 
       return { "teamIndex": teamIndex, "driverIndex": driverIndex }
     },
-    processResults(info, multiplier, results) {
+    processResults(type, info, multiplier, results) {
 
       let formattedResults = []
 
@@ -400,48 +400,62 @@ export default {
         let indexes = this.getDriverIndexByNumber(row["Car #"])
         let team = indexes.teamIndex > -1 ? this.entries[indexes.teamIndex] : { "name": "" }
         let driver = indexes.teamIndex > -1 ? this.entries[indexes.teamIndex].drivers[indexes.driverIndex] : { "name": row["Name"] }
-        if(parseInt(row["Start Pos"]) != 0) {
-          let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
-          let pointsScored = parseInt(row["League Points"]) * multiplier
+        if(type == "race") {
+          if(parseInt(row["Start Pos"]) != 0) {
+            let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
+            let pointsScored = parseInt(row["League Points"]) * multiplier
 
-          formattedRow = {
-            "Pos": row["Fin Pos"],
-            "#": row["Car #"],
-            "Driver": driver.name,
-            "Team": team.name,
-            "Start Pos": row["Start Pos"],
-            "G/L": positionsGained,
-            "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
-            "Laps Led": row["Laps Led"],
-            "Avg. Lap time": row["Average Lap Time"],
-            "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
-            "Incidents": row["Inc"],
-            "Points": pointsScored
-          }
 
-          if(this.data.automatic_standings) {
-            driver.points += pointsScored
-            if(info.counts_for_secondary_points) {
-              let secondaryPointsLabel = this.data.standings_fields.find(x => x.key == "secondary_points").label
-              if(formattedRow[secondaryPointsLabel]) {
-                let secondaryPointsScored = parseInt(formattedRow[secondaryPointsLabel])
-                driver.secondary_points += secondaryPointsScored
+            formattedRow = {
+              "Pos": row["Fin Pos"],
+              "#": row["Car #"],
+              "Driver": driver.name,
+              "Team": team.name,
+              "Start Pos": row["Start Pos"],
+              "G/L": positionsGained,
+              "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
+              "Laps Led": row["Laps Led"],
+              "Avg. Lap time": row["Average Lap Time"],
+              "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
+              "Incidents": row["Inc"],
+              "Points": pointsScored
+            }
+
+            if(this.data.automatic_standings) {
+              driver.points += pointsScored
+              if(info.counts_for_secondary_points) {
+                let secondaryPointsLabel = this.data.standings_fields.find(x => x.key == "secondary_points").label
+                if(formattedRow[secondaryPointsLabel]) {
+                  let secondaryPointsScored = parseInt(formattedRow[secondaryPointsLabel])
+                  driver.secondary_points += secondaryPointsScored
+                }
               }
             }
-          }
 
-        } else {
+          } else {
+            formattedRow = {
+              "Pos": row["Fin Pos"],
+              "#": row["Car #"],
+              "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
+              "Team": team.name,
+              "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
+              "Avg. Lap time": row["Average Lap Time"],
+              "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
+              "Points": 0
+            }
+          }
+        } else if(type == "practice") {
           formattedRow = {
             "Pos": row["Fin Pos"],
             "#": row["Car #"],
             "Driver": driver.name != "Unknown" ? driver.name : row["Name"],
             "Team": team.name,
-            "Interval": row["Interval"] != "-00.000" ? row["Interval"] : "",
-            "Avg. Lap time": row["Average Lap Time"],
-            "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
-            "Points": 0
+            "Laps Completed": row["Laps Comp"],
+            "Avg. Lap time": row["Average Lap Time"] != "00.000" ? row["Average Lap Time"] : "",
+            "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : "")
           }
         }
+
 
         formattedResults.push(formattedRow)
       }
@@ -516,6 +530,7 @@ export default {
 
           let sessionResults = { "key": sessions[i].name, "default": 0, "results": []}
           let files = sessions[i].results_files
+          let type = sessions[i].type
 
           this.nrOfResultsToLoad += files.length
 
@@ -528,7 +543,7 @@ export default {
               header: true,
               skipEmptyLines: true,
               complete: (results) => {
-                sessionResults.results.push(this.processResults(files[j], multiplier, results.data))
+                sessionResults.results.push(this.processResults(type, files[j], multiplier, results.data))
                 sessionResults.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
                 this.nrOfResultsToLoad -= 1
               }

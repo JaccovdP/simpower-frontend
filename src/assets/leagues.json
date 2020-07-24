@@ -71,7 +71,9 @@
         "simtime": "09:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "eventresult_33599151.csv" }
+        ]
       },
       {
         "type": "practice",
