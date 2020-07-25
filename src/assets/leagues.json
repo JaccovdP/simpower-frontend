@@ -72,7 +72,7 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": [
-          { "name": "Free Practice 1", "index": 0, "default": true, "file": "eventresult_33599151.csv" }
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r1-fp1.csv" }
         ]
       },
       {
@@ -83,7 +83,9 @@
         "simtime": "09:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r1-fp2.csv" }
+        ]
       },
       {
         "type": "race",
@@ -322,11 +324,11 @@
         { "number": "259", "name": "Tiago Mendes", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Maniti Racing", "logo": "maniti.png", "url": "", "drivers": [
-        { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "8", "name": "Tim Matzke", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "19", "name": "Yoep de Ligt", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Maniti Racing #2", "logo": "maniti.png", "url": "", "drivers": [
-        { "number": "8", "name": "Tim Matzke", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Meraki Racing", "logo": "", "url": "", "drivers": [
         { "number": "97", "name": "Lewis Ward", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
