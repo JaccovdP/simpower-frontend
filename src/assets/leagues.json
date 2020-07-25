@@ -308,7 +308,7 @@
         { "number": "729", "name": "Maxim Ramsteijn", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "9", "name": "Kieran Harrison", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Impulse Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Impulse Racing", "logo": "impulse.png", "url": "", "drivers": [
         { "number": "15", "name": "Tobias Maisel", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "KAST", "logo": "", "url": "", "drivers": [
