@@ -281,7 +281,7 @@
       }
     ],
     "teams": [
-      { "name": "B-Sport", "logo": "", "url": "", "drivers": [
+      { "name": "B-Sport", "logo": "bsport.png", "url": "", "drivers": [
         { "number": "242", "name": "Aden Brand", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "cartribute", "logo": "cartribute.png", "url": "", "drivers": [
