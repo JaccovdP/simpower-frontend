@@ -288,7 +288,7 @@
       { "name": "cartribute", "logo": "cartribute.png", "url": "", "drivers": [
         { "number": "23", "name": "Hugo Gallo", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Deep Eddy Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Deep Eddy Racing", "logo": "deepeddy.png", "url": "", "drivers": [
         { "number": "26", "name": "Alan Powell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "E-sport Performance Racing Team", "logo": "EPRT.png", "url": "", "drivers": [
@@ -331,7 +331,7 @@
       { "name": "Maniti Racing #2", "logo": "maniti.png", "url": "", "drivers": [
         { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Meraki Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Meraki Racing", "logo": "meraki.png", "url": "", "drivers": [
         { "number": "97", "name": "Lewis Ward", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "117", "name": "Tom Metherell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
