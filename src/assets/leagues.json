@@ -31,7 +31,7 @@
       "regulations_url": "https://docs.google.com/document/d/1XOphVOZajm8P6rFvaM5ZjfCjsZqN7GpxZqsXl3MwFw8/"
     },
     "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, "team", { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "G/L", "sortable": true }, { "key": "wins", "label": "Wins", "sortable": true }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, "team", { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "ATT", "sortable": true }, { "key": "wins", "label": "Wins", "sortable": true }
     ],
     "team_standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
@@ -41,7 +41,7 @@
       { "label": "Driver", "description": "Driver name" },
       { "label": "Team", "description": "Driver is member of this team." },
       { "label": "Points", "description": "Number of points the driver has scored during the season." },
-      { "label": "G/L", "description": "Number of positions the driver has gained or lost in heat races during the season. (AlkenTech.com Simulation Trophy)" },
+      { "label": "ATT", "description": "Points scored for the AlkenTech.com Simulation Trophy. Number of positions the driver has gained in heat races during the season. (AlkenTech.com Simulation Trophy)" },
       { "label": "Wins", "description": "Number of races the driver has won this season." }
     ],
     "team_table_info": [
@@ -315,7 +315,7 @@
         { "number": "44", "name": "Robin Östlund", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "HM Engineering", "logo": "hmengineering.png", "url": "", "drivers": [
-        { "number": "729", "name": "Maxim Ramsteijn", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "729", "name": "Maxim Ramsteijn", "wins": 1, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "9", "name": "Kieran Harrison", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Impulse Racing", "logo": "impulse.png", "url": "", "drivers": [

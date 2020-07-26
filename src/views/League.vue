@@ -406,6 +406,7 @@ export default {
         if(type == "race") {
           if(parseInt(row["Start Pos"]) != 0) {
             let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
+            // positionsGained = positionsGained < 0 ? 0 : positionsGained
             let pointsScored = row["League Points"] == "" ? 0 : parseInt(row["League Points"]) * multiplier
 
             formattedRow = {
@@ -426,11 +427,9 @@ export default {
             if(this.data.automatic_standings) {
               driver.points += pointsScored
               if(info.counts_for_secondary_points) {
-                let secondaryPointsLabel = this.data.standings_fields.find(x => x.key == "secondary_points").label
-                if(formattedRow[secondaryPointsLabel]) {
-                  let secondaryPointsScored = parseInt(formattedRow[secondaryPointsLabel])
-                  driver.secondary_points += secondaryPointsScored
-                }
+                let secondaryPointsScored = parseInt(formattedRow["G/L"])
+                if(secondaryPointsScored < 0) secondaryPointsScored = 0
+                driver.secondary_points += secondaryPointsScored
               }
             }
 
