@@ -96,7 +96,14 @@
         "simtime": "09:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": [],
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r1-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r1-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r1-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r1-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r1-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r1-feature.csv" }
+        ],
         "broadcast_url": "https://www.youtube.com/watch?v=KZuRj-HAN1k"
       },
       {

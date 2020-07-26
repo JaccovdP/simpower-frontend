@@ -406,8 +406,7 @@ export default {
         if(type == "race") {
           if(parseInt(row["Start Pos"]) != 0) {
             let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
-            let pointsScored = parseInt(row["League Points"]) * multiplier
-
+            let pointsScored = row["League Points"] == "" ? 0 : parseInt(row["League Points"]) * multiplier
 
             formattedRow = {
               "Pos": row["Fin Pos"],
