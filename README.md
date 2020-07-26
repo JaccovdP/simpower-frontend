@@ -37,7 +37,7 @@ To add a logo to a team, do the following:
 - Change the "results_files" property for the session in [the JSON](src/assets/leagues.json) to look similar to this:
 ```JSON
 "results_files": [
-  { "name": "Qualifying", "index": 0, "fastest_lap_bonus_enabled": true, "file": "filename.csv" },
+  { "name": "Qualifying", "index": 0, "file": "filename.csv" },
   { "name": "Heat 1", "index": 1, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "filename.csv" },
   { "name": "Heat 2", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "filename.csv" },
   { "name": "Consolation", "index": 3, "fastest_lap_bonus_enabled": true, "file": "filename.csv" },
@@ -49,6 +49,8 @@ To add a logo to a team, do the following:
 | name | Defines the name as shown on the results page |
 | index | Defines the order of the results |
 | default | Sets the default results tab (optional, default tab is 0) |
+| fastest_lap_bonus_enabled | Enables the bonus point(s) for fastest lap |
+| counts_for_secondary_points | Enables counting of secondary points (such as positions gained) |
 | file | Filename of the CSV file with the results. Do not include the path |
 
 ## League pages
