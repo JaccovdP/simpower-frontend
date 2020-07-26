@@ -62,6 +62,9 @@
                       {{ data.key_info.broadcast.text }}
                     </span>
                   </div>
+                  <div class="mb-2" v-if="data.key_info.spotters_guide_url">
+                    <b-link :href="data.key_info.spotters_guide_url" target="_blank">Spotters Guide</b-link>
+                  </div>
                   <div class="mb-2">
                     <strong>Number of rounds</strong><br>
                     {{ data.key_info.nr_of_rounds }}

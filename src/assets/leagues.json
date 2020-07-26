@@ -23,6 +23,7 @@
       ],
       "event_type": "2 heats, 1 consolation, 1 feature",
       "broadcast": { "text": "Live on Racespot TV", "url": "https://www.youtube.com/playlist?list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh" },
+      "spotters_guide_url": "https://www.porschesport.com/s/PorscheSport-CCup2020-SpottersGuide.pdf",
       "nr_of_rounds": 7,
       "overall_prize_pool": 400,
       "race_prize_pool": 40,
