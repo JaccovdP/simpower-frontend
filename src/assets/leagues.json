@@ -563,7 +563,7 @@
       }
     ],
     "teams": [
-      { "name": "DataWire Racing", "logo": "", "url": "", "drivers": [
+      { "name": "DataWire Racing", "logo": "datawire.png", "url": "", "drivers": [
         { "number": "11", "name": "Dries Vanderyt", "points": 445, "warnings": 0 },
         { "number": "3", "name": "Kristof Rampelberg", "points": 175, "warnings": 0 }
       ]},
