@@ -336,9 +336,9 @@
               <b-img class="mt-2" fluid :src="'/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png'" v-bind:onError="`this.onError=null;this.src = '/liveries/${$route.params.slug}/blank.png'`" alt="Livery placeholder"></b-img>
             </b-col>
             <b-col lg="6" md="6">
-              <strong style="float: left;">Points</strong><span style="float: right;">{{ selectedDriver.points }}</span><br>
+              <strong style="float: left;">Standing</strong><span style="float: right;">P{{ getPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.points }} points)</span><br>
               <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">{{ selectedDriver.secondary_points }}</span><br></span>
-              <strong style="float: left;">Wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
+              <strong style="float: left;">Race wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
               <strong style="float: left;">Warnings</strong><span style="float: right;">{{ selectedDriver.warnings ? selectedDriver.warnings : 0 }}</span>
             </b-col>
           </b-row>
@@ -456,7 +456,9 @@ export default {
       return { "teamIndex": teamIndex, "driverIndex": driverIndex }
     },
     getPositionByNumber(nr) {
-      console.log(nr)
+      let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.points) - parseInt(a.points))
+      console.log(sortedStandings)
+      return sortedStandings.findIndex(x => x.number == nr) + 1
     },
     processResults(type, info, multiplier, results) {
 
@@ -490,6 +492,9 @@ export default {
             }
 
             if(this.data.automatic_standings) {
+              if (formattedRow["Pos"] == 1) {
+                driver.wins += 1
+              }
               driver.points += pointsScored
               if(info.counts_for_secondary_points) {
                 let secondaryPointsScored = parseInt(formattedRow["G/L"])
