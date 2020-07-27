@@ -383,7 +383,7 @@
       ]},
       { "name": "Team Bergen", "logo": "teambergen.png", "url": "", "drivers": [
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
-        { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Team Blacksnow Racing", "logo": "blacksnow.png", "url": "", "drivers": [
         { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
@@ -577,7 +577,7 @@
       { "name": "Belgian iRacing Team", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Pierre Cousin", "points": 269, "warnings": 0 }
       ]},
-      { "name": "Desk Chair Racing", "logo": "", "url": "", "drivers": [
+      { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
         { "number": "21", "name": "Michael Schieber", "points": 251, "warnings": 0 },
         { "number": "6", "name": "Freddie Skitini", "points": 267, "warnings": 0 }
       ]},
