@@ -5,8 +5,10 @@
     "visible": true,
     "automatic_standings": true,
     "fastest_lap_bonus": 1,
+    "use_secondary_points": true,
     "description": "",
     "promo_image": "poster.jpeg",
+    "license_logo": "carreracup.png",
     "partners": [
       { "name": "PorscheSport.com", "url": "", "image": "porschesport.png" },
       { "name": "Alkentech.com", "url": "", "image": "alkentech.png" },

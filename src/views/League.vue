@@ -156,7 +156,11 @@
                         <b-col>
                           <b-card-body :title="team.name">
                             <b-card-text>
-                              <b-table small borderless :items="team.drivers" :fields="team_card_fields"></b-table> 
+                              <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                                <template v-slot:cell(name)="row">
+                                  <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
+                                </template>
+                              </b-table> 
                             </b-card-text>
                           </b-card-body>
                         </b-col>
@@ -172,7 +176,11 @@
                         <b-col>
                           <b-card-body :title="team.name">
                             <b-card-text>
-                              <b-table small borderless :items="team.drivers" :fields="team_card_fields"></b-table> 
+                              <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                                  <template v-slot:cell(name)="row">
+                                    <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
+                                  </template>
+                                </b-table> 
                             </b-card-text>
                           </b-card-body>
                         </b-col>
@@ -203,6 +211,9 @@
                     responsive>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
+                    </template>
+                    <template v-slot:cell(name)="row">
+                      <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                     </template>
                   </b-table>
                 </b-col>
@@ -299,6 +310,56 @@
       </template>
     </b-modal>
 
+    <b-modal id="license" title="Simpower License" size="md">
+
+      <div v-if="selectedDriver" class="license_container">
+
+        <b-row>
+          <b-col lg="12">
+            <div class="license_header">
+              <b-img style="max-width:200px; max-height:30px;" :src="require('../assets/images/simpower.png')"></b-img>
+              <!-- <span style="float:right;">{{data.title}}</span> -->
+            </div>
+          </b-col>
+        </b-row>
+
+
+        <div class="license_body">
+          <b-row>
+            <b-col lg="12">
+              <!-- <b-img  class="mt-1" fluid :src="require('../assets/images/carreracup.png')"></b-img> -->
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col lg="6" md="6">
+              <b-img v-if="data.license_logo" class="mt-2" fluid :src="require('../assets/images/' + data.license_logo)"></b-img>
+              <b-img class="mt-2" fluid :src="checkImage('/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png') ? '/liveries/car_' + selectedDriver.number + '.png' : checkImage('/liveries/' + $route.params.slug + '/blank.png') ? '/liveries/' + $route.params.slug + '/blank.png' : ''"></b-img>              
+            </b-col>
+            <b-col lg="6" md="6">
+              <strong style="float: left;">Points</strong><span style="float: right;">{{ selectedDriver.points }}</span><br>
+              <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">{{ selectedDriver.secondary_points }}</span><br></span>
+              <strong style="float: left;">Wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
+              <strong style="float: left;">Warnings</strong><span style="float: right;">{{ selectedDriver.warnings ? selectedDriver.warnings : 0 }}</span>
+            </b-col>
+          </b-row>
+        </div>
+
+        <b-row>
+          <b-col lg="12">
+            <div class="license_footer">
+              #{{ selectedDriver.number }} {{ selectedDriver.name }} - {{ selectedDriver.team ? selectedDriver.team : entries[this.getDriverIndexByNumber(selectedDriver.number).teamIndex].name }}
+            </div>
+          </b-col>
+        </b-row>
+      </div>
+
+
+      <template v-slot:modal-footer>
+        <div>
+        </div>
+      </template>
+    </b-modal>
+
   </div>
 </template>
 
@@ -326,7 +387,8 @@ export default {
             team: team.name,
             wins: driver.wins,
             points: driver.points,
-            secondary_points: driver.secondary_points
+            secondary_points: driver.secondary_points,
+            warnings: driver.warnings
           })
           team_points += driver.points
           team_sec_points += driver.secondary_points
@@ -495,6 +557,20 @@ export default {
 
       return returnObject
     },
+    checkImage(src) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('HEAD', src, false);
+      xhr.send();
+      if (xhr.status == "404") {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    showLicense(driver) {
+      this.selectedDriver = driver
+      this.$bvModal.show('license')
+    },
     openResults(key) {
       this.visibleResults = this.results.find(x => x.key == key)
       this.resultsTabIndex = this.visibleResults.default
@@ -505,6 +581,7 @@ export default {
     },
     loadData(key) {
       this.loading = true
+      this.selectedDriver = null
       this.data = null
       let data = this.filterData(leagueData, key)
       this.data = data[0].details
@@ -586,10 +663,11 @@ export default {
       leagueData,
       data: null,
       "team_card_fields": [
-        { "key": "number", "label": "#"}, "name", "wins", "points"
+        { "key": "number", "label": "#"}, "name", "wins", { "key": "info", "label": "" }
       ],
       results: [],
-      entries: []
+      entries: [],
+      selectedDriver: null
     }
   }
 }
@@ -602,6 +680,29 @@ export default {
   a.disabled {
     color: #6c757d;
     text-decoration: none;
+  }
+
+  .license_body {
+    border-left: 2px solid #c92526;
+    border-right: 2px solid #c92526;
+    background: #eee;
+    padding: 0px 5px 0 5px;
+  }
+
+  .license_header {
+    min-height: 40px;
+    background: #343a40;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+  }
+
+  .license_footer {
+    min-height: 40px;
+    background: #c92526;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.2em;
+    font-size: 0.9vw;
+    color: #fff;
   }
 
   @media (min-width: 992px) {
