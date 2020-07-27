@@ -337,7 +337,7 @@
             </b-col>
             <b-col lg="6" md="6">
               <strong style="float: left;">Standing</strong><span style="float: right;">P{{ getPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.points }} points)</span><br>
-              <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">{{ selectedDriver.secondary_points }}</span><br></span>
+              <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">P{{ getSecondaryPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.secondary_points }} points)</span><br></span>
               <strong style="float: left;">Race wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
               <strong style="float: left;">Warnings</strong><span style="float: right;">{{ selectedDriver.warnings ? selectedDriver.warnings : 0 }}</span>
             </b-col>
@@ -457,7 +457,10 @@ export default {
     },
     getPositionByNumber(nr) {
       let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.points) - parseInt(a.points))
-      console.log(sortedStandings)
+      return sortedStandings.findIndex(x => x.number == nr) + 1
+    },
+    getSecondaryPositionByNumber(nr) {
+      let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.secondary_points) - parseInt(a.secondary_points))
       return sortedStandings.findIndex(x => x.number == nr) + 1
     },
     processResults(type, info, multiplier, results) {
