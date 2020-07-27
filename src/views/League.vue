@@ -333,7 +333,7 @@
           <b-row>
             <b-col lg="6" md="6">
               <b-img v-if="data.license_logo" class="mt-2" fluid :src="require('../assets/images/' + data.license_logo)"></b-img>
-              <b-img class="mt-2" fluid :src="checkImage('/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png') ? '/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png' : checkImage('/liveries/' + $route.params.slug + '/blank.png') ? '/liveries/' + $route.params.slug + '/blank.png' : ''"></b-img>              
+              <b-img class="mt-2" fluid :src="'/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png'" v-bind:onError="`this.onError=null;this.src = '/liveries/${$route.params.slug}/blank.png'`" alt="Livery placeholder"></b-img>
             </b-col>
             <b-col lg="6" md="6">
               <strong style="float: left;">Points</strong><span style="float: right;">{{ selectedDriver.points }}</span><br>
@@ -455,6 +455,9 @@ export default {
 
       return { "teamIndex": teamIndex, "driverIndex": driverIndex }
     },
+    getPositionByNumber(nr) {
+      console.log(nr)
+    },
     processResults(type, info, multiplier, results) {
 
       let formattedResults = []
@@ -556,16 +559,6 @@ export default {
       }
 
       return returnObject
-    },
-    checkImage(src) {
-      var xhr = new XMLHttpRequest();
-      xhr.open('HEAD', src, false);
-      xhr.send();
-      if (xhr.status == "404") {
-        return false;
-      } else {
-        return true;
-      }
     },
     showLicense(driver) {
       this.selectedDriver = driver
