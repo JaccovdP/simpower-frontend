@@ -601,7 +601,7 @@
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "28", "name": "Silas Krag-Volijk", "points": 650, "wins": 3, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 571, "wins": 2, "warnings": 0 },
+        { "number": "57", "name": "Jacco van der Plaat", "points": 571, "wins": 2, "warnings": 1 },
         { "number": "", "name": "Russell Barnes", "points": 449, "wins": 1, "warnings": 0 },
         { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 1 },
         { "number": "44", "name": "Stephen Grabowski", "points": 355, "warnings": 0 },
