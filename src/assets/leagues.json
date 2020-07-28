@@ -568,8 +568,8 @@
         { "number": "3", "name": "Kristof Rampelberg", "points": 175, "warnings": 0 }
       ]},
       { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "99", "name": "Josh Clogg", "points": 682, "warnings": 0 },
-        { "number": "", "name": "Taylor Lane", "points": 219, "warnings": 0 }
+        { "number": "99", "name": "Josh Clogg", "points": 682, "warnings": 1 },
+        { "number": "", "name": "Taylor Lane", "points": 219, "warnings": 1 }
       ]},
       { "name": "Radar Racing", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Patrick Charlton", "points": 330, "warnings": 0 }
@@ -582,13 +582,13 @@
         { "number": "6", "name": "Freddie Skitini", "points": 267, "warnings": 0 }
       ]},
       { "name": "T.C.R", "logo": "tcrlogored.png", "url": "", "drivers": [
-        { "number": "4", "name": "William Paisley", "points": 290, "warnings": 0 }
+        { "number": "4", "name": "William Paisley", "points": 290, "warnings": 1 }
       ]},
       { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
         { "number": "22", "name": " Matthew Birkett", "points": 229, "warnings": 0 }
       ]},
       { "name": "Klub_Karacho", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 0 }
+        { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 2 }
       ]},
       { "name": "Team OCA Racing", "logo": "", "url": "", "drivers": [
         { "number": "66", "name": "Dan Ocaranza", "points": 116, "warnings": 0 }
@@ -597,13 +597,13 @@
         { "number": "", "name": "Andrew Waddle", "points": 73, "warnings": 0 }
       ]},
       { "name": "Slow Squadron", "logo": "", "url": "", "drivers": [
-        { "number": "41", "name": "Tyler Hoffman", "points": 46, "warnings": 0 }
+        { "number": "41", "name": "Tyler Hoffman", "points": 46, "warnings": 1 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "28", "name": "Silas Krag-Volijk", "points": 650, "warnings": 0 },
         { "number": "57", "name": "Jacco van der Plaat", "points": 571, "warnings": 0 },
         { "number": "", "name": "Russell Barnes", "points": 449, "warnings": 0 },
-        { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 0 },
+        { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 1 },
         { "number": "44", "name": "Stephen Grabowski", "points": 355, "warnings": 0 },
         { "number": "", "name": "Konstantinos Sidiras", "points": 320, "warnings": 0 },
         { "number": "", "name": "Micheal Les Wright", "points": 51, "warnings": 0 }
@@ -766,10 +766,10 @@
       ]},
       { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
         { "number": "52", "name": "Jak Crawford", "points": 120, "warnings": 0 },
-        { "number": "18", "name": "Matthew Crisp", "points": 109, "warnings": 0 }
+        { "number": "18", "name": "Matthew Crisp", "points": 109, "warnings": 1 }
       ]},
       { "name": "Glen eSports Powered by CL20", "logo": "", "url": "", "drivers": [
-        { "number": "74", "name": "Isaac Clarke", "points": 105, "warnings": 0 },
+        { "number": "74", "name": "Isaac Clarke", "points": 105, "warnings": 1 },
         { "number": "", "name": "Gordie Mutch", "points": 50, "warnings": 0 }
       ]},
       { "name": "Dutchies-Esports", "logo": "", "url": "", "drivers": [
