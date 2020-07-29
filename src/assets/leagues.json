@@ -564,28 +564,28 @@
     ],
     "teams": [
       { "name": "DataWire Racing", "logo": "datawire.png", "url": "", "drivers": [
-        { "number": "11", "name": "Dries Vanderyt", "points": 445, "warnings": 0 },
-        { "number": "3", "name": "Kristof Rampelberg", "points": 175, "warnings": 0 }
+        { "number": "11", "name": "Dries Vanderyt", "points": 551, "warnings": 0 },
+        { "number": "3", "name": "Kristof Rampelberg", "points": 235, "warnings": 0 }
       ]},
       { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "99", "name": "Josh Clogg", "points": 682, "wins": 3, "warnings": 1 },
-        { "number": "", "name": "Taylor Lane", "points": 219, "warnings": 1 }
+        { "number": "99", "name": "Josh Clogg", "points": 852, "wins": 3, "warnings": 1 },
+        { "number": "", "name": "Taylor Lane", "points": 294, "warnings": 1 }
       ]},
       { "name": "Radar Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Patrick Charlton", "points": 330, "wins": 1, "warnings": 0 }
+        { "number": "", "name": "Patrick Charlton", "points": 420, "wins": 2, "warnings": 1 }
       ]},
       { "name": "Belgian iRacing Team", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Pierre Cousin", "points": 269, "warnings": 0 }
+        { "number": "", "name": "Pierre Cousin", "points": 369, "warnings": 0 }
       ]},
       { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
-        { "number": "21", "name": "Michael Schieber", "points": 251, "warnings": 0 },
-        { "number": "6", "name": "Freddie Skitini", "points": 267, "warnings": 0 }
+        { "number": "21", "name": "Michael Schieber", "points": 366, "warnings": 0 },
+        { "number": "6", "name": "Freddie Skitini", "points": 361, "warnings": 0 }
       ]},
       { "name": "T.C.R", "logo": "tcrlogored.png", "url": "", "drivers": [
         { "number": "4", "name": "William Paisley", "points": 290, "warnings": 1 }
       ]},
       { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "22", "name": " Matthew Birkett", "points": 229, "warnings": 0 }
+        { "number": "22", "name": " Matthew Birkett", "points": 279, "warnings": 0 }
       ]},
       { "name": "Klub_Karacho", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 2 }
@@ -600,11 +600,11 @@
         { "number": "41", "name": "Tyler Hoffman", "points": 46, "warnings": 1 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "28", "name": "Silas Krag-Volijk", "points": 650, "wins": 3, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 571, "wins": 2, "warnings": 1 },
-        { "number": "", "name": "Russell Barnes", "points": 449, "wins": 1, "warnings": 0 },
+        { "number": "28", "name": "Silas Krag-Volijk", "points": 721, "wins": 3, "warnings": 0 },
+        { "number": "57", "name": "Jacco van der Plaat", "points": 741, "wins": 3, "warnings": 1 },
+        { "number": "", "name": "Russell Barnes", "points": 547, "wins": 1, "warnings": 0 },
         { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 1 },
-        { "number": "44", "name": "Stephen Grabowski", "points": 355, "warnings": 0 },
+        { "number": "44", "name": "Stephen Grabowski", "points": 425, "warnings": 0 },
         { "number": "", "name": "Konstantinos Sidiras", "points": 320, "warnings": 0 },
         { "number": "", "name": "Micheal Les Wright", "points": 51, "warnings": 0 }
       ]}
