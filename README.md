@@ -33,6 +33,7 @@ To add a logo to a team, do the following:
 ```CSV
 "Fin Pos","Car ID","Car","Car Class ID","Car Class","Team ID","Cust ID","Name","Start Pos","Car #","Out ID","Out","Interval","Laps Led","Qualify Time","Average Lap Time","Fastest Lap Time","Fast Lap#","Laps Comp","Inc","League Points","Max Fuel Fill%","Weight Penalty (KG)"
 ```
+- Update the results if necessary (example: apply penalties, update scored points for consolation race)
 - Add the CSV with the results to [public/results](public/results)
 - Change the "results_files" property for the session in [the JSON](src/assets/leagues.json) to look similar to this:
 ```JSON
