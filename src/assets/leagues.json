@@ -340,7 +340,7 @@
       { "name": "Maniti Racing #2", "logo": "maniti.png", "url": "", "drivers": [
         { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Team Eleven", "logo": "", "url": "", "drivers": [
+      { "name": "Team Eleven", "logo": "eleven.png", "url": "", "drivers": [
         { "number": "97", "name": "Lewis Ward", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "117", "name": "Tom Metherell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
