@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <img style="width: 100%" src="../assets/images/homebanner.png" alt="Homepage banner">
     <b-container class="text-center">
       Our website is currently a work in progress, so the homepage is not there yet.<br>
       However, the information for our leagues is already available via the navigation bar at the top of the page.<br>

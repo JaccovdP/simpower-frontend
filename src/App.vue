@@ -43,9 +43,9 @@
         </b-navbar-brand>
 
         <b-navbar-nav>        
-          <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item class="nav-spacing" to="/">Home</b-nav-item>
 
-          <b-nav-item-dropdown text="Leagues" left>
+          <b-nav-item-dropdown class="nav-spacing" text="Leagues" left>
             <template v-for="league in leagueData">
               <b-dropdown-item 
                 :key="league.details.name" 
@@ -56,7 +56,7 @@
             </template>
           </b-nav-item-dropdown>
 
-          <b-nav-item href="https://discord.gg/6B67YnY" target="_blank">Discord</b-nav-item>
+          <b-nav-item class="nav-spacing" href="https://discord.gg/6B67YnY" target="_blank">Discord</b-nav-item>
         </b-navbar-nav>
 
       </b-container>
@@ -116,6 +116,11 @@ export default {
 .push {
   margin-top: 70px;
   display: block;
+}
+
+.nav-spacing {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 div.tabContainer > div > ul.nav {
