@@ -726,8 +726,7 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": [
-          { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
-          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
+             { "name": "Race", "index": 0, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
         ],
         "broadcast_url": ""
       },
