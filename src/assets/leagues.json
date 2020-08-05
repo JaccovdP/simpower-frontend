@@ -421,7 +421,7 @@
         { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
-        { "number": "42", "name": "Mark Phillips7", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "991", "name": "Quentiin Vialatte", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
@@ -713,8 +713,8 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": [
-          { "name": "Qualifying", "index": 0, "file": "r5-quali.csv" },
-          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "r5-race.csv" }
+          { "name": "Qualifying", "index": 0, "file": "f3-r5-qualifying.csv" },
+          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r5-race.csv" }
         ],
         "broadcast_url": "https://www.youtube.com/watch?v=tOF2v4V703g"
       },
@@ -725,7 +725,11 @@
         "simtime": "14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
+          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
+        ],
+        "broadcast_url": ""
       },
       {
         "type": "race",
