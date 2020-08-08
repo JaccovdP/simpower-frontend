@@ -128,7 +128,9 @@
         "simtime": "13:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r2-fp2.csv" }
+        ]  
       },
       {
         "type": "race",
