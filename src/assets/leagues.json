@@ -140,7 +140,8 @@
         "simtime": "13:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [],
+        "broadcast_url": "https://www.youtube.com/watch?v=uJyVHGTZWb4"
       },
       {
         "type": "practice",
