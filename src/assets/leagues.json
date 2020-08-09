@@ -408,7 +408,7 @@
         { "number": "83", "name": "Josua Ali-Keskikylä", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Laps @ Racing", "logo": "lapsracing.png", "url": "", "drivers": [
-        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
         { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
