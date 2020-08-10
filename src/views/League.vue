@@ -701,8 +701,7 @@ export default {
     min-height: 40px;
     background: #c92526;
     padding: 5px 5px 5px 5px;
-    font-size: 1.2em;
-    font-size: 0.9vw;
+    font-size: 1em;
     color: #fff;
   }
 
