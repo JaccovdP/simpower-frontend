@@ -115,6 +115,18 @@
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
+                            <span v-if="session.setup_url && session.type == 'race'">
+                              <b-link :href="session.setup_url" target="_blank">Setup</b-link> |
+                            </span>
+                            <span v-if="!session.setup_url && session.type == 'race'">
+                              <b-link disabled>Setup</b-link> |
+                            </span>
+                            <span v-if="session.paintpack_url && session.type == 'race'">
+                              <b-link :href="session.paintpack_url" target="_blank">Paintpack</b-link> |
+                            </span>
+                            <span v-if="!session.paintpack_url && session.type == 'race'">
+                              <b-link disabled>Paintpack</b-link> |
+                            </span>
                             <span v-if="session.broadcast_url && session.type == 'race'">
                               <b-link :href="session.broadcast_url" target="_blank">Broadcast</b-link> |
                             </span>
@@ -122,10 +134,16 @@
                               <b-link disabled>Broadcast</b-link> |
                             </span>
                             <span v-if="session.results_files.length > 0">
-                              <b-link @click="openResults(session.name)">Results</b-link>
+                              <b-link @click="openResults(session.name)">Results</b-link> |
                             </span>
                             <span v-if="!session.results_files.length > 0">
-                              <b-link disabled>Results</b-link>
+                              <b-link disabled>Results</b-link> |
+                            </span>
+                            <span v-if="session.replay_url">
+                              <b-link :href="session.replay_url" target="_blank">Replay file</b-link>
+                            </span>
+                            <span v-if="!session.replay_url">
+                              <b-link disabled>Replay file</b-link>
                             </span>
                           </b-card-text>
                           <template v-slot:footer>
