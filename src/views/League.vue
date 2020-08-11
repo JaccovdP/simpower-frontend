@@ -116,8 +116,14 @@
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
-                            <span v-if="session.winner">
-                              <strong>Winner</strong> <b-link @click="showLicense(getDriverInfoByNumber(session.winner.number))">{{ session.winner.name }}</b-link> - {{ session.winner.team }}
+                            <span v-if="session.type == 'race' && session.winner && !resultsLoading">
+                              <strong>Winner</strong>&nbsp;<b-link @click="showLicense(getDriverInfoByNumber(session.winner.number))">{{ session.winner.name }}</b-link> - {{ session.winner.team }}
+                            </span>
+                            <span v-if="session.type == 'race' && resultsLoading">
+                              <strong>Winner</strong>&nbsp;<b-icon icon="three-dots" animation="cylon"></b-icon>
+                            </span>
+                            <span v-if="session.type == 'race' && !session.winner && !resultsLoading">
+                              <strong>Winner</strong>&nbsp;-
                             </span>
                           </b-card-text>
                         </b-card-body>
@@ -182,46 +188,51 @@
               <b-row class="text-left">
                 <b-col>
                   <h3>Entries</h3>
-                  <b-card-group deck>
-                    <b-card class="mb-2 team-card" v-for="team in teams" :key="team.name">
-                      <b-row no-gutters>
-                        <b-col cols="4">
-                          <b-img v-if="team.logo" fluid :src="require('../assets/images/teams/' + team.logo)"></b-img>
-                        </b-col>
-                        <b-col>
-                          <b-card-body :title="team.name">
-                            <b-card-text>
-                              <b-table small borderless :items="team.drivers" :fields="team_card_fields">
-                                <template v-slot:cell(name)="row">
-                                  <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
-                                </template>
-                              </b-table> 
-                            </b-card-text>
-                          </b-card-body>
-                        </b-col>
-                      </b-row>
-                    </b-card>
-                  </b-card-group>
-                  <b-card-group deck>
-                    <b-card class="mb-2 team-card" v-for="team in privateers" :key="team.name">
-                      <b-row no-gutters>
-                        <b-col cols="4">
-                          <b-img v-if="team.logo" fluid :src="require('../assets/images/teams/' + team.logo)"></b-img>
-                        </b-col>
-                        <b-col>
-                          <b-card-body :title="team.name">
-                            <b-card-text>
-                              <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                  <b-container class="mt-2" v-if="resultsLoading">
+                    <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
+                  </b-container>
+                  <div v-if="!resultsLoading">
+                    <b-card-group deck>
+                      <b-card class="mb-2 team-card" v-for="team in teams" :key="team.name">
+                        <b-row no-gutters>
+                          <b-col cols="4">
+                            <b-img v-if="team.logo" fluid :src="require('../assets/images/teams/' + team.logo)"></b-img>
+                          </b-col>
+                          <b-col>
+                            <b-card-body :title="team.name">
+                              <b-card-text>
+                                <b-table small borderless :items="team.drivers" :fields="team_card_fields">
                                   <template v-slot:cell(name)="row">
                                     <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                                   </template>
                                 </b-table> 
-                            </b-card-text>
-                          </b-card-body>
-                        </b-col>
-                      </b-row>
-                    </b-card>
-                  </b-card-group>
+                              </b-card-text>
+                            </b-card-body>
+                          </b-col>
+                        </b-row>
+                      </b-card>
+                    </b-card-group>
+                    <b-card-group deck>
+                      <b-card class="mb-2 team-card" v-for="team in privateers" :key="team.name">
+                        <b-row no-gutters>
+                          <b-col cols="4">
+                            <b-img v-if="team.logo" fluid :src="require('../assets/images/teams/' + team.logo)"></b-img>
+                          </b-col>
+                          <b-col>
+                            <b-card-body :title="team.name">
+                              <b-card-text>
+                                <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                                    <template v-slot:cell(name)="row">
+                                      <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
+                                    </template>
+                                  </b-table> 
+                              </b-card-text>
+                            </b-card-body>
+                          </b-col>
+                        </b-row>
+                      </b-card>
+                    </b-card-group>
+                  </div>
                 </b-col>
               </b-row>
             </b-tab>
