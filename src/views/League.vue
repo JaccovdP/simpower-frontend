@@ -116,6 +116,9 @@
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
+                            <span v-if="session.winner">
+                              <strong>Winner</strong> <b-link @click="showLicense(getDriverInfoByNumber(session.winner.number))">{{ session.winner.name }}</b-link> - {{ session.winner.team }}
+                            </span>
                           </b-card-text>
                         </b-card-body>
                       </b-col>
@@ -469,7 +472,11 @@ export default {
     },
     getDriverInfoByNumber(nr) {
       let driver = this.standings["driver"].find(x => x.number == nr)
-      return { "name": driver ? driver.name : "Unknown", "team": driver ? driver.team : "" }
+      if (driver) {
+        return { "number": driver.number, "name": driver.name, "team": driver.team, "wins": driver.wins, "points": driver.points, "secondary_points": driver.secondary_points }
+      } else {
+        return { "number": 0, "name": "Unknown", "team": "", "wins": 0, "points": 0, "secondary_points": 0 }
+      }
     },
     getDriverIndexByNumber(nr) {
       let teamIndex = -1;
@@ -495,7 +502,7 @@ export default {
       let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.secondary_points) - parseInt(a.secondary_points))
       return sortedStandings.findIndex(x => x.number == nr) + 1
     },
-    processResults(type, info, multiplier, results) {
+    processResults(session, type, info, multiplier, results) {
 
       let formattedResults = []
 
@@ -524,6 +531,10 @@ export default {
               "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
               "Incidents": row["Inc"],
               "Points": pointsScored
+            }
+
+            if(info.name == "Feature" && formattedRow["Pos"] == 1) {
+              session["winner"] = { "number": formattedRow["#"], "name": formattedRow["Driver"], "team": formattedRow["Team"] }
             }
 
             if(this.data.automatic_standings) {
@@ -654,7 +665,7 @@ export default {
               header: true,
               skipEmptyLines: true,
               complete: (results) => {
-                sessionResults.results.push(this.processResults(type, files[j], multiplier, results.data))
+                sessionResults.results.push(this.processResults(sessions[i], type, files[j], multiplier, results.data))
                 sessionResults.results.sort((a, b) => parseInt(a.index) - parseInt(b.index))
                 this.nrOfResultsToLoad -= 1
               }
