@@ -112,7 +112,7 @@
                       </b-col>
 
                       <b-col cols="12" sm="9" md="7" order="3" order-md="2">
-                        <b-card-body class="text-left">
+                        <b-card-body class="text-left inner-card-body">
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
@@ -720,6 +720,9 @@ export default {
 <style scoped>
   .card-body {
     padding: 0.5rem;
+  }
+  .inner-card-body {
+    padding: 0.25rem 0.5rem;
   }
   .card-footer {
     padding: 0.75rem 0.5rem 0.75rem 0.5rem;
