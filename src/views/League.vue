@@ -106,52 +106,66 @@
                       <h5 class="mb-0">{{ session.name }}</h5>
                     </template>
                     <b-row no-gutters>
-                      <b-col cols="3">
+                      <b-col sm="3" md="3" cols="6">
                         <h1><b-icon icon="calendar3"></b-icon></h1>
                         {{ session.date }}
                       </b-col>
-                      <b-col>
+
+                      <b-col cols="12" sm="9" md="7" order="3" order-md="2">
                         <b-card-body class="text-left">
                           <b-card-text>
                             <span v-if="session.time"><strong>Session start time</strong> {{ session.time }}<br></span>
                             Sim time {{ session.simtime }} | {{ session.weather }} | {{ session.sky }} <br>
-                            <span v-if="session.setup_url && session.type == 'race'">
-                              <b-link :href="session.setup_url" target="_blank">Setup</b-link> |
-                            </span>
-                            <span v-if="!session.setup_url && session.type == 'race'">
-                              <b-link disabled>Setup</b-link> |
-                            </span>
-                            <span v-if="session.paintpack_url && session.type == 'race'">
-                              <b-link :href="session.paintpack_url" target="_blank">Paintpack</b-link> |
-                            </span>
-                            <span v-if="!session.paintpack_url && session.type == 'race'">
-                              <b-link disabled>Paintpack</b-link> |
-                            </span>
-                            <span v-if="session.broadcast_url && session.type == 'race'">
-                              <b-link :href="session.broadcast_url" target="_blank">Broadcast</b-link> |
-                            </span>
-                            <span v-if="!session.broadcast_url && session.type == 'race'">
-                              <b-link disabled>Broadcast</b-link> |
-                            </span>
-                            <span v-if="session.results_files.length > 0">
-                              <b-link @click="openResults(session.name)">Results</b-link> |
-                            </span>
-                            <span v-if="!session.results_files.length > 0">
-                              <b-link disabled>Results</b-link> |
-                            </span>
-                            <span v-if="session.replay_url">
-                              <b-link :href="session.replay_url" target="_blank">Replay file</b-link>
-                            </span>
-                            <span v-if="!session.replay_url">
-                              <b-link disabled>Replay file</b-link>
-                            </span>
                           </b-card-text>
-                          <template v-slot:footer>
-                            <em>Footer Slot</em>
-                          </template>
                         </b-card-body>
                       </b-col>
+
+                      <b-col v-if="session.trackmap" md="2" cols="6" order="2" order-md="3">
+                        <b-img height="80px" :src="require('../assets/images/tracks/' + session.trackmap)"></b-img>
+                      </b-col>
+
                     </b-row>
+                    <template v-slot:footer>
+                      <b-row no-gutters>
+                        <b-col cols="3">
+                          <b-icon icon="download" v-b-tooltip.hover title="Downloads &amp; Links"></b-icon>
+                        </b-col>
+                        <b-col>
+                            <b-card-text class="text-left card-footer-body">
+                              <span v-if="session.setup_url && session.type == 'race'">
+                                <b-link :href="session.setup_url" target="_blank" v-b-tooltip.hover title="Setup"><b-icon icon="wrench"></b-icon></b-link>
+                              </span>
+                              <span v-if="!session.setup_url && session.type == 'race'">
+                                <b-link disabled v-b-tooltip.hover title="Setup"><b-icon icon="wrench"></b-icon></b-link>
+                              </span>
+                              <span v-if="session.paintpack_url && session.type == 'race'">
+                                <b-link :href="session.paintpack_url" target="_blank" v-b-tooltip.hover title="Paintpack"><b-icon icon="brush"></b-icon></b-link>
+                              </span>
+                              <span v-if="!session.paintpack_url && session.type == 'race'">
+                                <b-link disabled v-b-tooltip.hover title="Paintpack"><b-icon icon="brush"></b-icon></b-link>
+                              </span>
+                              <span v-if="session.broadcast_url && session.type == 'race'">
+                                <b-link :href="session.broadcast_url" target="_blank" v-b-tooltip.hover title="Broadcast"><b-icon icon="collection-play"></b-icon></b-link>
+                              </span>
+                              <span v-if="!session.broadcast_url && session.type == 'race'">
+                                <b-link disabled v-b-tooltip.hover title="Broadcast"><b-icon icon="collection-play"></b-icon></b-link>
+                              </span>
+                              <span v-if="session.results_files.length > 0">
+                                <b-link @click="openResults(session.name)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                              </span>
+                              <span v-if="!session.results_files.length > 0">
+                                <b-link disabled v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                              </span>
+                              <span v-if="session.replay_url">
+                                <b-link :href="session.replay_url" target="_blank" v-b-tooltip.hover title="Replay"><b-icon icon="camera-video"></b-icon></b-link>
+                              </span>
+                              <span v-if="!session.replay_url">
+                                <b-link disabled v-b-tooltip.hover title="Replay"><b-icon icon="camera-video"></b-icon></b-link>
+                              </span>
+                            </b-card-text>
+                        </b-col>
+                      </b-row>
+                    </template>
                   </b-card>
                 </b-col>
                 <b-col class="text-left" md="12" lg="4" sm="12">
@@ -695,6 +709,16 @@ export default {
 <style scoped>
   .card-body {
     padding: 0.5rem;
+  }
+  .card-footer {
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  }
+  .card-footer-body {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .card-footer-body > span > a {
+    margin-right: 15px;
   }
   a.disabled {
     color: #6c757d;
