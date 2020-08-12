@@ -378,7 +378,7 @@
         { "number": "95", "name": "Yvo de Brouwer", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "RaceKraft Esports #2", "logo": "racekraft.png", "url": "", "drivers": [
-        { "number": "143", "name": "Brian Lockwood", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "143", "name": "Brian Lockwood", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "777", "name": "Jonathon White", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Kairos Competition", "logo": "kairos.png", "url": "", "drivers": [
