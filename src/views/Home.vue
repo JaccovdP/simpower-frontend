@@ -37,9 +37,9 @@
       <div class="quotes bg-dark mt-5">
         <b-container fluid="lg">
           <b-row v-if="quotes">
-            <b-col v-for="quote in quotes.slice(0,3)" :key="quote.name" cols="12" md="4" class="mt-2 mb-2">
-              <i>"{{ quote.quote }}"</i><br>
-              &#9; - {{ quote.name }} ({{ quote.team }})
+            <b-col v-for="quote in quotes.slice(0,3)" :key="quote.name" cols="12" md="4" class="mt-2 mb-2 text-center">
+              <small><i>"{{ quote.quote }}"</i><br>
+              &#9; - {{ quote.name }}</small>
             </b-col>
           </b-row>
         </b-container>
