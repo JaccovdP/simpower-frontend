@@ -468,6 +468,203 @@
       ]}
     ]
   }},
+  { "key": "f3-pro", "details": {
+    "title": "Alkentech Formula Pro Championship",
+    "menu_title": "Alkentech Formula Pro Championship",
+    "visible": true,
+    "description": "",
+    "fastest_lap_bonus": 1,
+    "automatic_standings": false,
+    "promo_image": "f3poster.png",
+    "partners": [
+      { "name": "Alkentech.com", "url": "", "image": "alkentech.png" }
+    ],
+    "key_info": {
+      "car_classes": [
+        { 
+          "class": "Dallara F3",
+          "cars": [
+            { "name": "Dallara F3", "image": "" }
+          ]
+        }
+      ],
+      "event_type": "40 minute race with mandatory pit stop",
+      "broadcast": { "text": "Live on Simpower TV", "url": "" },
+      "nr_of_rounds": 8,
+      "overall_prize_pool": 700,
+      "entry_fee": 20
+    },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "Wins", "description": "Number of races the driver has won this season." }
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
+    ],
+    "key_dates": [
+      { "date": "April 2, 2020", "event": "Registration opens" },
+      { "date": "April 26, 2020", "event": "Payment opens" },
+      { "date": "May 13, 2020", "event": "Payment deadline" },
+      { "date": "May 13, 2020", "event": "Paint submission deadline" },
+      { "date": "May 20, 2020", "event": "Round 1" },
+      { "date": "September 10, 2020", "event": "Prize payouts" }
+    ],
+    "schedule": [
+      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
+      { "time": "18:45 UTC", "broadcast": "", "session": "Qualifying" },
+      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
+      { "time": "19:10 UTC", "broadcast": "", "session": "Race begin" },
+      { "time": "20:55 UTC", "broadcast": "Interviews", "session": "" }
+    ],
+    "sessions": [
+      {
+        "type": "race",
+        "name": "Indianapolis GP",
+        "date": "May 27, 2020",
+        "simtime": "12:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "type": "race",
+        "name": "Suzuka GP",
+        "date": "June 10, 2020",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "type": "race",
+        "name": "Silverstone GP",
+        "date": "June 24, 2020",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "type": "race",
+        "name": "Philip Island",
+        "date": "July 8, 2020",
+        "simtime": "11:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "type": "race",
+        "name": "Nurburgring GP",
+        "date": "July 22, 2020",
+        "simtime": "16:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": [
+          { "name": "Qualifying", "index": 0, "file": "f3-r5-qualifying.csv" },
+          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r5-race.csv" }
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=tOF2v4V703g"
+      },
+      {
+        "type": "race",
+        "name": "Monza GP",
+        "date": "August 5, 2020",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": [
+          { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
+          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
+        ]
+      },
+      {
+        "type": "race",
+        "name": "Spa GP",
+        "date": "August 19, 2020",
+        "simtime": "06:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "type": "race",
+        "name": "Interlagos",
+        "date": "September 9, 2020",
+        "simtime": "10:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      }
+    ],
+    "teams": [
+      { "name": "Comrade Gaming", "logo": "", "url": "", "drivers": [
+        { "number": "11", "name": "Alex Bennett", "points": 385, "warnings": 0 },
+        { "number": "9", "name": "Christoph Holstein", "points": 155, "warnings": 0 }
+      ]},
+      { "name": "Alkentech Simulation NHR e-Sports", "logo": "nhr.jpg", "url": "", "drivers": [
+        { "number": "71", "name": "Nicklas Rasmussen", "points": 360, "warnings": 0 },
+        { "number": "96", "name": "Alex Jönsson", "points": 10, "warnings": 0 }
+      ]},
+      { "name": "Allied Racing Esports by TCS Off", "logo": "", "url": "", "drivers": [
+        { "number": "14", "name": "Sam Kuitert", "points": 350, "wins": 1, "warnings": 0 }
+      ]},
+      { "name": "Triple-A eSports", "logo": "", "url": "", "drivers": [
+        { "number": "", "name": "Chris Lulham", "points": 322, "wins": 3, "warnings": 0 }
+      ]},
+      { "name": "Puresim Esports", "logo": "", "url": "", "drivers": [
+        { "number": "45", "name": "Dean Woods", "points": 135, "warnings": 0 }
+      ]},
+      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
+        { "number": "52", "name": "Jak Crawford", "points": 120, "wins": 1, "warnings": 0 },
+        { "number": "18", "name": "Matthew Crisp", "points": 132, "warnings": 1 }
+      ]},
+      { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
+        { "number": "", "name": "Britton Smith", "points": 30, "warnings": 0 }
+      ]},
+      { "name": "Glen eSports Powered by CL20", "logo": "", "url": "", "drivers": [
+        { "number": "74", "name": "Isaac Clarke", "points": 105, "warnings": 1 },
+        { "number": "", "name": "Gordie Mutch", "points": 50, "warnings": 0 }
+      ]},
+      { "name": "Dutchies-Esports", "logo": "", "url": "", "drivers": [
+        { "number": "70", "name": "Tom Walstra", "points": 178, "warnings": 0 },
+        { "number": "", "name": "Yuri Gamelkoorn", "points": 45, "warnings": 0 }
+      ]},
+      { "name": "SDL eSports by Logitech", "logo": "", "url": "", "drivers": [
+        { "number": "92", "name": "Christophe Herbigneaux", "points": 141, "warnings": 0 }
+      ]},
+      { "name": "Trium eSport by KAST", "logo": "", "url": "", "drivers": [
+        { "number": "", "name": "Martin Donati", "points": 100, "warnings": 0 }
+      ]},
+      { "name": "RSR Esports", "logo": "", "url": "", "drivers": [
+        { "number": "", "name": "Owen Watts", "points": 19, "warnings": 0 }
+      ]},
+      { "name": "Privateer", "logo": "", "url": "", "drivers": [
+        { "number": "", "name": "James J Pinsker", "points": 406, "wins": 1, "warnings": 0 },
+        { "number": "34", "name": "Matt Emery", "points": 173, "warnings": 0 },
+        { "number": "57", "name": "Jacco van der Plaat", "points": 109, "warnings": 0 },
+        { "number": "25", "name": "Kevin Zwemstra", "points": 159, "warnings": 0 },
+        { "number": "13", "name": "James Thewlis", "points": 114, "warnings": 0 },
+        { "number": "", "name": "Santtu Makinen", "points": 45, "warnings": 0 },
+        { "number": "", "name": "Silas Krag-Volijk", "points": 85, "warnings": 0 },
+        { "number": "99", "name": "Josh Clogg", "points": 86, "warnings": 0 },
+        { "number": "", "name": "Russell Barnes", "points": 25, "warnings": 0 },
+        { "number": "19", "name": "Stephen Grabrowski", "points": 17, "warnings": 0 },
+        { "number": "4", "name": "William Paisley", "points": 14, "warnings": 0 },
+        { "number": "8", "name": "Dries Vanderyt3", "points": 13, "warnings": 0 }
+      ]}
+    ]
+  }},
   { "key": "f3-evo", "details": {
     "title": "Alkentech Formula Evo Championship",
     "menu_title": "Alkentech Formula Evo Championship",
@@ -646,201 +843,6 @@
         { "number": "44", "name": "Stephen Grabowski", "points": 425, "warnings": 0 },
         { "number": "", "name": "Konstantinos Sidiras", "points": 320, "warnings": 0 },
         { "number": "", "name": "Micheal Les Wright", "points": 51, "warnings": 0 }
-      ]}
-    ]
-  }},
-  { "key": "f3-pro", "details": {
-    "title": "Alkentech Formula Pro Championship",
-    "menu_title": "Alkentech Formula Pro Championship",
-    "visible": true,
-    "description": "",
-    "fastest_lap_bonus": 1,
-    "automatic_standings": false,
-    "promo_image": "f3poster.png",
-    "partners": [
-      { "name": "Alkentech.com", "url": "", "image": "alkentech.png" }
-    ],
-    "key_info": {
-      "car_classes": [
-        { 
-          "class": "Dallara F3",
-          "cars": [
-            { "name": "Dallara F3", "image": "" }
-          ]
-        }
-      ],
-      "event_type": "40 minute race with mandatory pit stop",
-      "broadcast": { "text": "Live on Simpower TV", "url": "" },
-      "nr_of_rounds": 8,
-      "overall_prize_pool": 700,
-      "entry_fee": 20
-    },
-    "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
-    ],
-    "team_standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
-    ],
-    "driver_table_info": [
-      { "label": "#", "description": "Driver number" },
-      { "label": "Driver", "description": "Driver name" },
-      { "label": "Team", "description": "Driver is member of this team." },
-      { "label": "Points", "description": "Number of points the driver has scored during the season." },
-      { "label": "Wins", "description": "Number of races the driver has won this season." }
-    ],
-    "team_table_info": [
-      { "label": "Team", "description": "Team name"},
-      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
-    ],
-    "key_dates": [
-      { "date": "April 2, 2020", "event": "Registration opens" },
-      { "date": "April 26, 2020", "event": "Payment opens" },
-      { "date": "May 13, 2020", "event": "Payment deadline" },
-      { "date": "May 13, 2020", "event": "Paint submission deadline" },
-      { "date": "May 20, 2020", "event": "Round 1" },
-      { "date": "September 10, 2020", "event": "Prize payouts" }
-    ],
-    "schedule": [
-      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
-      { "time": "18:45 UTC", "broadcast": "", "session": "Qualifying" },
-      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
-      { "time": "19:10 UTC", "broadcast": "", "session": "Race begin" },
-      { "time": "20:55 UTC", "broadcast": "Interviews", "session": "" }
-    ],
-    "sessions": [
-      {
-        "type": "race",
-        "name": "Indianapolis GP",
-        "date": "May 27, 2020",
-        "simtime": "12:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Suzuka GP",
-        "date": "June 10, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Silverstone GP",
-        "date": "June 24, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Philip Island",
-        "date": "July 8, 2020",
-        "simtime": "11:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Nurburgring GP",
-        "date": "July 22, 2020",
-        "simtime": "16:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [
-          { "name": "Qualifying", "index": 0, "file": "f3-r5-qualifying.csv" },
-          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r5-race.csv" }
-        ],
-        "broadcast_url": "https://www.youtube.com/watch?v=tOF2v4V703g"
-      },
-      {
-        "type": "race",
-        "name": "Monza GP",
-        "date": "August 5, 2020",
-        "simtime": "14:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [
-          { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
-          { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
-        ]
-      },
-      {
-        "type": "race",
-        "name": "Spa GP",
-        "date": "August 19, 2020",
-        "simtime": "06:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Interlagos",
-        "date": "September 9, 2020",
-        "simtime": "10:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      }
-    ],
-    "teams": [
-      { "name": "Comrade Gaming", "logo": "", "url": "", "drivers": [
-        { "number": "11", "name": "Alex Bennett", "points": 385, "warnings": 0 },
-        { "number": "9", "name": "Christoph Holstein", "points": 155, "warnings": 0 }
-      ]},
-      { "name": "Alkentech Simulation NHR e-Sports", "logo": "nhr.jpg", "url": "", "drivers": [
-        { "number": "71", "name": "Nicklas Rasmussen", "points": 360, "warnings": 0 },
-        { "number": "96", "name": "Alex Jönsson", "points": 10, "warnings": 0 }
-      ]},
-      { "name": "Allied Racing Esports by TCS Off", "logo": "", "url": "", "drivers": [
-        { "number": "14", "name": "Sam Kuitert", "points": 350, "wins": 1, "warnings": 0 }
-      ]},
-      { "name": "Triple-A eSports", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Chris Lulham", "points": 322, "wins": 3, "warnings": 0 }
-      ]},
-      { "name": "Puresim Esports", "logo": "", "url": "", "drivers": [
-        { "number": "45", "name": "Dean Woods", "points": 135, "warnings": 0 }
-      ]},
-      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "52", "name": "Jak Crawford", "points": 120, "wins": 1, "warnings": 0 },
-        { "number": "18", "name": "Matthew Crisp", "points": 132, "warnings": 1 }
-      ]},
-      { "name": "Glen eSports Powered by CL20", "logo": "", "url": "", "drivers": [
-        { "number": "74", "name": "Isaac Clarke", "points": 105, "warnings": 1 },
-        { "number": "", "name": "Gordie Mutch", "points": 50, "warnings": 0 }
-      ]},
-      { "name": "Dutchies-Esports", "logo": "", "url": "", "drivers": [
-        { "number": "70", "name": "Tom Walstra", "points": 178, "warnings": 0 },
-        { "number": "", "name": "Yuri Gamelkoorn", "points": 45, "warnings": 0 }
-      ]},
-      { "name": "SDL eSports by Logitech", "logo": "", "url": "", "drivers": [
-        { "number": "92", "name": "Christophe Herbigneaux", "points": 141, "warnings": 0 }
-      ]},
-      { "name": "Trium eSport by KAST", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Martin Donati", "points": 100, "warnings": 0 }
-      ]},
-      { "name": "RSR Esports", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Owen Watts", "points": 19, "warnings": 0 }
-      ]},
-      { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "James J Pinsker", "points": 406, "wins": 1, "warnings": 0 },
-        { "number": "34", "name": "Matt Emery", "points": 173, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 109, "warnings": 0 },
-        { "number": "25", "name": "Kevin Zwemstra", "points": 159, "warnings": 0 },
-        { "number": "13", "name": "James Thewlis", "points": 114, "warnings": 0 },
-        { "number": "", "name": "Santtu Makinen", "points": 45, "warnings": 0 },
-        { "number": "", "name": "Silas Krag-Volijk", "points": 85, "warnings": 0 },
-        { "number": "", "name": "Britton Smith", "points": 30, "warnings": 0 },
-        { "number": "99", "name": "Josh Clogg", "points": 86, "warnings": 0 },
-        { "number": "", "name": "Russell Barnes", "points": 25, "warnings": 0 },
-        { "number": "19", "name": "Stephen Grabrowski", "points": 17, "warnings": 0 },
-        { "number": "4", "name": "William Paisley", "points": 14, "warnings": 0 },
-        { "number": "8", "name": "Dries Vanderyt3", "points": 13, "warnings": 0 }
       ]}
     ]
   }}

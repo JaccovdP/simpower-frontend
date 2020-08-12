@@ -1,0 +1,20 @@
+{
+    "about_us": {
+        "title": "About Simpower Leagues",
+        "image": "PorscheSport-1.jpg",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum in diam sed auctor. Vestibulum quis enim at metus pulvinar pharetra eget eu risus. In ac sollicitudin augue, condimentum suscipit ipsum. Donec fermentum accumsan dignissim. Quisque sollicitudin sed tellus vel fermentum."
+    },
+    "partners": [
+        { "name": "PorscheSport.com", "url": "", "image": "porschesport.png" },
+        { "name": "Alkentech.com", "url": "", "image": "alkentech.png" },
+        { "name": "Clutch Customs", "url": "", "image": "ClutchCustoms.png"}
+    ],
+    "quotes": [
+        { "name": "Mehdi El Fathy", "team": "RaceKraft Esports", "quote": "1Lorem ipsum dolor sit amet" },
+        { "name": "2Name", "team": "Team", "quote": "2Lorem ipsum dolor sit amet" },
+        { "name": "3Name", "team": "Team", "quote": "3Lorem ipsum dolor sit amet" },
+        { "name": "4Name", "team": "Team", "quote": "4Lorem ipsum dolor sit amet" },
+        { "name": "5Name", "team": "Team", "quote": "5Lorem ipsum dolor sit amet" },
+        { "name": "6Name", "team": "Team", "quote": "6Lorem ipsum dolor sit amet" }
+    ]
+}
