@@ -2,7 +2,7 @@
     "about_us": {
         "title": "About Simpower Leagues",
         "image": "PorscheSport-1.jpg",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum in diam sed auctor. Vestibulum quis enim at metus pulvinar pharetra eget eu risus. In ac sollicitudin augue, condimentum suscipit ipsum. Donec fermentum accumsan dignissim. Quisque sollicitudin sed tellus vel fermentum."
+        "text": "Simpower is a premier tier league organiser for the iRacing platform. We are a passionate and excited organising team committed to providing engaging, professional leagues that bring viewers closer to the action and closer to the edge of their seat."
     },
     "partners": [
         { "name": "PorscheSport.com", "url": "", "image": "porschesport.png" },
@@ -10,8 +10,6 @@
         { "name": "Clutch Customs", "url": "", "image": "ClutchCustoms.png"}
     ],
     "quotes": [
-        { "name": "Mehdi El Fathy, Owner / Creative Director of RaceKraft Esports", "team": "", "quote": "We are really excited to be part of the PorscheSport.com Simpower Carrera Cup for the series' first season. The quality of the organisation is exemplary and a very strong field means this is the perfect series to practice for the Porsche Esports Supercup Pro Qualifiers" },
-        { "name": "2Name", "team": "Team", "quote": "2Lorem ipsum dolor sit amet" },
-        { "name": "6Name", "team": "Team", "quote": "6Lorem ipsum dolor sit amet" }
+        { "name": "Mehdi El Fathy, Owner / Creative Director of RaceKraft Esports", "team": "", "quote": "We are really excited to be part of the PorscheSport.com Simpower Carrera Cup for the series' first season. The quality of the organisation is exemplary and a very strong field means this is the perfect series to practice for the Porsche Esports Supercup Pro Qualifiers" }
     ]
 }
