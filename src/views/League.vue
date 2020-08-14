@@ -77,9 +77,14 @@
                     <strong>Entry fee</strong><br>
                     &euro;{{ data.key_info.entry_fee }}
                   </div>
-                  <div class="mb-2" v-if="data.key_info.regulations_url">
+                  <div class="mb-2">
                     <strong>Regulations</strong><br>
-                    <b-link :href="data.key_info.regulations_url" target="_blank">Regulations</b-link>
+                    <template v-if="$route.params.slug == 'f3-pro' || $route.params.slug == 'f3-evo'">
+                      <b-link href="https://regulations.simpower.co.uk/#/alkentech-f3/" target="_blank">Regulations</b-link>
+                    </template>
+                    <template v-else>
+                      <b-link :href="'https://regulations.simpower.co.uk/#/' + $route.params.slug + '/'" target="_blank">Regulations</b-link>
+                    </template>
                   </div>
                 </b-col>
                 <b-col lg="4" md="12">
@@ -88,8 +93,12 @@
                 </b-col>
                 <b-col lg="4" md="12">
                   <h3>Partners</h3>
-
-                  <b-img class="mb-4" fluid v-for="partner in data.partners" :key="partner.name" :src="require('../assets/images/' + partner.image)"></b-img>
+                  <template v-for="partner in data.partners">
+                    <b-link :key="partner.name" v-if="partner.url.length > 0" :href="partner.url" target="_blank">
+                      <b-img class="mb-4" fluid :src="require('../assets/images/' + partner.image)"></b-img>
+                    </b-link>
+                    <b-img class="mb-4" fluid :key="partner.name" v-if="partner.url.length == 0" :src="require('../assets/images/' + partner.image)"></b-img>
+                  </template>
                 </b-col>
               </b-row>
             </b-tab>

@@ -5,8 +5,8 @@
         "text": "Simpower is a premier tier league organiser for the iRacing platform. We are a passionate and excited organising team committed to providing engaging, professional leagues that bring viewers closer to the action and closer to the edge of their seat."
     },
     "partners": [
-        { "name": "PorscheSport.com", "url": "", "image": "porschesport.png" },
-        { "name": "Alkentech.com", "url": "", "image": "alkentech.png" },
+        { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
+        { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" },
         { "name": "Clutch Customs", "url": "", "image": "ClutchCustoms.png"}
     ],
     "quotes": [
