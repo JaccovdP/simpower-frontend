@@ -7,7 +7,7 @@ Car class: Porsche 911 GT3 Cup
 Event type: 2x Heat race, 1x Consolation 1x Feature  
 Broadcast: Live on Racespot TV  
 Races: 7 rounds  
-Prize pool: €700: €400 championship prize pool, €40 per race prize pool  
+Prize pool: €400 championship prize pool, €40 per race prize pool  
 Entry fee: €25 per car  
 
 ## Key Dates

@@ -2,33 +2,22 @@
 
 ## Key Info
 
-2 championships
-
+2 championships  
 Formula Pro: 25 car championship 
-
-Formula Evo: 30 car championship
-
-Prize pool: €1100
-
-Entry fee: €20 per driver
+Formula Evo: 30 car championship  
+Prize pool: €1100  
+Entry fee: €20 per driver  
 
 ## Key Dates
 
-Registration opens: 2nd April 2020
-
-Payment opens: 26th April 2020
-
-iRating snapshot: 9th May 2020
-
-Registration closes: 10th May 2020
-
-Payment deadline: 13th May 2020
-
-Paint submission deadline: 13th May 2020
-
-Round 1: 20th May 2020
-
-Prizes awarded: 10th September 2020
+Registration opens: 2nd April 2020  
+Payment opens: 26th April 2020  
+iRating snapshot: 9th May 2020  
+Registration closes: 10th May 2020  
+Payment deadline: 13th May 2020  
+Paint submission deadline: 13th May 2020  
+Round 1: 20th May 2020  
+Prizes awarded: 10th September 2020  
 
 
 ## 1. Overview
@@ -103,24 +92,19 @@ An entry fee of €20 per driver, per championship is required to cover the priz
 
 ### 2.2 Formula Pro Championship
 
-Winner of the Drivers Championship: €400
-
-Second in the Drivers Championship: €200
-
+Winner of the Drivers Championship: €400  
+Second in the Drivers Championship: €200  
 Third in the Drivers Championship: €100
 
 
 ### 2.3 Formula Evo Championship
 
-Winner of the Drivers Championship: €200
-
-Second in the Drivers Championship: €125
-
+Winner of the Drivers Championship: €200  
+Second in the Drivers Championship: €125  
 Third in the Drivers Championship: €75
 
 
 ## 3. Calendar
-
 
 ### 3.1 Formula Pro Calendar
 

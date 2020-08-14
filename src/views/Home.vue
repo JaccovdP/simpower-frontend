@@ -48,7 +48,10 @@
         <b-container fluid="lg">
           <b-row>
             <b-col v-for="partner in partners" :key="partner.name" cols="12" :md="(12 / partners.length) < 4 ? 3 : 12 / partners.length">
-              <b-img height="50px" class="mt-2 mb-2" :src="require('../assets/images/' + partner.image)"></b-img>
+              <b-link :key="partner.name" v-if="partner.url.length > 0" :href="partner.url" target="_blank">
+                <b-img height="50px" class="mt-2 mb-2" :src="require('../assets/images/' + partner.image)"></b-img>
+              </b-link>
+              <b-img v-if="partner.url.length == 0" height="50px" class="mt-2 mb-2" :src="require('../assets/images/' + partner.image)"></b-img>
             </b-col>
           </b-row>
         </b-container>
