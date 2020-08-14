@@ -18,9 +18,9 @@ Paint submission deadline: 23rd July 2020
 Round 1: 26th July 2020  
 Prizes awarded: Championship: 19th October 2020, Race: The Wednesday after the event.  
 
-## Overview
+## 1. Overview
 
-### Championship format
+### 1.1 Championship format
 - Porsche 911 GT3 Cup 
 - You must join the server before qualifying, joining during or after will result in disqualification from the race.
 - Open setup
@@ -37,13 +37,13 @@ Prizes awarded: Championship: 19th October 2020, Race: The Wednesday after the e
 - Weather for the event will be generated and carried over from each session
 - No fast repairs, no full course cautions
 
-### Alkentech Simulation Trophy
+### 1.2 Alkentech Simulation Trophy
 Additionally to the main championship we will be running a championship for most positions gained during heat races. The points for this are explained in section 5.1. 
 
-### Entry fee
+### 1.3 Entry fee
 An entry fee of €25 per driver, per championship is required to cover the prize pool, hosted sessions, administrators time and all broadcast fees that we incur.
 
-## Prize pool breakdown
+## 2. Prize pool breakdown
 Winner of the Championship: €150  
 Second in the Championship: €100  
 Third in the Championship: €75  
@@ -53,11 +53,11 @@ Alkentech Simulation Trophy (Most places gained): €75
 Each race will also have a feature race prize pool of €40 awarded as follows:  
 1st: €15, 2nd: €10, 3rd: €6, 4th: €4, 5th: €3, 6th: €2
 
-### Claiming prize money
+### 2.2 Claiming prize money
 - For a driver to claim overall prize money a minimum of 5 championship rounds must be attended.
 - The prize paying drivers in each championship standings will be awarded the prize money as detailed above to the PayPal account of their choice
 
-## Calendar
+## 3. Calendar
 <table>
   <tr>
    <td><strong>Date</strong>
@@ -134,7 +134,7 @@ Each race will also have a feature race prize pool of €40 awarded as follows:
 **Weather:** Generated  
 **Double Points:** Spa
 
-## Event schedule
+## 4. Event schedule
 All times in UTC
 
 
@@ -189,7 +189,7 @@ All times in UTC
   </tr>
 </table>
 
-## Championship Points
+## 5. Championship Points
 Championship points are only awarded to drivers in the feature and top 10 left in consolation
 
 
@@ -396,23 +396,23 @@ Championship points are only awarded to drivers in the feature and top 10 left i
   </tr>
 </table>
 
-### Alkentech Simulation Trophy Points
+### 5.1 Alkentech Simulation Trophy Points
 Starting position in the heat race minus finishing position in the heat race
 
-### Bonus Points
+### 5.2 Bonus Points
 - Double Points: The last round will be a double points scoring round
 - Fastest Lap: In every heat race, consolation race and feature race, a driver can earn 1 bonus point for the fastest lap
 
-### Teams Championship
+### 5.3 Teams Championship
 - There will be no prizes awarded for the winning team, this championship is for merit only
 - Each team can only consist of 2 drivers.
  - The 2 drivers must be decided before the start of the first round.
   - If this isn't the case when the series starts then we will assign the two drivers with the most points after round 1
 
-## Protests and Sporting Code
+## 6. Protests and Sporting Code
 As there is a prize pool, it’s very important that we have clean and fair racing in the championship.
 
-### Sporting Rules
+### 6.1 Sporting Rules
 - Avoid car contact where possible. All contact incidents involving a car leaving the race track will be reviewed by race stewards either during the event or if missed, afterwards.
  - In the event that the stewards miss the incident, a protest form will be available through the league discord and it will be assessed after the event
 - Intentional excessive car contact will have a zero tolerance policy. Incidents such as this will result in disqualification from the race and in the most serious circumstances, disqualification from the championship. 
@@ -426,7 +426,7 @@ As there is a prize pool, it’s very important that we have clean and fair raci
  - Penalty every 5 incident points after 20
 - If you enter the session with the incorrect car then you will be disqualified from the race
 
-### Possible Penalties
+### 6.2 Possible Penalties
 The following penalties are examples that the stewards can apply:
 - Warning
  - A warning from the stewards with explanation
