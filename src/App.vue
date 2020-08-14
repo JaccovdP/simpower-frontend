@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <b-navbar fluid type="dark" variant="dark" fixed sticky toggleable class="toggle-navbar">
       <b-container>
         <b-navbar-brand to="/">
@@ -62,10 +61,11 @@
       </b-container>
     </b-navbar>
     <router-view/>
-    <div class="push"></div>
-    <b-navbar type="dark" variant="dark" class="smallNav" fixed="bottom" sticky>
+    <div class="push" v-if="$route.params.slug"></div>
+
+    <b-navbar type="dark" variant="dark" v-if="$route.params.slug" class="smallNav" fixed="bottom" sticky>
       <b-container fluid>
-        <b-nav v-if="$route.params.slug" pills>
+        <b-nav pills>
           <b-nav-item to="info" :active="$route.params.tab == 'info'">
             <b-icon icon="info-square"></b-icon>
             <span class="navTitle">&nbsp;Info</span>
@@ -94,11 +94,13 @@
 
 <script>
 import leagueData from './assets/leagues.json'
+import simpowerData from './assets/simpower.json'
 
 export default {
     data: function () {
         return {
-            leagueData
+            leagueData,
+            simpowerData
         }
     }
 }
@@ -148,6 +150,9 @@ div.tabContainer > div > ul.nav {
 
 @media (min-width: 992px) {
   .smallNav {
+    display: none !important;
+  }
+  .push {
     display: none !important;
   }
 }
