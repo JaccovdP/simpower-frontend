@@ -24,6 +24,23 @@
               <b-card-body :title="simpowerData.about_us.title">
                 <b-card-text class="text-justify" style="max-width: 800px; margin: 0 auto;">
                   {{ simpowerData.about_us.text }}
+                  <b-row class="text-center mt-4">
+                    <b-col>
+                      <b-link href="https://www.instagram.com/simpowerleagues/" target="_blank">
+                        <b-img height="48px" :src="require('../assets/images/iconmonstr-instagram-13-240.png')"></b-img>
+                      </b-link>
+                    </b-col>
+                    <b-col>
+                      <b-link href="https://discord.gg/6B67YnY" target="_blank">
+                        <b-img height="48px" :src="require('../assets/images/iconmonstr-discord-3-240.png')"></b-img>
+                      </b-link>
+                    </b-col>
+                    <b-col>
+                      <b-link href="https://www.youtube.com/channel/UCvsbzk_sEC0ONXhXZG02myQ" target="_blank">
+                        <b-img height="48px" :src="require('../assets/images/iconmonstr-youtube-8-240.png')"></b-img>
+                      </b-link>
+                    </b-col>
+                  </b-row>
                 </b-card-text>
               </b-card-body>
             </b-col>
