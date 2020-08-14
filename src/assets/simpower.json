@@ -7,7 +7,7 @@
     "partners": [
         { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
         { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" },
-        { "name": "Clutch Customs", "url": "", "image": "ClutchCustoms.png"}
+        { "name": "Clutch Customs", "url": "https://www.instagram.com/_clutchcustoms/", "image": "ClutchCustoms.png"}
     ],
     "quotes": [
         { "name": "Mehdi El Fathy, Owner / Creative Director of RaceKraft Esports", "team": "", "quote": "We are really excited to be part of the PorscheSport.com Simpower Carrera Cup for the series' first season. The quality of the organisation is exemplary and a very strong field means this is the perfect series to practice for the Porsche Esports Supercup Pro Qualifiers" }
