@@ -270,10 +270,10 @@
                     <template v-slot:cell(name)="row">
                       <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                     </template>
-                    <template v-slot:cell(points)="row">
+                    <template v-slot:cell(points)="row" v-if="data.automatic_standings">
                       {{ row.item.points }} <small><b-link @click="openResults(row.item.main_drop.session)">(+{{row.item.main_drop.points}})</b-link></small>
                     </template>
-                    <template v-slot:cell(secondary_points)="row">
+                    <template v-slot:cell(secondary_points)="row" v-if="data.automatic_standings">
                       {{ row.item.secondary_points }} <small><b-link @click="openResults(row.item.secondary_drop.session)">(+{{row.item.secondary_drop.points}})</b-link></small>
                     </template>
                   </b-table>
@@ -299,7 +299,7 @@
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
                     </template>
-                    <template v-slot:cell(points)="row">
+                    <template v-slot:cell(points)="row" v-if="data.automatic_standings">
                       <span v-b-tooltip.hover :title="'Drop round points: ' + row.item.team_dropped">{{ row.item.points }}</span>
                     </template>
                   </b-table>
@@ -473,34 +473,36 @@ export default {
         let team_sec_points = 0
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
-          for(let k = 1; k <= this.data.key_info.nr_of_rounds; k++) {
-            let round = this.data.sessions.find(x => x.round == k && x.type == "race")
-            let finished = round.results_files.length > 0 ? true : false
-            if (finished) {
-              let result
-              if(driver.results && driver.results[k]) {
-                result = driver.results[k]
-                result.session = round.name
-              } else {
-                result = { "points": 0, "secondary_points": 0, "dq": false, "session": round.name }
-              }
-              if(!result.dq) {
-                if(!driver.main_drop) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
-                if(driver.main_drop.points > result.points) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
-                if(!driver.secondary_drop) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
-                if(driver.secondary_drop.points > result.secondary_points) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+          if(this.data.automatic_standings) {
+            for(let k = 1; k <= this.data.key_info.nr_of_rounds; k++) {
+              let round = this.data.sessions.find(x => x.round == k && x.type == "race")
+              let finished = round.results_files.length > 0 ? true : false
+              if (finished) {
+                let result
+                if(driver.results && driver.results[k]) {
+                  result = driver.results[k]
+                  result.session = round.name
+                } else {
+                  result = { "points": 0, "secondary_points": 0, "dq": false, "session": round.name }
+                }
+                if(!result.dq) {
+                  if(!driver.main_drop) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
+                  if(driver.main_drop.points > result.points) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
+                  if(!driver.secondary_drop) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+                  if(driver.secondary_drop.points > result.secondary_points) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
 
-                driver.points += result.points
-                driver.secondary_points += result.secondary_points
-              } else {
-                driver.points += 0
-                driver.secondary_points += 0
-              }              
+                  driver.points += result.points
+                  driver.secondary_points += result.secondary_points
+                } else {
+                  driver.points += 0
+                  driver.secondary_points += 0
+                }              
+              }
             }
-          }
-          if(driver.main_drop && driver.secondary_drop) {
-            driver.points -= driver.main_drop.points
-            driver.secondary_points -= driver.secondary_drop.points
+            if(driver.main_drop && driver.secondary_drop) {
+              driver.points -= driver.main_drop.points
+              driver.secondary_points -= driver.secondary_drop.points
+            }
           }
           driver_standings.push({
             number: driver.number,
@@ -515,7 +517,7 @@ export default {
             secondary_drop: driver.secondary_drop
           })
           team_points += driver.points
-          team_dropped += driver.main_drop.points
+          if(this.data.automatic_standings) team_dropped += driver.main_drop.points
           team_sec_points += driver.secondary_points
         }
         if(team.name != "Privateer") {
