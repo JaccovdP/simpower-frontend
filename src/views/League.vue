@@ -270,6 +270,12 @@
                     <template v-slot:cell(name)="row">
                       <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                     </template>
+                    <template v-slot:cell(points)="row">
+                      {{ row.item.points }} <small><b-link @click="openResults(row.item.main_drop.session)">(+{{row.item.main_drop.points}})</b-link></small>
+                    </template>
+                    <template v-slot:cell(secondary_points)="row">
+                      {{ row.item.secondary_points }} <small><b-link @click="openResults(row.item.secondary_drop.session)">(+{{row.item.secondary_drop.points}})</b-link></small>
+                    </template>
                   </b-table>
                 </b-col>
 
@@ -292,6 +298,9 @@
                     responsive>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
+                    </template>
+                    <template v-slot:cell(points)="row">
+                      <span v-b-tooltip.hover :title="'Drop round points: ' + row.item.team_dropped">{{ row.item.points }}</span>
                     </template>
                   </b-table>
                 </b-col>
@@ -350,7 +359,11 @@
             responsive
             :items="result.results"
             class="mt-2"
-          ></b-table>
+          >
+          <template v-slot:cell(driver)="row">
+            <b-link @click="showLicense(getDriverInfoByNumber(row.item['#']))">{{ row.item.Driver }}</b-link>
+          </template>
+          </b-table>
           <template v-if="result.fastest_lap">
             <strong>Fastest lap</strong> <small>({{ result.fastest_lap.points > 1 ? result.fastest_lap.points + " points" : result.fastest_lap.points + " point"}})</small> <br>
             {{ result.fastest_lap.driver }} - {{ result.fastest_lap.laptime }}
@@ -406,6 +419,29 @@
             </div>
           </b-col>
         </b-row>
+        <!-- <hr v-if="selectedDriver.results" style="margin-bottom:0;">
+        <h5 v-if="selectedDriver.results" class="mt-2">
+          Results
+        </h5>
+        <b-card v-for="result in selectedDriver.results" :key="result.session" class="mt-2">
+          <table style="width:100%; table-layout:fixed;">
+            <tr>
+              <td style="width:60%;">
+                <strong>{{ result.session }}</strong>
+              </td>
+              <td style="width:10%;">
+                P{{ result.pos }}
+              </td>
+              <td style="width:20%;">
+                {{ result.points }} points
+              </td>
+              <td style="width:10%; text-align:right;">
+                <b-link @click="openResults(result.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+              </td>
+            </tr>
+          </table>
+        </b-card> -->
+
       </div>
 
 
@@ -433,9 +469,39 @@ export default {
       for(let i = 0; i < this.entries.length; i++) {
         let team = this.entries[i]
         let team_points = 0
+        let team_dropped = 0
         let team_sec_points = 0
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
+          for(let k = 1; k <= this.data.key_info.nr_of_rounds; k++) {
+            let round = this.data.sessions.find(x => x.round == k && x.type == "race")
+            let finished = round.results_files.length > 0 ? true : false
+            if (finished) {
+              let result
+              if(driver.results && driver.results[k]) {
+                result = driver.results[k]
+                result.session = round.name
+              } else {
+                result = { "points": 0, "secondary_points": 0, "dq": false, "session": round.name }
+              }
+              if(!result.dq) {
+                if(!driver.main_drop) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
+                if(driver.main_drop.points > result.points) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
+                if(!driver.secondary_drop) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+                if(driver.secondary_drop.points > result.secondary_points) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+
+                driver.points += result.points
+                driver.secondary_points += result.secondary_points
+              } else {
+                driver.points += 0
+                driver.secondary_points += 0
+              }              
+            }
+          }
+          if(driver.main_drop && driver.secondary_drop) {
+            driver.points -= driver.main_drop.points
+            driver.secondary_points -= driver.secondary_drop.points
+          }
           driver_standings.push({
             number: driver.number,
             name: driver.name,
@@ -443,16 +509,21 @@ export default {
             wins: driver.wins,
             points: driver.points,
             secondary_points: driver.secondary_points,
-            warnings: driver.warnings
+            warnings: driver.warnings,
+            results: driver.results,
+            main_drop: driver.main_drop,
+            secondary_drop: driver.secondary_drop
           })
           team_points += driver.points
+          team_dropped += driver.main_drop.points
           team_sec_points += driver.secondary_points
         }
         if(team.name != "Privateer") {
           team_standings.push({
             name: team.name,
             points: team_points,
-            secondary_points: team_sec_points
+            secondary_points: team_sec_points,
+            team_dropped: team_dropped
           })
         }
       }
@@ -493,7 +564,7 @@ export default {
     getDriverInfoByNumber(nr) {
       let driver = this.standings["driver"].find(x => x.number == nr)
       if (driver) {
-        return { "number": driver.number, "name": driver.name, "team": driver.team, "wins": driver.wins, "points": driver.points, "secondary_points": driver.secondary_points }
+        return driver
       } else {
         return { "number": 0, "name": "Unknown", "team": "", "wins": 0, "points": 0, "secondary_points": 0 }
       }
@@ -535,8 +606,15 @@ export default {
         if(type == "race") {
           if(parseInt(row["Start Pos"]) != 0) {
             let positionsGained = parseInt(row["Start Pos"]) - parseInt(row["Fin Pos"])
-            // positionsGained = positionsGained < 0 ? 0 : positionsGained
-            let pointsScored = row["League Points"] == "" ? 0 : parseInt(row["League Points"]) * multiplier
+            let pointsScored = 0
+            let secondaryPointsScored = positionsGained
+            let dq = false
+            if(row["League Points"] == "DQ") {
+              dq = true
+            } else {
+              pointsScored = row["League Points"] == "" ? 0 : parseInt(row["League Points"]) * multiplier
+            }
+            if(secondaryPointsScored < 0) secondaryPointsScored = 0
 
             formattedRow = {
               "Pos": row["Fin Pos"],
@@ -550,7 +628,7 @@ export default {
               "Avg. Lap time": row["Average Lap Time"],
               "Fastest Lap Time": row["Fastest Lap Time"] + (row["Fast Lap#"] ? " (#" + row["Fast Lap#"] + ")" : ""),
               "Incidents": row["Inc"],
-              "Points": pointsScored
+              "Points": dq ? "DQ" : pointsScored
             }
 
             if(info.name == "Feature" && formattedRow["Pos"] == 1) {
@@ -558,15 +636,13 @@ export default {
             }
 
             if(this.data.automatic_standings) {
-              if (formattedRow["Pos"] == 1) {
-                driver.wins += 1
-              }
-              driver.points += pointsScored
-              if(info.counts_for_secondary_points) {
-                let secondaryPointsScored = parseInt(formattedRow["G/L"])
-                if(secondaryPointsScored < 0) secondaryPointsScored = 0
-                driver.secondary_points += secondaryPointsScored
-              }
+              if (formattedRow["Pos"] == 1) driver.wins += 1
+              if(!driver.results) driver.results = {}
+              if(!driver.results[session.round]) driver.results[session.round] = { "pos": 0, "points": 0, "secondary_points": 0, "dq": dq }
+              driver.results[session.round].dq = dq
+              driver.results[session.round].points += pointsScored
+
+              if(info.counts_for_secondary_points) driver.results[session.round].secondary_points += secondaryPointsScored
             }
 
           } else {
@@ -618,10 +694,9 @@ export default {
           let indexes = this.getDriverIndexByNumber(fastestLapRow["#"])
           if (indexes.teamIndex > -1) {
             let driver = this.entries[indexes.teamIndex].drivers[indexes.driverIndex]
-            driver.points += this.data.fastest_lap_bonus * multiplier
+            driver.results[session.round].points += fastestLapBonus
           }
         }
-
 
         returnObject = { "name": info.name, "index": info.index, "results": formattedResults, "fastest_lap": { "points": fastestLapBonus, "driver": fastestLapRow["Driver"], "laptime": fastestLapRow["Fastest Lap Time"].split(" ")[0] } }
 

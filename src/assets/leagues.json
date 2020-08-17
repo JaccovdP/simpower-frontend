@@ -43,11 +43,13 @@
       { "label": "Team", "description": "Driver is member of this team." },
       { "label": "Points", "description": "Number of points the driver has scored during the season." },
       { "label": "ATT", "description": "Points scored for the AlkenTech.com Simulation Trophy. Number of positions the driver has gained in heat races during the season. (AlkenTech.com Simulation Trophy)" },
-      { "label": "Wins", "description": "Number of races the driver has won this season." }
+      { "label": "Wins", "description": "Number of races the driver has won this season." },
+      { "label": "Drop round", "description": "Between brackets after each points column is the drop round for the driver. That is, the round with the worst result (excluding disqualifications)."}
     ],
     "team_table_info": [
       { "label": "Team", "description": "Team name"},
-      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
+      { "label": "Drop round", "description": "Hover (touch) the points to view the sum of the dropped points for the team."}
     ],
     "key_dates": [
       { "date": "June 11, 2020", "event": "Registration opens" },
@@ -66,6 +68,7 @@
     ],
     "sessions": [
       {
+        "round": 1,
         "type": "practice",
         "name": "FP1: Nürburgring BES/WEC",
         "date": "July 24, 2020",
@@ -79,6 +82,7 @@
         ]
       },
       {
+        "round": 1,
         "type": "practice",
         "name": "FP2: Nürburgring BES/WEC",
         "date": "July 25, 2020",
@@ -92,6 +96,7 @@
         ]
       },
       {
+        "round": 1,
         "type": "race",
         "name": "Race: Nürburgring BES/WEC",
         "date": "July 26, 2020",
@@ -114,6 +119,7 @@
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%201/Round1_v1.2.zip"
       },
       {
+        "round": 2,
         "type": "practice",
         "name": "FP1: Road America",
         "date": "August 7, 2020",
@@ -128,6 +134,7 @@
         "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%202%20-%20Road%20America/FP1.rpy"
       },
       {
+        "round": 2,
         "type": "practice",
         "name": "FP2: Road America",
         "date": "August 8, 2020",
@@ -141,6 +148,7 @@
         ]
       },
       {
+        "round": 2,
         "type": "race",
         "name": "Race: Road America",
         "date": "August 9, 2020",
@@ -163,6 +171,7 @@
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%202/Round2_v1.1.zip"
       },
       {
+        "round": 3,
         "type": "practice",
         "name": "FP1: Imola GP",
         "date": "August 21, 2020",
@@ -174,6 +183,7 @@
         "results_files": []
       },
       {
+        "round": 3,
         "type": "practice",
         "name": "FP2: Imola GP",
         "date": "August 22, 2020",
@@ -185,6 +195,7 @@
         "results_files": []
       },
       {
+        "round": 3,
         "type": "race",
         "name": "Race: Imola GP",
         "date": "August 23, 2020",
@@ -196,6 +207,7 @@
         "results_files": []
       },
       {
+        "round": 4,
         "type": "practice",
         "name": "FP1: Interlagos",
         "date": "September 4, 2020",
@@ -207,6 +219,7 @@
         "results_files": []
       },
       {
+        "round": 4,
         "type": "practice",
         "name": "FP2: Interlagos",
         "date": "September 5, 2020",
@@ -218,6 +231,7 @@
         "results_files": []
       },
       {
+        "round": 4,
         "type": "race",
         "name": "Race: Interlagos",
         "date": "September 6, 2020",
@@ -229,6 +243,7 @@
         "results_files": []
       },
       {
+        "round": 5,
         "type": "practice",
         "name": "FP1: Circuit Gilles Villeneuve",
         "date": "September 18, 2020",
@@ -240,6 +255,7 @@
         "results_files": []
       },
       {
+        "round": 5,
         "type": "practice",
         "name": "FP2: Circuit Gilles Villeneuve",
         "date": "September 19, 2020",
@@ -251,6 +267,7 @@
         "results_files": []
       },
       {
+        "round": 5,
         "type": "race",
         "name": "Race: Circuit Gilles Villeneuve",
         "date": "September 20, 2020",
@@ -262,6 +279,7 @@
         "results_files": []
       },
       {
+        "round": 6,
         "type": "practice",
         "name": "FP1: Zandvoort GP",
         "date": "October 2, 2020",
@@ -273,6 +291,7 @@
         "results_files": []
       },
       {
+        "round": 6,
         "type": "practice",
         "name": "FP2: Zandvoort GP",
         "date": "October 3, 2020",
@@ -284,6 +303,7 @@
         "results_files": []
       },
       {
+        "round": 6,
         "type": "race",
         "name": "Race: Zandvoort GP",
         "date": "October 4, 2020",
@@ -295,6 +315,7 @@
         "results_files": []
       },
       {
+        "round": 7,
         "type": "practice",
         "name": "FP1: Spa GP",
         "date": "October 16, 2020",
@@ -306,6 +327,7 @@
         "results_files": []
       },
       {
+        "round": 7,
         "type": "practice",
         "name": "FP2: Spa GP",
         "date": "October 17, 2020",
@@ -317,6 +339,7 @@
         "results_files": []
       },
       {
+        "round": 7,
         "type": "race",
         "name": "Race: Spa GP",
         "date": "October 18, 2020",
