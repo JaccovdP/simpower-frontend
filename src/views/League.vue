@@ -299,6 +299,9 @@
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
                     </template>
+                    <template v-slot:cell(points)="row">
+                      <span v-b-tooltip.hover :title="'Drop round points: ' + row.item.team_dropped">{{ row.item.points }}</span>
+                    </template>
                   </b-table>
                 </b-col>
 
@@ -466,6 +469,7 @@ export default {
       for(let i = 0; i < this.entries.length; i++) {
         let team = this.entries[i]
         let team_points = 0
+        let team_dropped = 0
         let team_sec_points = 0
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
@@ -511,13 +515,15 @@ export default {
             secondary_drop: driver.secondary_drop
           })
           team_points += driver.points
+          team_dropped += driver.main_drop.points
           team_sec_points += driver.secondary_points
         }
         if(team.name != "Privateer") {
           team_standings.push({
             name: team.name,
             points: team_points,
-            secondary_points: team_sec_points
+            secondary_points: team_sec_points,
+            team_dropped: team_dropped
           })
         }
       }

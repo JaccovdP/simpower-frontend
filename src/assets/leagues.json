@@ -48,7 +48,8 @@
     ],
     "team_table_info": [
       { "label": "Team", "description": "Team name"},
-      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
+      { "label": "Drop round", "description": "Hover (touch) the points to view the sum of the dropped points for the team."}
     ],
     "key_dates": [
       { "date": "June 11, 2020", "event": "Registration opens" },
