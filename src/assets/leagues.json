@@ -113,7 +113,7 @@
           { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r1-consolation.csv" },
           { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r1-feature.csv" }
         ],
-        "broadcast_url": "https://www.youtube.com/watch?v=KZuRj-HAN1k",
+        "broadcast_url": "https://www.youtube.com/watch?v=KZuRj-HAN1k&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=1",
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round1.zip",
         "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%201%20-%20Nurburgring%20GP/Race.rpy",
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%201/Round1_v1.2.zip"
@@ -165,7 +165,7 @@
           { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r2-consolation.csv" },
           { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r2-feature.csv" }
         ],
-        "broadcast_url": "https://www.youtube.com/watch?v=uJyVHGTZWb4",
+        "broadcast_url": "https://www.youtube.com/watch?v=uJyVHGTZWb4&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=2",
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round2.zip",
         "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%202%20-%20Road%20America/Race.rpy",
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%202/Round2_v1.1.zip"
@@ -204,7 +204,8 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "imolagp.jpg",
-        "results_files": []
+        "results_files": [],
+        "broadcast_url": "https://www.youtube.com/watch?v=7W18EeQxB1U&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=3"
       },
       {
         "round": 4,
