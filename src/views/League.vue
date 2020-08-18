@@ -646,6 +646,7 @@ export default {
             wins: driver.wins,
             feature_wins: driver.feature_wins,
             heat_wins: driver.heat_wins,
+            consolation_wins: driver.consolation_wins,
             average_finishing_position: driver.average_finishing_position,
             highest_finishing_position: driver.highest_finishing_position,
             lowest_finishing_position: driver.lowest_finishing_position,
