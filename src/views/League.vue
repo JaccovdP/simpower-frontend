@@ -501,18 +501,18 @@
                 </tr>
                 <tr>
                   <td>
-                    <strong>Heat wins</strong>
-                  </td>
-                  <td>
-                    {{ selectedDriver.heat_wins }}
-                  </td>
-                </tr>
-                <tr>
-                  <td>
                     <strong>Feature wins</strong>
                   </td>
                   <td>
                     {{ selectedDriver.feature_wins }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Heat wins</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.heat_wins }}
                   </td>
                 </tr>
                 <tr>
@@ -646,6 +646,7 @@ export default {
             wins: driver.wins,
             feature_wins: driver.feature_wins,
             heat_wins: driver.heat_wins,
+            consolation_wins: driver.consolation_wins,
             average_finishing_position: driver.average_finishing_position,
             highest_finishing_position: driver.highest_finishing_position,
             lowest_finishing_position: driver.lowest_finishing_position,
@@ -784,14 +785,23 @@ export default {
               if(!driver.feature_wins) driver.feature_wins = 0
               if(!driver.heat_wins) driver.heat_wins = 0
               if(!driver.consolation_wins) driver.consolation_wins = 0
+              if(!driver.heat_inc) driver.heat_inc = 0
+              if(!driver.consolation_inc) driver.consolation_inc = 0
+              if(!driver.feature_inc) driver.feature_inc = 0
 
-              if(info.name.includes("Heat") && formattedRow["Pos"] == 1) driver.heat_wins += 1
-              if(info.name == "Feature" && formattedRow["Pos"] == 1) driver.feature_wins += 1
-              if(info.name == "Consolation" && formattedRow["Pos"] == 1) driver.consolation_wins += 1
-              if(info.name == "Consolation") {
-                driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 20
-              } else if (info.name == "Feature") {
+              if(info.name.includes("Heat")) {
+                if(formattedRow["Pos"] == 1) driver.heat_wins += 1
+                driver.heat_inc += parseInt(formattedRow["Incidents"])
+              }
+              if(info.name == "Feature") {
+                if(formattedRow["Pos"] == 1) driver.feature_wins += 1
+                driver.heat_inc += parseInt(formattedRow["Incidents"])
                 driver.results[session.round].pos = parseInt(formattedRow["Pos"])
+              }
+              if(info.name == "Consolation") {
+                if(formattedRow["Pos"] == 1) driver.consolation_wins += 1
+                driver.consolation_inc += parseInt(formattedRow["Incidents"])
+                driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 20
               }
 
               driver.results[session.round].dq = dq
