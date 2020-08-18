@@ -268,13 +268,14 @@
                       {{ data.index + 1 }}
                     </template>
                     <template v-slot:cell(name)="row">
-                      <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
+                      <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link><br>
+                      <small>{{ row.item.team }}</small>
                     </template>
                     <template v-slot:cell(points)="row" v-if="data.automatic_standings">
-                      {{ row.item.points }} <small><b-link @click="openResults(row.item.main_drop.session)">(+{{row.item.main_drop.points}})</b-link></small>
+                      {{ row.item.points }} <small v-if="row.item.main_drop.session"><b-link @click="openResults(row.item.main_drop.session)">(+{{row.item.main_drop.points}})</b-link></small>
                     </template>
                     <template v-slot:cell(secondary_points)="row" v-if="data.automatic_standings">
-                      {{ row.item.secondary_points }} <small><b-link @click="openResults(row.item.secondary_drop.session)">(+{{row.item.secondary_drop.points}})</b-link></small>
+                      {{ row.item.secondary_points }} <small v-if="row.item.main_drop.session"><b-link @click="openResults(row.item.secondary_drop.session)">(+{{row.item.secondary_drop.points}})</b-link></small>
                     </template>
                   </b-table>
                 </b-col>
@@ -419,31 +420,141 @@
             </div>
           </b-col>
         </b-row>
-        <!-- <hr v-if="selectedDriver.results" style="margin-bottom:0;">
-        <h5 v-if="selectedDriver.results" class="mt-2">
-          Results
-        </h5>
-        <b-card v-for="result in selectedDriver.results" :key="result.session" class="mt-2">
-          <table style="width:100%; table-layout:fixed;">
-            <tr>
-              <td style="width:60%;">
-                <strong>{{ result.session }}</strong>
-              </td>
-              <td style="width:10%;">
-                P{{ result.pos }}
-              </td>
-              <td style="width:20%;">
-                {{ result.points }} points
-              </td>
-              <td style="width:10%; text-align:right;">
-                <b-link @click="openResults(result.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
-              </td>
-            </tr>
-          </table>
-        </b-card> -->
+        
+
+        <template v-if="selectedDriver.results">
+          <hr style="margin-bottom:0;">
+          <h5 class="mt-2">Results</h5>
+          <b-card v-for="result in selectedDriver.results" :key="result.session" class="mt-2">
+            <table style="width:100%; table-layout:fixed;">
+              <tr>
+                <td style="width:60%;">
+                  <strong>{{ result.session }}</strong> <span v-if="result.session == selectedDriver.main_drop.session">(Drop round)</span>
+                </td>
+                <td style="width:10%;">
+                  P{{ result.pos }}
+                </td>
+                <td style="width:20%;">
+                  {{ result.points }} points
+                </td>
+                <td style="width:10%; text-align:right;">
+                  <b-link @click="openResults(result.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                </td>
+              </tr>
+            </table>
+          </b-card>
+
+          <template v-if="selectedDriver.main_drop">
+            <h5 class="mt-2">Drop round</h5>
+            <b-card class="mt-2">
+              <table style="width:100%; table-layout:fixed;">
+                <tr>
+                  <td style="width:60%;">
+                    <strong>{{ selectedDriver.main_drop.session }}</strong>
+                  </td>
+                  <td style="width:10%;">
+                    P{{ selectedDriver.main_drop.pos }}
+                  </td>
+                  <td style="width:20%;">
+                    {{ selectedDriver.main_drop.points }} points
+                  </td>
+                  <td style="width:10%; text-align:right;">
+                    <b-link @click="openResults(selectedDriver.main_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                  </td>
+                </tr>
+              </table>
+            </b-card>
+          </template>
+
+          <template v-if="selectedDriver.secondary_drop">
+            <h5 class="mt-2">Drop round ATT</h5>
+            <b-card class="mt-2">
+              <table style="width:100%; table-layout:fixed;">
+                <tr>
+                  <td style="width:60%;">
+                    <strong>{{ selectedDriver.secondary_drop.session }}</strong>
+                  </td>
+                  <td style="width:10%;">
+                  </td>
+                  <td style="width:20%;">
+                    {{ selectedDriver.secondary_drop.points }} points
+                  </td>
+                  <td style="width:10%; text-align:right;">
+                    <b-link @click="openResults(selectedDriver.secondary_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                  </td>
+                </tr>
+              </table>
+            </b-card>
+          </template>
+
+          <h5 class="mt-2">Stats</h5>
+          <div class="table-responsive">
+            <table class="table b-table table-striped table-sm border b-table-no-border-collapse">
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Wins</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.wins }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Heat wins</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.heat_wins }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Feature wins</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.feature_wins }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Consolation wins</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.consolation_wins }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Highest finishing position*</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.highest_finishing_position }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Lowest finishing position*</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.lowest_finishing_position }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Average finishing position*</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.average_finishing_position }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <small>*Drop round is excluded from this stat</small>
+          </div>
+          
+        </template>
 
       </div>
-
 
       <template v-slot:modal-footer>
         <div>
@@ -474,22 +585,25 @@ export default {
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
           if(this.data.automatic_standings) {
+            let skipDropCalc = this.data.sessions.find(x => x.round == 2 && x.type == "race").results_files.length == 0
             for(let k = 1; k <= this.data.key_info.nr_of_rounds; k++) {
               let round = this.data.sessions.find(x => x.round == k && x.type == "race")
-              let finished = round.results_files.length > 0 ? true : false
+              let finished = round.results_files.length > 0
               if (finished) {
                 let result
                 if(driver.results && driver.results[k]) {
                   result = driver.results[k]
                   result.session = round.name
                 } else {
-                  result = { "points": 0, "secondary_points": 0, "dq": false, "session": round.name }
+                  result = { "pos": "NS", "points": 0, "secondary_points": 0, "dq": false, "session": round.name }
                 }
                 if(!result.dq) {
-                  if(!driver.main_drop) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
-                  if(driver.main_drop.points > result.points) driver.main_drop = { "round": k, "points": result.points, "session": result.session}
-                  if(!driver.secondary_drop) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
-                  if(driver.secondary_drop.points > result.secondary_points) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+                  if(!skipDropCalc) {
+                    if(!driver.main_drop) driver.main_drop = { "round": k, "pos": result.pos, "points": result.points, "session": result.session}
+                    if(driver.main_drop.points >= result.points && (driver.main_drop.pos < result.pos || result.pos == "NS")) driver.main_drop = { "round": k, "pos": result.pos, "points": result.points, "session": result.session}
+                    if(!driver.secondary_drop) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+                    if(driver.secondary_drop.points > result.secondary_points) driver.secondary_drop = { "round": k, "points": result.secondary_points, "session": result.session}
+                  }
 
                   driver.points += result.points
                   driver.secondary_points += result.secondary_points
@@ -498,6 +612,26 @@ export default {
                   driver.secondary_points += 0
                 }              
               }
+            }
+            if(driver.results) {
+              let finishingPositions = []
+              for(let n = 1; n <= this.data.key_info.nr_of_rounds; n++) {
+                if(driver.results[n]) {
+                  let result = driver.results[n]
+                  if(driver.main_drop) {
+                    if(result.session != driver.main_drop.session && result.pos != "NS") finishingPositions.push(parseInt(result.pos))
+                  } else if(result.pos != "NS") {
+                    finishingPositions.push(parseInt(result.pos))
+                  }
+                }
+              }
+              let sum = 0
+              for(let x = 0; x < finishingPositions.length; x++) {
+                sum += finishingPositions[x]
+              }
+              driver.highest_finishing_position = Math.max(...finishingPositions)
+              driver.lowest_finishing_position = Math.min(...finishingPositions)
+              driver.average_finishing_position = (sum / finishingPositions.length)
             }
             if(driver.main_drop && driver.secondary_drop) {
               driver.points -= driver.main_drop.points
@@ -508,16 +642,22 @@ export default {
             number: driver.number,
             name: driver.name,
             team: team.name,
+            team_logo: team.logo,
             wins: driver.wins,
+            feature_wins: driver.feature_wins,
+            heat_wins: driver.heat_wins,
+            average_finishing_position: driver.average_finishing_position,
+            highest_finishing_position: driver.highest_finishing_position,
+            lowest_finishing_position: driver.lowest_finishing_position,
             points: driver.points,
             secondary_points: driver.secondary_points,
             warnings: driver.warnings,
             results: driver.results,
-            main_drop: driver.main_drop,
-            secondary_drop: driver.secondary_drop
+            main_drop: driver.main_drop ? driver.main_drop : {},
+            secondary_drop: driver.secondary_drop ? driver.secondary_drop : {}
           })
           team_points += driver.points
-          if(this.data.automatic_standings) team_dropped += driver.main_drop.points
+          if(this.data.automatic_standings && driver.main_drop) team_dropped += driver.main_drop.points
           team_sec_points += driver.secondary_points
         }
         if(team.name != "Privateer") {
@@ -640,7 +780,20 @@ export default {
             if(this.data.automatic_standings) {
               if (formattedRow["Pos"] == 1) driver.wins += 1
               if(!driver.results) driver.results = {}
-              if(!driver.results[session.round]) driver.results[session.round] = { "pos": 0, "points": 0, "secondary_points": 0, "dq": dq }
+              if(!driver.results[session.round]) driver.results[session.round] = { "pos": 0, "points": 0, "secondary_points": 0, "dq": dq, "session": session.name }
+              if(!driver.feature_wins) driver.feature_wins = 0
+              if(!driver.heat_wins) driver.heat_wins = 0
+              if(!driver.consolation_wins) driver.consolation_wins = 0
+
+              if(info.name.includes("Heat") && formattedRow["Pos"] == 1) driver.heat_wins += 1
+              if(info.name == "Feature" && formattedRow["Pos"] == 1) driver.feature_wins += 1
+              if(info.name == "Consolation" && formattedRow["Pos"] == 1) driver.consolation_wins += 1
+              if(info.name == "Consolation") {
+                driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 30
+              } else if (info.name == "Feature") {
+                driver.results[session.round].pos = parseInt(formattedRow["Pos"])
+              }
+
               driver.results[session.round].dq = dq
               driver.results[session.round].points += pointsScored
 
