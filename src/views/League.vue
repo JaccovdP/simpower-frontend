@@ -453,7 +453,7 @@
                     <strong>{{ selectedDriver.main_drop.session }}</strong>
                   </td>
                   <td style="width:10%;">
-                    P{{ selectedDriver.main_drop.pos }}
+                    <span v-if="selectedDriver.main_drop.pos != 'NS'">P</span>{{ selectedDriver.main_drop.pos }}
                   </td>
                   <td style="width:20%;">
                     {{ selectedDriver.main_drop.points }} points
@@ -789,7 +789,7 @@ export default {
               if(info.name == "Feature" && formattedRow["Pos"] == 1) driver.feature_wins += 1
               if(info.name == "Consolation" && formattedRow["Pos"] == 1) driver.consolation_wins += 1
               if(info.name == "Consolation") {
-                driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 30
+                driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 20
               } else if (info.name == "Feature") {
                 driver.results[session.round].pos = parseInt(formattedRow["Pos"])
               }
