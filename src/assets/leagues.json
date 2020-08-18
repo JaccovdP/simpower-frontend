@@ -7,7 +7,7 @@
     "fastest_lap_bonus": 1,
     "use_secondary_points": true,
     "description": "",
-    "promo_image": "poster.jpeg",
+    "promo_image": "poster_small.jpeg",
     "license_logo": "carreracup.png",
     "partners": [
       { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
@@ -500,7 +500,7 @@
     "description": "",
     "fastest_lap_bonus": 1,
     "automatic_standings": false,
-    "promo_image": "f3poster.png",
+    "promo_image": "f3poster_small.png",
     "partners": [
       { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" }
     ],
@@ -695,7 +695,7 @@
     "menu_title": "Alkentech Formula Evo Championship",
     "visible": true,
     "description": "",
-    "promo_image": "f3poster.png",
+    "promo_image": "f3poster_small.png",
     "partners": [
       { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" }
     ],
