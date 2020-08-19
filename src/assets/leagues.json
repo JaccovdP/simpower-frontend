@@ -32,7 +32,7 @@
       "entry_fee": 25
     },
     "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points", "sortable": true }, { "key": "secondary_points", "label": "ATT", "sortable": true }, { "key": "wins", "label": "Wins", "sortable": true }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "secondary_points", "label": "ATT" }, { "key": "wins", "label": "Wins" }
     ],
     "team_standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
@@ -44,7 +44,9 @@
       { "label": "Points", "description": "Number of points the driver has scored during the season." },
       { "label": "ATT", "description": "Points scored for the AlkenTech.com Simulation Trophy. Number of positions the driver has gained in heat races during the season. (AlkenTech.com Simulation Trophy)" },
       { "label": "Wins", "description": "Number of races the driver has won this season." },
-      { "label": "Drop round", "description": "Between brackets after each points column is the drop round for the driver. That is, the round with the worst result (excluding disqualifications)."}
+      { "label": "Drop round", "description": "Between brackets after each points column is the drop round for the driver. That is, the round with the worst result (excluding disqualifications)."},
+      { "label": "Tie breakers", "description": "Feature wins -> Heat wins -> Average finishing position (excluding drop round) -> Highest finishing position -> Least lowest finishing position (excluding drop round)"},
+      { "label": "ATT tie breakers", "description": "Lowest average incident points in heat races"}
     ],
     "team_table_info": [
       { "label": "Team", "description": "Team name"},
@@ -520,7 +522,7 @@
       "entry_fee": 20
     },
     "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points" }, {"key": "wins", "label": "Wins" }
     ],
     "team_standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
@@ -715,7 +717,7 @@
       "entry_fee": 20
     },
     "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points", "sortable": true }, {"key": "wins", "label": "Wins", "sortable": true }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points" }, {"key": "wins", "label": "Wins" }
     ],
     "team_standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, "name", "points"

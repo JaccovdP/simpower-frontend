@@ -258,12 +258,18 @@
                     small 
                     outlined
                     no-border-collapse
-                    :items="standings.driver" 
+                    :items="sortedDriverStandings" 
                     :fields="data.standings_fields" 
-                    sort-by="points" 
-                    sort-desc
-                    sort-icon-left
                     responsive>
+                    <template v-slot:head(points)>
+                      <b-link @click="driverStandingsSort = 'points'">Points</b-link><b-icon icon="arrow-down" v-if="driverStandingsSort == 'points'"></b-icon>
+                    </template>
+                    <template v-slot:head(secondary_points)="data">
+                      <b-link @click="driverStandingsSort = 'secondary_points'">{{data.label}}</b-link><b-icon icon="arrow-down" v-if="driverStandingsSort == 'secondary_points'"></b-icon>
+                    </template>
+                    <template v-slot:head(wins)="data">
+                      <b-link @click="driverStandingsSort = 'wins'">{{data.label}}</b-link><b-icon icon="arrow-down" v-if="driverStandingsSort == 'wins'"></b-icon>
+                    </template>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
                     </template>
@@ -295,7 +301,6 @@
                     :fields="data.team_standings_fields" 
                     sort-by="points"
                     sort-desc
-                    sort-icon-left
                     responsive>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
@@ -379,115 +384,123 @@
       </template>
     </b-modal>
 
-    <b-modal id="license" title="Simpower License" size="md">
+    <b-modal id="license" title="Simpower License" size="xl">
 
-      <div v-if="selectedDriver" class="license_container">
+      <b-row v-if="selectedDriver">
+        <b-col lg="7">
+          <!-- License -->
+          <div class="license_container">
 
-        <b-row>
-          <b-col lg="12">
-            <div class="license_header">
-              <b-img style="max-width:200px; max-height:30px;" :src="require('../assets/images/simpower.png')"></b-img>
-              <!-- <span style="float:right;">{{data.title}}</span> -->
+            <b-row>
+              <b-col lg="12">
+                <div class="license_header">
+                  <b-img style="max-width:200px; max-height:30px;" :src="require('../assets/images/simpower.png')"></b-img>
+                  <!-- <span style="float:right;">{{data.title}}</span> -->
+                </div>
+              </b-col>
+            </b-row>
+
+
+            <div class="license_body">
+              <b-row>
+                <b-col lg="12">
+                  <!-- <b-img  class="mt-1" fluid :src="require('../assets/images/carreracup.png')"></b-img> -->
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col lg="6" md="6">
+                  <b-img v-if="data.license_logo" class="mt-2" fluid :src="require('../assets/images/' + data.license_logo)"></b-img>
+                  <b-img class="mt-2" fluid :src="'/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png'" v-bind:onError="`this.onError=null;this.src = '/liveries/${$route.params.slug}/blank.png'`" alt="Livery placeholder"></b-img>
+                </b-col>
+                <b-col lg="6" md="6">
+                  <strong style="float: left;">Standing</strong><span style="float: right;">P{{ getPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.points }} points)</span><br>
+                  <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">P{{ getSecondaryPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.secondary_points }} points)</span><br></span>
+                  <strong style="float: left;">Race wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
+                  <strong style="float: left;">Warnings</strong><span style="float: right;">{{ selectedDriver.warnings ? selectedDriver.warnings : 0 }}</span>
+                </b-col>
+              </b-row>
             </div>
-          </b-col>
-        </b-row>
 
-
-        <div class="license_body">
-          <b-row>
-            <b-col lg="12">
-              <!-- <b-img  class="mt-1" fluid :src="require('../assets/images/carreracup.png')"></b-img> -->
-            </b-col>
-          </b-row>
-          <b-row>
-            <b-col lg="6" md="6">
-              <b-img v-if="data.license_logo" class="mt-2" fluid :src="require('../assets/images/' + data.license_logo)"></b-img>
-              <b-img class="mt-2" fluid :src="'/liveries/' + $route.params.slug + '/car_' + selectedDriver.number + '.png'" v-bind:onError="`this.onError=null;this.src = '/liveries/${$route.params.slug}/blank.png'`" alt="Livery placeholder"></b-img>
-            </b-col>
-            <b-col lg="6" md="6">
-              <strong style="float: left;">Standing</strong><span style="float: right;">P{{ getPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.points }} points)</span><br>
-              <span v-if="data.use_secondary_points"><strong style="float: left;">{{ data.standings_fields.find(x => x.key == "secondary_points").label }}</strong><span style="float: right;">P{{ getSecondaryPositionByNumber(selectedDriver.number) }} ({{ selectedDriver.secondary_points }} points)</span><br></span>
-              <strong style="float: left;">Race wins</strong><span style="float: right;">{{ selectedDriver.wins ? selectedDriver.wins : 0 }}</span><br>
-              <strong style="float: left;">Warnings</strong><span style="float: right;">{{ selectedDriver.warnings ? selectedDriver.warnings : 0 }}</span>
-            </b-col>
-          </b-row>
-        </div>
-
-        <b-row>
-          <b-col lg="12">
-            <div class="license_footer">
-              #{{ selectedDriver.number }} {{ selectedDriver.name }} - {{ selectedDriver.team ? selectedDriver.team : entries[this.getDriverIndexByNumber(selectedDriver.number).teamIndex].name }}
-            </div>
-          </b-col>
-        </b-row>
-        
-
-        <template v-if="selectedDriver.results">
-          <hr style="margin-bottom:0;">
-          <h5 class="mt-2">Results</h5>
-          <b-card v-for="result in selectedDriver.results" :key="result.session" class="mt-2">
-            <table style="width:100%; table-layout:fixed;">
-              <tr>
-                <td style="width:60%;">
-                  <strong>{{ result.session }}</strong> <span v-if="result.session == selectedDriver.main_drop.session">(Drop round)</span>
-                </td>
-                <td style="width:10%;">
-                  P{{ result.pos }}
-                </td>
-                <td style="width:20%;">
-                  {{ result.points }} points
-                </td>
-                <td style="width:10%; text-align:right;">
-                  <b-link @click="openResults(result.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
-                </td>
-              </tr>
-            </table>
-          </b-card>
-
-          <template v-if="selectedDriver.main_drop">
-            <h5 class="mt-2">Drop round</h5>
-            <b-card class="mt-2">
+            <b-row>
+              <b-col lg="12">
+                <div class="license_footer">
+                  #{{ selectedDriver.number }} {{ selectedDriver.name }} - {{ selectedDriver.team ? selectedDriver.team : entries[this.getDriverIndexByNumber(selectedDriver.number).teamIndex].name }}
+                </div>
+              </b-col>
+            </b-row>
+          </div>
+          
+          <!-- Results -->
+          <div v-if="selectedDriver.results">
+            <hr style="margin-bottom:0px;">
+            <h5 class="mt-2">Results</h5>
+            <b-card v-for="result in selectedDriver.results" :key="result.session" class="mt-2">
               <table style="width:100%; table-layout:fixed;">
                 <tr>
                   <td style="width:60%;">
-                    <strong>{{ selectedDriver.main_drop.session }}</strong>
+                    <strong>{{ result.session }}</strong> <span v-if="result.session == selectedDriver.main_drop.session" v-b-tooltip.hover title="This round has been dropped">*</span>
                   </td>
                   <td style="width:10%;">
-                    <span v-if="selectedDriver.main_drop.pos != 'NS'">P</span>{{ selectedDriver.main_drop.pos }}
+                    P{{ result.pos }}
                   </td>
                   <td style="width:20%;">
-                    {{ selectedDriver.main_drop.points }} points
+                    {{ result.points }} points
                   </td>
                   <td style="width:10%; text-align:right;">
-                    <b-link @click="openResults(selectedDriver.main_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                    <b-link @click="openResults(result.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
                   </td>
                 </tr>
               </table>
             </b-card>
-          </template>
 
-          <template v-if="selectedDriver.secondary_drop">
-            <h5 class="mt-2">Drop round ATT</h5>
-            <b-card class="mt-2">
-              <table style="width:100%; table-layout:fixed;">
-                <tr>
-                  <td style="width:60%;">
-                    <strong>{{ selectedDriver.secondary_drop.session }}</strong>
-                  </td>
-                  <td style="width:10%;">
-                  </td>
-                  <td style="width:20%;">
-                    {{ selectedDriver.secondary_drop.points }} points
-                  </td>
-                  <td style="width:10%; text-align:right;">
-                    <b-link @click="openResults(selectedDriver.secondary_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
-                  </td>
-                </tr>
-              </table>
-            </b-card>
-          </template>
+            <template v-if="selectedDriver.main_drop">
+              <h5 class="mt-2">Drop round</h5>
+              <b-card class="mt-2">
+                <table style="width:100%; table-layout:fixed;">
+                  <tr>
+                    <td style="width:60%;">
+                      <strong>{{ selectedDriver.main_drop.session }}</strong>
+                    </td>
+                    <td style="width:10%;">
+                      <span v-if="selectedDriver.main_drop.pos != 'NS'">P</span>{{ selectedDriver.main_drop.pos }}
+                    </td>
+                    <td style="width:20%;">
+                      {{ selectedDriver.main_drop.points }} points
+                    </td>
+                    <td style="width:10%; text-align:right;">
+                      <b-link @click="openResults(selectedDriver.main_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                    </td>
+                  </tr>
+                </table>
+              </b-card>
+            </template>
 
-          <h5 class="mt-2">Stats</h5>
+            <template v-if="selectedDriver.secondary_drop">
+              <h5 class="mt-2">Drop round ATT</h5>
+              <b-card class="mt-2">
+                <table style="width:100%; table-layout:fixed;">
+                  <tr>
+                    <td style="width:60%;">
+                      <strong>{{ selectedDriver.secondary_drop.session }}</strong>
+                    </td>
+                    <td style="width:10%;">
+                    </td>
+                    <td style="width:20%;">
+                      {{ selectedDriver.secondary_drop.points }} points
+                    </td>
+                    <td style="width:10%; text-align:right;">
+                      <b-link @click="openResults(selectedDriver.secondary_drop.session)" v-b-tooltip.hover title="Results"><b-icon icon="list-ol"></b-icon></b-link>
+                    </td>
+                  </tr>
+                </table>
+              </b-card>
+            </template>
+
+          </div>
+        </b-col>
+        <b-col lg="5">
+          <!-- Stats -->
+          <h5>Stats</h5>
           <div class="table-responsive">
             <table class="table b-table table-striped table-sm border b-table-no-border-collapse">
               <tbody>
@@ -547,14 +560,77 @@
                     {{ selectedDriver.average_finishing_position }}
                   </td>
                 </tr>
+                <tr>
+                  <td>
+                    <strong>Rounds attended</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.heat_races_p }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Feature appearances</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.feature_races_p }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Heat races laps led</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.heat_laps_led }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Consolation races laps led</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.consolation_laps_led }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Feature races laps led</strong>
+                  </td>
+                  <td>
+                    {{ selectedDriver.feature_laps_led }}
+                  </td>
+                </tr>                
+                <tr>
+                  <td>
+                    <strong>Average incident points in heats</strong>
+                  </td>
+                  <td>
+                    {{ !selectedDriver.average_inc_heat ? "-" : selectedDriver.average_inc_heat }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Average incident points in consolation</strong>
+                  </td>
+                  <td>
+                    {{ !selectedDriver.average_inc_consolation ? "-" : selectedDriver.average_inc_consolation }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Average incident points in features</strong>
+                  </td>
+                  <td>
+                    {{ !selectedDriver.average_inc_feature ? "-" : selectedDriver.average_inc_feature }}
+                  </td>
+                </tr>
               </tbody>
             </table>
             <small>*Drop round is excluded from this stat</small>
           </div>
           
-        </template>
-
-      </div>
+        </b-col>
+      </b-row>
 
       <template v-slot:modal-footer>
         <div>
@@ -585,6 +661,8 @@ export default {
         for(let j = 0; j < team.drivers.length; j++) {
           let driver = team.drivers[j]
           if(this.data.automatic_standings) {
+            driver.points = 0
+            driver.secondary_points = 0
             let skipDropCalc = this.data.sessions.find(x => x.round == 2 && x.type == "race").results_files.length == 0
             for(let k = 1; k <= this.data.key_info.nr_of_rounds; k++) {
               let round = this.data.sessions.find(x => x.round == k && x.type == "race")
@@ -652,6 +730,18 @@ export default {
             lowest_finishing_position: driver.lowest_finishing_position,
             points: driver.points,
             secondary_points: driver.secondary_points,
+            heat_races_p: driver.heat_races_p,
+            consolation_races_p: driver.consolation_races_p,
+            feature_races_p: driver.feature_races_p,
+            heat_laps_led: driver.heat_laps_led,
+            consolation_laps_led: driver.consolation_laps_led,
+            feature_laps_led: driver.feature_laps_led,
+            heat_inc: driver.heat_inc,
+            feature_inc: driver.feature_inc,
+            consolation_inc: driver.consolation_inc,
+            average_inc_heat: driver.heat_inc / driver.heat_races_p,
+            average_inc_consolation: driver.consolation_inc / driver.consolation_races_p,
+            average_inc_feature: driver.feature_inc / driver.feature_races_p,
             warnings: driver.warnings,
             results: driver.results,
             main_drop: driver.main_drop ? driver.main_drop : {},
@@ -671,6 +761,46 @@ export default {
         }
       }
       return { driver: driver_standings, team: team_standings}
+    },
+    sortedDriversPoints() {
+      let result = JSON.parse(JSON.stringify(this.standings.driver))
+      return result.sort((a, b) => 
+        a.points < b.points || 
+        (a.points == b.points && a.feature_wins < b.feature_wins) ||
+        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins < b.heat_wins) ||
+        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position > b.average_finishing_position) ||
+        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position < b.highest_finishing_position) ||
+        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position == b.highest_finishing_position && a.lowest_finishing_position < b.lowest_finishing_position) ||
+        (a.points == b.points && !a.results)
+      )
+    },
+    sortedDriversSecondaryPoints() {
+      let result = JSON.parse(JSON.stringify(this.standings.driver))
+      return result.sort((a, b) =>
+          a.secondary_points < b.secondary_points ||
+          (a.secondary_points == b.secondary_points && a.average_inc_heat > b.average_inc_heat)
+        )
+    },
+    sortedDriversWins() {
+      let result = JSON.parse(JSON.stringify(this.standings.driver))
+      return result.sort((a, b) =>
+          a.wins < b.wins ||
+          (a.wins == b.wins && a.feature_wins < b.feature_wins) ||
+          (a.wins == b.wins && a.feature_wins == b.feature_wins && a.heat_wins < b.heat_wins) ||
+          (a.wins == b.wins && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.consolation_wins < b.consolation_wins) ||
+          (!a.wins)
+        )
+    },
+    sortedDriverStandings() {
+      if(this.driverStandingsSort == 'points') {
+        return this.sortedDriversPoints
+      } else if (this.driverStandingsSort == 'secondary_points') {
+        return this.sortedDriversSecondaryPoints
+      } else if (this.driverStandingsSort == 'wins') {
+        return this.sortedDriversWins
+      } else {
+        return this.standings.driver
+      }
     },
     teams () {
       let teams = this.entries
@@ -729,12 +859,10 @@ export default {
       return { "teamIndex": teamIndex, "driverIndex": driverIndex }
     },
     getPositionByNumber(nr) {
-      let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.points) - parseInt(a.points))
-      return sortedStandings.findIndex(x => x.number == nr) + 1
+      return this.sortedDriversPoints.findIndex(x => x.number == nr) + 1
     },
     getSecondaryPositionByNumber(nr) {
-      let sortedStandings = this.standings.driver.sort((a, b) => parseInt(b.secondary_points) - parseInt(a.secondary_points))
-      return sortedStandings.findIndex(x => x.number == nr) + 1
+      return this.sortedDriversSecondaryPoints.findIndex(x => x.number == nr) + 1
     },
     processResults(session, type, info, multiplier, results) {
 
@@ -788,20 +916,32 @@ export default {
               if(!driver.heat_inc) driver.heat_inc = 0
               if(!driver.consolation_inc) driver.consolation_inc = 0
               if(!driver.feature_inc) driver.feature_inc = 0
+              if(!driver.heat_races_p) driver.heat_races_p = 0
+              if(!driver.consolation_races_p) driver.consolation_races_p = 0
+              if(!driver.feature_races_p) driver.feature_races_p = 0
+              if(!driver.heat_laps_led) driver.heat_laps_led = 0
+              if(!driver.consolation_laps_led) driver.consolation_laps_led = 0
+              if(!driver.feature_laps_led) driver.feature_laps_led = 0
 
               if(info.name.includes("Heat")) {
                 if(formattedRow["Pos"] == 1) driver.heat_wins += 1
                 driver.heat_inc += parseInt(formattedRow["Incidents"])
+                driver.heat_laps_led += parseInt(formattedRow["Laps Led"])
+                driver.heat_races_p += 1
               }
               if(info.name == "Feature") {
                 if(formattedRow["Pos"] == 1) driver.feature_wins += 1
-                driver.heat_inc += parseInt(formattedRow["Incidents"])
+                driver.feature_inc += parseInt(formattedRow["Incidents"])
                 driver.results[session.round].pos = parseInt(formattedRow["Pos"])
+                driver.feature_laps_led += parseInt(formattedRow["Laps Led"])
+                driver.feature_races_p += 1
               }
               if(info.name == "Consolation") {
                 if(formattedRow["Pos"] == 1) driver.consolation_wins += 1
                 driver.consolation_inc += parseInt(formattedRow["Incidents"])
                 driver.results[session.round].pos = parseInt(formattedRow["Pos"]) + 20
+                driver.consolation_laps_led += parseInt(formattedRow["Laps Led"])
+                driver.consolation_races_p += 1
               }
 
               driver.results[session.round].dq = dq
@@ -859,7 +999,9 @@ export default {
           let indexes = this.getDriverIndexByNumber(fastestLapRow["#"])
           if (indexes.teamIndex > -1) {
             let driver = this.entries[indexes.teamIndex].drivers[indexes.driverIndex]
+            if(!driver.nr_of_fastest_laps) driver.nr_of_fastest_laps = 0
             driver.results[session.round].points += fastestLapBonus
+            driver.nr_of_fastest_laps += 1
           }
         }
 
@@ -889,6 +1031,7 @@ export default {
       this.data = null
       let data = this.filterData(leagueData, key)
       this.data = data[0].details
+      this.driverStandingsSort = "points"
       this.loadEntries()
       this.loadResults()
       this.loading = false
@@ -971,7 +1114,8 @@ export default {
       ],
       results: [],
       entries: [],
-      selectedDriver: null
+      selectedDriver: null,
+      driverStandingsSort: "points"
     }
   }
 }
@@ -998,6 +1142,10 @@ export default {
     color: #6c757d;
     text-decoration: none;
   }
+
+  /* .license_container {
+    max-width: 466px;
+  } */
 
   .license_body {
     border-left: 2px solid #c92526;
