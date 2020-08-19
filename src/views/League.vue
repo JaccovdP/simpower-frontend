@@ -763,32 +763,47 @@ export default {
     },
     sortedDriversPoints() {
       let result = JSON.parse(JSON.stringify(this.standings.driver))
-      return result.sort((a, b) => 
-        a.points < b.points || 
+      return result.sort((a, b) => {
+        let bool = a.points < b.points || 
         (a.points == b.points && a.feature_wins < b.feature_wins) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins < b.heat_wins) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position > b.average_finishing_position) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position < b.highest_finishing_position) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position == b.highest_finishing_position && a.lowest_finishing_position < b.lowest_finishing_position) ||
         (a.points == b.points && !a.results)
-      )
+        if (bool) {
+          return 1
+        } else {
+          return -1
+        }
+      })
     },
     sortedDriversSecondaryPoints() {
       let result = JSON.parse(JSON.stringify(this.standings.driver))
-      return result.sort((a, b) =>
-          a.secondary_points < b.secondary_points ||
+      return result.sort((a, b) => {
+          let bool = a.secondary_points < b.secondary_points ||
           (a.secondary_points == b.secondary_points && a.average_inc_heat > b.average_inc_heat)
-        )
+          if (bool) {
+            return 1
+          } else {
+            return -1
+          }
+        })
     },
     sortedDriversWins() {
       let result = JSON.parse(JSON.stringify(this.standings.driver))
-      return result.sort((a, b) =>
-          a.wins < b.wins ||
+      return result.sort((a, b) => {
+          let bool = a.wins < b.wins ||
           (a.wins == b.wins && a.feature_wins < b.feature_wins) ||
           (a.wins == b.wins && a.feature_wins == b.feature_wins && a.heat_wins < b.heat_wins) ||
           (a.wins == b.wins && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.consolation_wins < b.consolation_wins) ||
           (!a.wins)
-        )
+          if (bool) {
+            return 1
+          } else {
+            return -1
+          }
+        })
     },
     sortedDriverStandings() {
       if(this.driverStandingsSort == 'points') {
