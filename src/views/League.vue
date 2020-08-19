@@ -495,7 +495,6 @@
                 </table>
               </b-card>
             </template>
-
           </div>
         </b-col>
         <b-col lg="5">
@@ -605,7 +604,7 @@
                     <strong>Average incident points in heats</strong>
                   </td>
                   <td>
-                    {{ !selectedDriver.average_inc_heat ? "-" : selectedDriver.average_inc_heat }}
+                    {{ !selectedDriver.heat_inc / selectedDriver.heat_races_p ? "-" : selectedDriver.heat_inc / selectedDriver.heat_races_p }}
                   </td>
                 </tr>
                 <tr>
@@ -613,7 +612,7 @@
                     <strong>Average incident points in consolation</strong>
                   </td>
                   <td>
-                    {{ !selectedDriver.average_inc_consolation ? "-" : selectedDriver.average_inc_consolation }}
+                    {{ !selectedDriver.consolation_inc / selectedDriver.consolation_races_p ? "-" : selectedDriver.consolation_inc / selectedDriver.consolation_races_p }}
                   </td>
                 </tr>
                 <tr>
@@ -621,7 +620,7 @@
                     <strong>Average incident points in features</strong>
                   </td>
                   <td>
-                    {{ !selectedDriver.average_inc_feature ? "-" : selectedDriver.average_inc_feature }}
+                    {{ !selectedDriver.feature_inc / selectedDriver.feature_races_p ? "-" : selectedDriver.feature_inc / selectedDriver.feature_races_p }}
                   </td>
                 </tr>
               </tbody>
@@ -739,9 +738,9 @@ export default {
             heat_inc: driver.heat_inc,
             feature_inc: driver.feature_inc,
             consolation_inc: driver.consolation_inc,
-            average_inc_heat: driver.heat_inc / driver.heat_races_p,
-            average_inc_consolation: driver.consolation_inc / driver.consolation_races_p,
-            average_inc_feature: driver.feature_inc / driver.feature_races_p,
+            average_inc_heat: (driver.heat_inc / driver.heat_races_p),
+            average_inc_consolation: (driver.consolation_inc / driver.consolation_races_p),
+            average_inc_feature: (driver.feature_inc / driver.feature_races_p),
             warnings: driver.warnings,
             results: driver.results,
             main_drop: driver.main_drop ? driver.main_drop : {},
