@@ -613,7 +613,8 @@
         "results_files": [
           { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
           { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
-        ]
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=ffHh_GOEOXQ"
       },
       {
         "type": "race",
@@ -622,7 +623,12 @@
         "simtime": "06:30",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "f3-pro-r7-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "f3-pro-r7-qualifying.csv" },
+          { "name": "Race", "index": 2, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-pro-r7-race.csv" }
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=1RKMoMZ9GMs"
       },
       {
         "type": "race",
@@ -636,32 +642,32 @@
     ],
     "teams": [
       { "name": "Comrade Gaming", "logo": "", "url": "", "drivers": [
-        { "number": "11", "name": "Alex Bennett", "points": 385, "warnings": 0 },
-        { "number": "9", "name": "Christoph Holstein", "points": 155, "warnings": 0 }
+        { "number": "11", "name": "Alex Bennett", "points": 460, "warnings": 0 },
+        { "number": "9", "name": "Christoph Holstein", "points": 215, "warnings": 0 }
       ]},
       { "name": "Alkentech Simulation NHR e-Sports", "logo": "nhr.jpg", "url": "", "drivers": [
-        { "number": "71", "name": "Nicklas Rasmussen", "points": 360, "warnings": 0 },
+        { "number": "71", "name": "Nicklas Rasmussen", "points": 410, "warnings": 0 },
         { "number": "96", "name": "Alex Jönsson", "points": 10, "warnings": 0 }
       ]},
       { "name": "Allied Racing Esports by TCS Off", "logo": "", "url": "", "drivers": [
-        { "number": "14", "name": "Sam Kuitert", "points": 350, "wins": 1, "warnings": 0 }
+        { "number": "14", "name": "Sam Kuitert", "points": 430, "wins": 1, "warnings": 0 }
       ]},
       { "name": "Triple-A eSports", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Chris Lulham", "points": 322, "wins": 3, "warnings": 0 }
+        { "number": "", "name": "Chris Lulham", "points": 413, "wins": 4, "warnings": 0 }
       ]},
       { "name": "Puresim Esports", "logo": "", "url": "", "drivers": [
         { "number": "45", "name": "Dean Woods", "points": 135, "warnings": 0 }
       ]},
       { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
         { "number": "52", "name": "Jak Crawford", "points": 120, "wins": 1, "warnings": 0 },
-        { "number": "18", "name": "Matthew Crisp", "points": 132, "warnings": 1 }
+        { "number": "18", "name": "Matthew Crisp", "points": 179, "warnings": 1 }
       ]},
       { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
         { "number": "", "name": "Britton Smith", "points": 30, "warnings": 0 }
       ]},
       { "name": "Glen eSports Powered by CL20", "logo": "", "url": "", "drivers": [
         { "number": "74", "name": "Isaac Clarke", "points": 105, "warnings": 1 },
-        { "number": "", "name": "Gordie Mutch", "points": 50, "warnings": 0 }
+        { "number": "", "name": "Gordie Mutch", "points": 135, "warnings": 0 }
       ]},
       { "name": "Dutchies-Esports", "logo": "", "url": "", "drivers": [
         { "number": "70", "name": "Tom Walstra", "points": 178, "warnings": 0 },
@@ -671,20 +677,20 @@
         { "number": "92", "name": "Christophe Herbigneaux", "points": 141, "warnings": 0 }
       ]},
       { "name": "Trium eSport by KAST", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Martin Donati", "points": 100, "warnings": 0 }
+        { "number": "", "name": "Martin Donati", "points": 118, "warnings": 0 }
       ]},
       { "name": "RSR Esports", "logo": "", "url": "", "drivers": [
         { "number": "", "name": "Owen Watts", "points": 19, "warnings": 0 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "James J Pinsker", "points": 406, "wins": 1, "warnings": 0 },
+        { "number": "", "name": "James J Pinsker", "points": 466, "wins": 1, "warnings": 0 },
         { "number": "34", "name": "Matt Emery", "points": 173, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 109, "warnings": 0 },
-        { "number": "25", "name": "Kevin Zwemstra", "points": 159, "warnings": 0 },
-        { "number": "13", "name": "James Thewlis", "points": 114, "warnings": 0 },
+        { "number": "57", "name": "Jacco van der Plaat", "points": 153, "warnings": 0 },
+        { "number": "25", "name": "Kevin Zwemstra", "points": 184, "warnings": 0 },
+        { "number": "13", "name": "James Thewlis", "points": 133, "warnings": 0 },
         { "number": "", "name": "Santtu Makinen", "points": 45, "warnings": 0 },
         { "number": "", "name": "Silas Krag-Volijk", "points": 85, "warnings": 0 },
-        { "number": "99", "name": "Josh Clogg", "points": 86, "warnings": 0 },
+        { "number": "99", "name": "Josh Clogg", "points": 106, "warnings": 0 },
         { "number": "", "name": "Russell Barnes", "points": 25, "warnings": 0 },
         { "number": "19", "name": "Stephen Grabrowski", "points": 17, "warnings": 0 },
         { "number": "4", "name": "William Paisley", "points": 14, "warnings": 0 },
