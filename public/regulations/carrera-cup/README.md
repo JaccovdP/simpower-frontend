@@ -16,7 +16,7 @@ Payment opens: 20th June 2020
 Payment deadline: 10th July 2020  
 Paint submission deadline: 23rd July 2020  
 Round 1: 26th July 2020  
-Prizes awarded: Championship: 19th October 2020, Race: The Wednesday after the event.  
+Prizes awarded: Championship: 21st October 2020, Race: The Wednesday after the event.  
 
 ## 1. Overview
 

@@ -59,7 +59,7 @@
       { "date": "July 10, 2020", "event": "Payment deadline" },
       { "date": "July 23, 2020", "event": "Paint submission deadline" },
       { "date": "July 26, 2020", "event": "Round 1" },
-      { "date": "October 19, 2020", "event": "Prize payouts" }
+      { "date": "October 21, 2020", "event": "Prize payouts" }
     ],
     "schedule": [
       { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
