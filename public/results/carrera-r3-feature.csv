@@ -1,31 +1,31 @@
-"Fin Pos","Car ID","Car","Car Class ID","Car Class","Team ID","Cust ID","Name","Start Pos","Car #","Out ID","Out","Interval","Laps Led","Qualify Time","Average Lap Time","Fastest Lap Time","Fast Lap#","Laps Comp","Inc","League Points","Max Fuel Fill%","Weight Penalty (KG)"
-"1","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","255919","255919","Alexander Thiebe","1","54","0","Running","-00.000","18","","1:44.855","1:44.500","6","18","6","","100","0"
-"2","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","75474","75474","Brian Lockwood","5","143","0","Running","-04.462","0","","1:45.102","1:44.554","17","18","6","","100","0"
-"3","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","97564","97564","Maxim Ramsteijn","10","729","0","Running","-06.776","0","","1:45.231","1:44.278","16","18","2","","100","0"
-"4","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","220235","220235","Justin Tipton","9","2","0","Running","-13.192","0","","1:45.587","1:44.567","8","18","7","","100","0"
-"5","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","232715","232715","Anders Myhre","8","20","0","Running","-15.029","0","","1:45.689","1:44.763","10","18","9","","100","0"
-"6","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","421524","421524","Quentiin Vialatte","3","991","0","Running","-15.054","0","","1:45.691","1:44.520","4","18","12","","100","0"
-"7","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","291217","291217","Kieran Harrison","2","9","0","Running","-15.084","0","","1:45.693","1:44.406","17","18","12","","100","0"
-"8","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","367245","367245","Dylan Birse","7","68","0","Running","-15.794","0","","1:45.732","1:44.407","16","18","19","","100","0"
-"9","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","42739","42739","Robin �stlund","6","44","0","Running","-17.616","0","","1:45.833","1:44.767","4","18","12","","100","0"
-"10","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","365706","365706","Michael Pedersen3","13","199","0","Running","-21.748","0","","1:46.062","1:44.923","10","18","6","","100","0"
-"11","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","349143","349143","Sam Kuitert","19","28","0","Running","-24.128","0","","1:46.194","1:44.839","7","18","10","","100","0"
-"12","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","255667","255667","Diogo Francisco","4","48","0","Running","-26.324","0","","1:46.317","1:44.881","11","18","4","","100","0"
-"13","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","329240","329240","Kirill Kolobuxov","17","555","0","Running","-30.346","0","","1:46.540","1:45.348","17","18","11","","100","0"
-"14","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","138514","138514","Artem Grabow","21","43","0","Running","-30.733","0","","1:46.561","1:45.249","17","18","9","","100","0"
-"15","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","32807","32807","Ivo Laubscher","15","46","0","Running","-34.741","0","","1:46.784","1:45.294","3","18","13","","100","0"
-"16","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","310532","310532","Lewis Ward","14","97","0","Running","-36.676","0","","1:46.892","1:45.179","11","18","8","","100","0"
-"17","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","174512","174512","Ryan Parkins","27","225","0","Running","-39.844","0","","1:47.067","1:45.318","11","18","2","","100","0"
-"18","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","266853","266853","Jonathon White","12","777","0","Running","-40.155","0","","1:47.064","1:45.213","8","18","16","","100","0"
-"19","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","322065","322065","Jose Manuel Padin","16","119","0","Running","-45.042","0","","1:47.514","1:45.796","11","18","12","","100","0"
-"20","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","342918","342918","Espen Erlandsen","22","14","0","Running","-46.146","0","","1:47.417","1:45.254","15","18","11","","100","0"
-"21","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","345510","345510","Nelson Costa De Sousa","20","919","0","Running","-46.283","0","","1:47.425","1:45.575","7","18","9","","100","0"
-"22","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","229161","229161","Martin Donati","24","17","0","Running","-57.625","0","","1:48.055","1:45.586","5","18","6","","100","0"
-"23","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","342188","342188","Tobias Maisel","18","15","0","Running","-1:04.796","0","","1:48.454","1:46.184","7","18","3","","100","0"
-"24","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","84986","84986","Oscar Wilkens","23","33","0","Running","-1:08.911","0","","1:48.682","1:45.535","11","18","8","","100","0"
-"25","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","466380","466380","Gavin Halls","28","38","0","Running","-1:26.639","0","","1:49.667","1:46.386","3","18","8","","100","0"
-"26","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","328174","328174","Tom Metherell","26","117","0","Running","-1:26.904","0","","1:49.681","1:46.183","4","18","15","","100","0"
-"27","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","341072","341072","Ivan Harasta","25","63","0","Running","-1:32.838","0","","1:50.011","1:45.755","4","18","17","","100","0"
-"28","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","260613","260613","Alan Powell","11","26","32","Disconnected","-1 L","0","","1:47.306","1:45.308","3","17","7","","100","0"
-"29","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","334613","334613","Dane Baird","29","36","0","Running","-1 L","0","","1:50.930","1:46.502","8","17","23","","100","0"
-"30","88","Porsche 911 GT3 Cup (991)","0","Hosted All Cars Class","316142","316142","Airijus Jomantas","30","71","32","Disconnected","-18 L","0","","00.000","","","0","0","","100","0"
+Fin Pos,Car ID,Car,Car Class ID,Car Class,Team ID,Cust ID,Name,Start Pos,Car #,Out ID,Out,Interval,Laps Led,Qualify Time,Average Lap Time,Fastest Lap Time,Fast Lap#,Laps Comp,Inc,League Points,Max Fuel Fill%,Weight Penalty (KG)
+1,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,255919,255919,Alexander Thiebe,1,54,0,Running,0,18,,1:44.855,1:44.500,6,18,6,150,100,0
+2,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,75474,75474,Brian Lockwood,5,143,0,Running,-4.462,0,,1:45.102,1:44.554,17,18,6,120,100,0
+3,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,97564,97564,Maxim Ramsteijn,10,729,0,Running,-6.776,0,,1:45.231,1:44.278,16,18,2,100,100,0
+4,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,220235,220235,Justin Tipton,9,2,0,Running,-13.192,0,,1:45.587,1:44.567,8,18,7,80,100,0
+5,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,232715,232715,Anders Myhre,8,20,0,Running,-15.029,0,,1:45.689,1:44.763,10,18,9,60,100,0
+6,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,421524,421524,Quentiin Vialatte,3,991,0,Running,-15.054,0,,1:45.691,1:44.520,4,18,12,55,100,0
+7,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,291217,291217,Kieran Harrison,2,9,0,Running,-15.084,0,,1:45.693,1:44.406,17,18,12,50,100,0
+8,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,367245,367245,Dylan Birse,7,68,0,Running,-15.794,0,,1:45.732,1:44.407,16,18,19,45,100,0
+9,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,42739,42739,Robin �stlund,6,44,0,Running,-17.616,0,,1:45.833,1:44.767,4,18,12,35,100,0
+10,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,365706,365706,Michael Pedersen3,13,199,0,Running,-21.748,0,,1:46.062,1:44.923,10,18,6,34,100,0
+11,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,349143,349143,Sam Kuitert,19,28,0,Running,-24.128,0,,1:46.194,1:44.839,7,18,10,33,100,0
+12,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,255667,255667,Diogo Francisco,4,48,0,Running,-26.324,0,,1:46.317,1:44.881,11,18,4,32,100,0
+13,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,329240,329240,Kirill Kolobuxov,17,555,0,Running,-30.346,0,,1:46.540,1:45.348,17,18,11,31,100,0
+14,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,138514,138514,Artem Grabow,21,43,0,Running,-30.733,0,,1:46.561,1:45.249,17,18,9,30,100,0
+15,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,32807,32807,Ivo Laubscher,15,46,0,Running,-34.741,0,,1:46.784,1:45.294,3,18,13,29,100,0
+16,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,310532,310532,Lewis Ward,14,97,0,Running,-36.676,0,,1:46.892,1:45.179,11,18,8,28,100,0
+17,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,174512,174512,Ryan Parkins,27,225,0,Running,-39.844,0,,1:47.067,1:45.318,11,18,2,27,100,0
+18,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,266853,266853,Jonathon White,12,777,0,Running,-40.155,0,,1:47.064,1:45.213,8,18,16,26,100,0
+19,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,322065,322065,Jose Manuel Padin,16,119,0,Running,-45.042,0,,1:47.514,1:45.796,11,18,12,25,100,0
+20,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,342918,342918,Espen Erlandsen,22,14,0,Running,-46.146,0,,1:47.417,1:45.254,15,18,11,24,100,0
+21,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,345510,345510,Nelson Costa De Sousa,20,919,0,Running,-46.283,0,,1:47.425,1:45.575,7,18,9,23,100,0
+22,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,229161,229161,Martin Donati,24,17,0,Running,-57.625,0,,1:48.055,1:45.586,5,18,6,22,100,0
+23,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,342188,342188,Tobias Maisel,18,15,0,Running,-1:04.796,0,,1:48.454,1:46.184,7,18,3,21,100,0
+24,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,84986,84986,Oscar Wilkens,23,33,0,Running,-1:08.911,0,,1:48.682,1:45.535,11,18,8,20,100,0
+25,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,466380,466380,Gavin Halls,28,38,0,Running,-1:26.639,0,,1:49.667,1:46.386,3,18,8,19,100,0
+26,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,328174,328174,Tom Metherell,26,117,0,Running,-1:26.904,0,,1:49.681,1:46.183,4,18,15,18,100,0
+27,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,341072,341072,Ivan Harasta,25,63,0,Running,-1:32.838,0,,1:50.011,1:45.755,4,18,17,17,100,0
+28,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,260613,260613,Alan Powell,11,26,32,Disconnected,-1 L,0,,1:47.306,1:45.308,3,17,7,16,100,0
+29,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,334613,334613,Dane Baird,29,36,0,Running,-1 L,0,,1:50.930,1:46.502,8,17,23,15,100,0
+30,88,Porsche 911 GT3 Cup (991),0,Hosted All Cars Class,316142,316142,Airijus Jomantas,30,71,32,Disconnected,-18 L,0,,0,,,0,0,14,100,0
