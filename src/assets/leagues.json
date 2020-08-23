@@ -620,7 +620,8 @@
           { "name": "Qualifying", "index": 0, "file": "f3-r6-qualifying.csv" },
           { "name": "Race", "index": 1, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-r6-race.csv" }
         ],
-        "broadcast_url": "https://www.youtube.com/watch?v=ffHh_GOEOXQ"
+        "broadcast_url": "https://www.youtube.com/watch?v=ffHh_GOEOXQ",
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round6.zip"
       },
       {
         "type": "race",
@@ -634,7 +635,8 @@
           { "name": "Qualifying", "index": 1, "file": "f3-pro-r7-qualifying.csv" },
           { "name": "Race", "index": 2, "default": true, "fastest_lap_bonus_enabled": true, "file": "f3-pro-r7-race.csv" }
         ],
-        "broadcast_url": "https://www.youtube.com/watch?v=1RKMoMZ9GMs"
+        "broadcast_url": "https://www.youtube.com/watch?v=1RKMoMZ9GMs",
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round7.zip"
       },
       {
         "type": "race",
@@ -643,7 +645,8 @@
         "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round8.zip"
       }
     ],
     "teams": [
@@ -816,7 +819,8 @@
         "simtime": "14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round6.zip"
       },
       {
         "type": "race",
@@ -825,7 +829,8 @@
         "simtime": "06:30",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round7.zip"
       },
       {
         "type": "race",
@@ -834,7 +839,8 @@
         "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round8.zip"
       }
     ],
     "teams": [
