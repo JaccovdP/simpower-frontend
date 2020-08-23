@@ -706,8 +706,8 @@ export default {
               for(let x = 0; x < finishingPositions.length; x++) {
                 sum += finishingPositions[x]
               }
-              driver.highest_finishing_position = Math.max(...finishingPositions)
-              driver.lowest_finishing_position = Math.min(...finishingPositions)
+              driver.highest_finishing_position = Math.min(...finishingPositions)
+              driver.lowest_finishing_position = Math.max(...finishingPositions)
               driver.average_finishing_position = (sum / finishingPositions.length)
             }
             if(driver.main_drop && driver.secondary_drop) {
