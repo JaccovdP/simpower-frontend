@@ -768,7 +768,7 @@ export default {
         (a.points == b.points && a.feature_wins < b.feature_wins) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins < b.heat_wins) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position > b.average_finishing_position) ||
-        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position < b.highest_finishing_position) ||
+        (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position > b.highest_finishing_position) ||
         (a.points == b.points && a.feature_wins == b.feature_wins && a.heat_wins == b.heat_wins && a.average_finishing_position == b.average_finishing_position && a.highest_finishing_position == b.highest_finishing_position && a.lowest_finishing_position < b.lowest_finishing_position) ||
         (a.points == b.points && !a.results)
         if (bool) {
