@@ -422,7 +422,7 @@
         { "number": "777", "name": "Jonathon White", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Kairos Competition", "logo": "kairos.png", "url": "", "drivers": [
-        { "number": "36", "name": "Dane Baird", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "36", "name": "Dane Baird", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "63", "name": "Ivan Harasta", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
@@ -485,7 +485,7 @@
       ]},
       { "name": "WoIP.com Volante Racing 1", "logo": "volante.png", "url": "", "drivers": [
         { "number": "199", "name": "Michael Pedersen3", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
-        { "number": "28", "name": "Sam Kuitert", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "28", "name": "Sam Kuitert", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "WoIP.com Volante Racing 2", "logo": "volante.png", "url": "", "drivers": [
         { "number": "198", "name": "Jordan A Pearce", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
@@ -496,10 +496,10 @@
         { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Team Effect eSports", "logo": "", "url": "", "drivers": [
-        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 0 }
+        { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
+        { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 2 },
         { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
