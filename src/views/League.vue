@@ -204,7 +204,7 @@
                     <b-card-group deck>
                       <b-card class="mb-2 team-card" v-for="team in teams" :key="team.name">
                         <b-row no-gutters>
-                          <b-col cols="4">
+                          <b-col cols="4" style="align-self:center;">
                             <b-img v-if="team.logo" fluid :src="require('../assets/images/teams/' + team.logo)"></b-img>
                           </b-col>
                           <b-col>
@@ -750,6 +750,7 @@ export default {
           if(this.data.automatic_standings && driver.main_drop) team_dropped += driver.main_drop.points
           team_sec_points += driver.secondary_points
         }
+        if(team.points_mod) team_points += team.points_mod
         if(team.name != "Privateer") {
           team_standings.push({
             name: team.name,

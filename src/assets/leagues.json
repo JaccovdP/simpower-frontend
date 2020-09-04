@@ -234,7 +234,10 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "interlagosgp.jpg",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r4-fp1.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP1.rpy"
       },
       {
         "round": 4,
@@ -258,7 +261,8 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "interlagosgp.jpg",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round4.zip"
       },
       {
         "round": 5,
@@ -294,7 +298,8 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "montreal.jpg",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip"
       },
       {
         "round": 6,
@@ -432,9 +437,11 @@
         { "number": "33", "name": "Oscar Wilkens", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "5", "name": "Alexis Dias", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
-      { "name": "Optimal Simracing", "logo": "", "url": "", "drivers": [
-        { "number": "98", "name": "Bastien Mattler", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+      { "name": "Optimal Simracing", "logo": "", "url": "", "points_mod": 33, "drivers": [
         { "number": "919", "name": "Nelson Costa De Sousa", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
+      { "name": "Monaco eSports", "logo": "monaco.jpg", "url": "", "points_mod": -33, "drivers": [
+        { "number": "98", "name": "Bastien Mattler", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "B-Sport", "logo": "bsport.png", "url": "", "drivers": [
         { "number": "242", "name": "Aden Brand", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
