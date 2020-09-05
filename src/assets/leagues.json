@@ -249,7 +249,10 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "interlagosgp.jpg",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r4-fp2.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP2.rpy" 
       },
       {
         "round": 4,
