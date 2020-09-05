@@ -252,7 +252,7 @@
         "results_files": [
           { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r4-fp2.csv" }
         ],
-        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP2.rpy" 
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP2.rpy"
       },
       {
         "round": 4,
@@ -265,7 +265,9 @@
         "sky": "Dynamic Sky",
         "trackmap": "interlagosgp.jpg",
         "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round4.zip"
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round4.zip",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%204/Round4_v1.0.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=ofY0SiHxERk&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=4"
       },
       {
         "round": 5,
