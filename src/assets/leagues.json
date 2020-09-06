@@ -264,10 +264,18 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "interlagosgp.jpg",
-        "results_files": [],
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r4-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r4-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r4-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r4-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r4-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r4-feature.csv" }
+        ],
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round4.zip",
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%204/Round4_v1.0.zip",
-        "broadcast_url": "https://www.youtube.com/watch?v=ofY0SiHxERk&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=4"
+        "broadcast_url": "https://www.youtube.com/watch?v=ofY0SiHxERk&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=4",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/Race.rpy"
       },
       {
         "round": 5,
@@ -468,10 +476,10 @@
       ]},
       { "name": "KAST", "logo": "", "url": "", "drivers": [
         { "number": "17", "name": "Martin Donati", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
-        { "number": "37", "name": "Clément Andrieu", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "37", "name": "Clément Andrieu", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "LuxSim24 eSports", "logo": "lux.png", "url": "", "drivers": [
-        { "number": "791", "name": "Alex Kraeter", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "791", "name": "Alex Kraeter", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
         { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 3 }
