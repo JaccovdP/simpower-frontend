@@ -17,7 +17,7 @@
         </b-row>
       </b-container>
 
-      <b-container fluid="lg" class="mt-5">
+      <b-container fluid="lg" class="mt-4">
         <b-card no-body>
           <b-row>
             <b-col md="12">
@@ -51,7 +51,7 @@
         </b-card>
       </b-container>
 
-      <div class="quotes bg-dark mt-5">
+      <div class="quotes bg-dark mt-4">
         <b-container fluid="lg">
           <b-row v-if="quotes">
             <b-col v-for="quote in quotes.slice(0,3)" :key="quote.name" cols="12" md="4" class="mt-2 mb-2 text-center">
@@ -130,10 +130,19 @@ export default {
     padding-top: 300px;
   }
   .quotes {
-    padding: 30px 0;
+    padding: 20px 0;
     color: #fff;
   }
   .footer {
-    padding: 30px 0;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 767px) {
+    .leagues-background {
+      display: none !important;
+    }
+    .leagues-container {
+      padding-top: 20px;
+    }
   }
 </style>
