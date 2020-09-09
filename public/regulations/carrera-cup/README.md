@@ -401,6 +401,8 @@ Starting position in the heat race minus finishing position in the heat race
 
 ### 5.2 Bonus Points
 - Double Points: The last round will be a double points scoring round
+ - Only regular points and fastest lap bonus points will be doubled
+ - The double points modifier does not apply to Alkentech Simulation Trophy Points 
 - Fastest Lap: In every heat race, consolation race and feature race, a driver can earn 1 bonus point for the fastest lap
 
 ### 5.3 Teams Championship
