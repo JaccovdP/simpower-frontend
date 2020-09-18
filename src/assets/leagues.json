@@ -287,7 +287,9 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "montreal.jpg",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r5-fp1.csv" }
+        ]
       },
       {
         "round": 5,
