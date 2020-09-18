@@ -404,7 +404,8 @@
         { "number": "9", "name": "Kieran Harrison", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Impulse Racing", "logo": "impulse.png", "url": "", "drivers": [
-        { "number": "15", "name": "Tobias Maisel", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
+        { "number": "15", "name": "Tobias Maisel", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
+        { "number": "801", "name": "Pascal Costa", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 0 }
       ]},
       { "name": "Team Bergen", "logo": "teambergen.png", "url": "", "drivers": [
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
