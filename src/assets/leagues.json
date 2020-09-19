@@ -314,7 +314,8 @@
         "sky": "Dynamic Sky",
         "trackmap": "montreal.jpg",
         "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip"
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%205/Round5_v1.0.zip"
       },
       {
         "round": 6,
