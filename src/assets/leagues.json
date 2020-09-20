@@ -325,7 +325,8 @@
         ],
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip",
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%205/Round5_v1.0.zip",
-        "broadcast_url": "https://www.youtube.com/watch?v=YmaZsnFa_58&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=5"
+        "broadcast_url": "https://www.youtube.com/watch?v=YmaZsnFa_58&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=5",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%205%20-%20Montreal/Race.rpy"
       },
       {
         "round": 6,
