@@ -315,7 +315,14 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "montreal.jpg",
-        "results_files": [],
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r5-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r5-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r5-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r5-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r5-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r5-feature.csv" }
+        ],
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip",
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%205/Round5_v1.0.zip",
         "broadcast_url": "https://www.youtube.com/watch?v=YmaZsnFa_58&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=5"
