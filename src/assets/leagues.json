@@ -478,7 +478,7 @@
         { "number": "23", "name": "Hugo Gallo", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "Deep Eddy Racing", "logo": "deepeddy.png", "url": "", "drivers": [
-        { "number": "26", "name": "Alan Powell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "26", "name": "Alan Powell", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "E-sport Performance Racing Team", "logo": "EPRT.png", "url": "", "drivers": [
         { "number": "3", "name": "Thomas Guldalian", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
@@ -490,20 +490,20 @@
         { "number": "58", "name": "Jack G Boyd", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "KAST", "logo": "", "url": "", "drivers": [
-        { "number": "17", "name": "Martin Donati", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "17", "name": "Martin Donati", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "37", "name": "Clément Andrieu", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "LuxSim24 eSports", "logo": "lux.png", "url": "", "drivers": [
         { "number": "791", "name": "Alex Kraeter", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
-        { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 3 }
+        { "number": "55", "name": "Hendryk Lichtenhagen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 4 }
       ]},
       { "name": "Rev It Up Racing Esports Team", "logo": "", "url": "", "drivers": [
         { "number": "22", "name": "Jack Godden", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "RodgersA51", "logo": "", "url": "", "drivers": [
-        { "number": "18", "name": "Tristan Martz", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "18", "name": "Tristan Martz", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "SRB TEAM", "logo": "srb.png", "url": "", "drivers": [
         { "number": "119", "name": "Jose Manuel Padin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
@@ -539,7 +539,7 @@
         { "number": "912", "name": "Justin Rehm", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "71", "name": "Airijus Jomantas", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "77", "name": "Mark Jones12", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
-        { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "906", "name": "Martin Spalek", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
         { "number": "78", "name": "Onuray Sahin", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]}
     ]
