@@ -533,6 +533,9 @@
       { "name": "Team Effect eSports", "logo": "", "url": "", "drivers": [
         { "number": "29", "name": "Jack Wilson", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
+      { "name": "AXA SimSport", "logo": "", "url": "", "drivers": [
+        { "number": "12", "name": "Matias Birk", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 0 }
+      ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
         { "number": "68", "name": "Dylan Birse", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 2 },
         { "number": "107", "name": "Niclas Laubisch", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
