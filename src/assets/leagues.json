@@ -425,6 +425,10 @@
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
+      { "name": "HM Engineering 2", "logo": "hmengineering.png", "url": "", "drivers": [
+        { "number": "222", "name": "Rasmus Busk", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
+        { "number": "959", "name": "Jordan Weekes", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
       { "name": "Maniti Racing", "logo": "maniti.png", "url": "", "drivers": [
         { "number": "8", "name": "Tim Matzke", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "19", "name": "Yoep de Ligt", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
