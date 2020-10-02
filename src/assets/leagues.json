@@ -425,6 +425,9 @@
         { "number": "14", "name": "Espen Erlandsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "20", "name": "Anders Myhre", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
+      { "name": "Triple A eSports", "logo": "", "url": "", "drivers": [
+        { "number": "148", "name": "Alexander Lauritzen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
       { "name": "HM Engineering 2", "logo": "hmengineering.png", "url": "", "drivers": [
         { "number": "222", "name": "Rasmus Busk", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "959", "name": "Jordan Weekes", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
