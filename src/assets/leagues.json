@@ -338,7 +338,9 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "tle_tmap_cpz_grandprix.jpg",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r6-fp1.csv" }
+        ]
       },
       {
         "round": 6,
@@ -362,7 +364,9 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "tle_tmap_cpz_grandprix.jpg",
-        "results_files": []
+        "results_files": [],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round6.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=YshaiaaLv-w&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=6"
       },
       {
         "round": 7,
