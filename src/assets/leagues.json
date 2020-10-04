@@ -366,7 +366,8 @@
         "trackmap": "tle_tmap_cpz_grandprix.jpg",
         "results_files": [],
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round6.zip",
-        "broadcast_url": "https://www.youtube.com/watch?v=YshaiaaLv-w&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=6"
+        "broadcast_url": "https://www.youtube.com/watch?v=YshaiaaLv-w&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=6",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%206/Round6_v1.0.zip"
       },
       {
         "round": 7,
