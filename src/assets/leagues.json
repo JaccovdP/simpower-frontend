@@ -533,6 +533,9 @@
         { "number": "198", "name": "Jordan A Pearce", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "911", "name": "Karsten van Eijck", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
+      { "name": "WoIP.com Volante Racing 3", "logo": "volante.png", "url": "", "drivers": [
+        { "number": "802", "name": "Ross Yost", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
       { "name": "Project Dynamic Engineering", "logo": "PDE.png", "url": "", "drivers": [
         { "number": "24", "name": "Carl Wahlqvist", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 },
         { "number": "27", "name": "Louie Eggertsen", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
