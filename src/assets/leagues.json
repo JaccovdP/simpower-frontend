@@ -374,7 +374,8 @@
         ],
         "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round6.zip",
         "broadcast_url": "https://www.youtube.com/watch?v=YshaiaaLv-w&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=6",
-        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%206/Round6_v1.0.zip"
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%206/Round6_v1.0.zip",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%206%20-%20Zandvoort/Race.rpy"
       },
       {
         "round": 7,
@@ -534,7 +535,7 @@
         { "number": "7", "name": "Jacob Robotham", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 }
       ]},
       { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
-        { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 1 },
+        { "number": "43", "name": "Artem Grabow", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0, "warnings": 2 },
         { "number": "555", "name": "Kirill Kolobuxov", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
       { "name": "WoIP.com Volante Racing 1", "logo": "volante.png", "url": "", "drivers": [
