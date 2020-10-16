@@ -56,3 +56,5 @@ To add a logo to a team, do the following:
 
 ## League pages
 All league pages are rendered based on [this](src/assets/leagues.json) JSON file. All logic for the league page can be found in [src/views/League.vue](src/views/League.vue).
+
+This README is not completely up-to-date, contact Simpower on Discord for more information if needed.
