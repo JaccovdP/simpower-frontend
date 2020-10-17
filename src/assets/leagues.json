@@ -403,7 +403,9 @@
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "trackmap": "tle_tmap_spa_gp.jpg",
-        "results_files": []
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r7-fp2.csv" }
+        ]
       },
       {
         "round": 7,
@@ -416,7 +418,9 @@
         "sky": "Dynamic Sky",
         "trackmap": "tle_tmap_spa_gp.jpg",
         "points_multiplier": 2,
-        "results_files": []
+        "results_files": [],
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%207/Round7_v1.0.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=RNKYvw3Esig&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=7"
       }
     ],
     "teams": [
