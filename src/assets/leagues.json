@@ -427,7 +427,8 @@
           { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r7-feature.csv" }
         ],
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%207/Round7_v1.0.zip",
-        "broadcast_url": "https://www.youtube.com/watch?v=RNKYvw3Esig&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=7"
+        "broadcast_url": "https://www.youtube.com/watch?v=RNKYvw3Esig&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=7",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%207%20-%20Spa/Race.rpy"
       }
     ],
     "teams": [
