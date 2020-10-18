@@ -418,7 +418,14 @@
         "sky": "Dynamic Sky",
         "trackmap": "tle_tmap_spa_gp.jpg",
         "points_multiplier": 2,
-        "results_files": [],
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r7-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r7-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r7-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r7-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r7-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r7-feature.csv" }
+        ],
         "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%207/Round7_v1.0.zip",
         "broadcast_url": "https://www.youtube.com/watch?v=RNKYvw3Esig&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=7"
       }
