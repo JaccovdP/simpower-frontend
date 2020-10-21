@@ -586,6 +586,443 @@
       ]}
     ]
   }},
+  { "key": "carrera-cup-s2", "details": {
+    "title": "PorscheSport.com Carrera Cup Season 2",
+    "menu_title": "PorscheSport Carrera Cup Season 2",
+    "visible": true,
+    "automatic_standings": true,
+    "fastest_lap_bonus": 1,
+    "use_secondary_points": true,
+    "description": "",
+    "promo_image": "poster_small.jpeg",
+    "license_logo": "carreracup.png",
+    "partners": [
+      { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
+      { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" },
+      { "name": "Racespot TV", "url": "https://www.racespot.tv/", "image": "racespot.png" }
+    ],
+    "key_info": {
+      "car_classes": [
+        { 
+          "class": "Porsche 911 GT3 Cup",
+          "cars": [
+            { "name": "Porsche 911 GT3 Cup", "image": "" }
+          ]
+        }
+      ],
+      "event_type": "2 heats, 1 consolation, 1 feature",
+      "broadcast": { "text": "Live on Racespot TV", "url": "#" },
+      "nr_of_rounds": "TBD",
+      "overall_prize_pool": "TBD",
+      "race_prize_pool": "TBD",
+      "entry_fee": "TBD"
+    },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "secondary_points", "label": "ATT" }, { "key": "wins", "label": "Wins" }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "ATT", "description": "Points scored for the AlkenTech.com Simulation Trophy. Number of positions the driver has gained in heat races during the season. (AlkenTech.com Simulation Trophy)" },
+      { "label": "Wins", "description": "Number of races the driver has won this season." },
+      { "label": "Drop round", "description": "Between brackets after each points column is the drop round for the driver. That is, the round with the worst result (excluding disqualifications)."},
+      { "label": "Tie breakers", "description": "Feature wins -> Heat wins -> Average finishing position (excluding drop round) -> Highest finishing position -> Least lowest finishing position (excluding drop round)"},
+      { "label": "ATT tie breakers", "description": "Lowest average incident points in heat races"}
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
+      { "label": "Drop round", "description": "Hover (touch) the points to view the sum of the dropped points for the team."}
+    ],
+    "key_dates": [
+      { "date": "TBD", "event": "Season 2 registration opens" },
+      { "date": "TBD", "event": "Season 2 payment opens" },
+      { "date": "TBD", "event": "Season 2 payment deadline" },
+      { "date": "TBD", "event": "Season 2 paint submission deadline" },
+      { "date": "TBD", "event": "Season 2 round 1" },
+      { "date": "TBD", "event": "Season 2 prize payouts" }
+    ],
+    "schedule": [
+      { "time": "TBD", "broadcast": "", "session": "Starts" },
+      { "time": "TBD", "broadcast": "", "session": "Qualifying" },
+      { "time": "TBD", "broadcast": "Begins", "session": "" },
+      { "time": "TBD", "broadcast": "", "session": "Heats begin" },
+      { "time": "TBD", "broadcast": "Interviews", "session": "" }
+    ],
+    "sessions": [
+      {
+        "round": 1,
+        "type": "practice",
+        "name": "FP1: Nürburgring BES/WEC",
+        "date": "July 24, 2020",
+        "time": "18:00 UTC",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "nurbwec.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r1-fp1.csv" }
+        ]
+      },
+      {
+        "round": 1,
+        "type": "practice",
+        "name": "FP2: Nürburgring BES/WEC",
+        "date": "July 25, 2020",
+        "time": "18:00 UTC",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "nurbwec.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r1-fp2.csv" }
+        ]
+      },
+      {
+        "round": 1,
+        "type": "race",
+        "name": "Race: Nürburgring BES/WEC",
+        "date": "July 26, 2020",
+        "time": "18:00 UTC",
+        "simtime": "09:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "nurbwec.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r1-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r1-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r1-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r1-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r1-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r1-feature.csv" }
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=KZuRj-HAN1k&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=1",
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round1.zip",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%201%20-%20Nurburgring%20GP/Race.rpy",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%201/Round1_v1.2.zip"
+      },
+      {
+        "round": 2,
+        "type": "practice",
+        "name": "FP1: Road America",
+        "date": "August 7, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_ra_full.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r2-fp1.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%202%20-%20Road%20America/FP1.rpy"
+      },
+      {
+        "round": 2,
+        "type": "practice",
+        "name": "FP2: Road America",
+        "date": "August 8, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_ra_full.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r2-fp2.csv" }
+        ]
+      },
+      {
+        "round": 2,
+        "type": "race",
+        "name": "Race: Road America",
+        "date": "August 9, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_ra_full.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r2-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r2-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r2-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r2-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r2-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r2-feature.csv" }
+        ],
+        "broadcast_url": "https://www.youtube.com/watch?v=uJyVHGTZWb4&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=2",
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round2.zip",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%202%20-%20Road%20America/Race.rpy",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%202/Round2_v1.1.zip"
+      },
+      {
+        "round": 3,
+        "type": "practice",
+        "name": "FP1: Imola GP",
+        "date": "August 21, 2020",
+        "time": "18:00 UTC",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "imolagp.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r3-fp1.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%203%20-%20Imola/FP1.rpy"
+      },
+      {
+        "round": 3,
+        "type": "practice",
+        "name": "FP2: Imola GP",
+        "date": "August 22, 2020",
+        "time": "18:00 UTC",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "imolagp.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r3-fp2.csv" }
+        ]
+      },
+      {
+        "round": 3,
+        "type": "race",
+        "name": "Race: Imola GP",
+        "date": "August 23, 2020",
+        "time": "18:00 UTC",
+        "simtime": "17:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "imolagp.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r3-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r3-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r3-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r3-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r3-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r3-feature.csv" }
+        ],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round3.zip",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%203%20-%20Imola/Race.rpy",
+        "broadcast_url": "https://www.youtube.com/watch?v=7W18EeQxB1U&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=3",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%203/Round3_v1.zip"
+      },
+      {
+        "round": 4,
+        "type": "practice",
+        "name": "FP1: Interlagos",
+        "date": "September 4, 2020",
+        "time": "18:00 UTC",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "interlagosgp.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r4-fp1.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP1.rpy"
+      },
+      {
+        "round": 4,
+        "type": "practice",
+        "name": "FP2: Interlagos",
+        "date": "September 5, 2020",
+        "time": "18:00 UTC",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "interlagosgp.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r4-fp2.csv" }
+        ],
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/FP2.rpy"
+      },
+      {
+        "round": 4,
+        "type": "race",
+        "name": "Race: Interlagos",
+        "date": "September 6, 2020",
+        "time": "18:00 UTC",
+        "simtime": "16:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "interlagosgp.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r4-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r4-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r4-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r4-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r4-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r4-feature.csv" }
+        ],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round4.zip",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%204/Round4_v1.0.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=ofY0SiHxERk&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=4",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%204%20-%20Interlagos/Race.rpy"
+      },
+      {
+        "round": 5,
+        "type": "practice",
+        "name": "FP1: Circuit Gilles Villeneuve",
+        "date": "September 18, 2020",
+        "time": "18:00 UTC",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "montreal.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r5-fp1.csv" }
+        ]
+      },
+      {
+        "round": 5,
+        "type": "practice",
+        "name": "FP2: Circuit Gilles Villeneuve",
+        "date": "September 19, 2020",
+        "time": "18:00 UTC",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "montreal.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r5-fp2.csv" }
+        ]
+      },
+      {
+        "round": 5,
+        "type": "race",
+        "name": "Race: Circuit Gilles Villeneuve",
+        "date": "September 20, 2020",
+        "time": "18:00 UTC",
+        "simtime": "07:30",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "montreal.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r5-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r5-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r5-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r5-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r5-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r5-feature.csv" }
+        ],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round5.zip",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%205/Round5_v1.0.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=YmaZsnFa_58&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=5",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%205%20-%20Montreal/Race.rpy"
+      },
+      {
+        "round": 6,
+        "type": "practice",
+        "name": "FP1: Zandvoort GP",
+        "date": "October 2, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_cpz_grandprix.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r6-fp1.csv" }
+        ]
+      },
+      {
+        "round": 6,
+        "type": "practice",
+        "name": "FP2: Zandvoort GP",
+        "date": "October 3, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_cpz_grandprix.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r6-fp2.csv" }
+        ]
+      },
+      {
+        "round": 6,
+        "type": "race",
+        "name": "Race: Zandvoort GP",
+        "date": "October 4, 2020",
+        "time": "18:00 UTC",
+        "simtime": "13:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_cpz_grandprix.jpg",
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r6-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r6-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r6-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r6-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r6-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r6-feature.csv" }
+        ],
+        "setup_url": "https://downloads.simpower.co.uk/carrera-cup/s1/setups/Round6.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=YshaiaaLv-w&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=6",
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%206/Round6_v1.0.zip",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%206%20-%20Zandvoort/Race.rpy"
+      },
+      {
+        "round": 7,
+        "type": "practice",
+        "name": "FP1: Spa GP",
+        "date": "October 16, 2020",
+        "time": "18:00 UTC",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_spa_gp.jpg",
+        "results_files": [
+          { "name": "Free Practice 1", "index": 0, "default": true, "file": "carrera-r7-fp1.csv" }
+        ]
+      },
+      {
+        "round": 7,
+        "type": "practice",
+        "name": "FP2: Spa GP",
+        "date": "October 17, 2020",
+        "time": "18:00 UTC",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_spa_gp.jpg",
+        "results_files": [
+          { "name": "Free Practice 2", "index": 0, "default": true, "file": "carrera-r7-fp2.csv" }
+        ]
+      },
+      {
+        "round": 7,
+        "type": "race",
+        "name": "Race: Spa GP",
+        "date": "October 18, 2020",
+        "time": "18:00 UTC",
+        "simtime": "14:00",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "trackmap": "tle_tmap_spa_gp.jpg",
+        "points_multiplier": 2,
+        "results_files": [
+          { "name": "Practice", "index": 0, "file": "carrera-r7-practice.csv" },
+          { "name": "Qualifying", "index": 1, "file": "carrera-r7-qualifying.csv" },
+          { "name": "Heat 1", "index": 2, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r7-heat1.csv" },
+          { "name": "Heat 2", "index": 3, "fastest_lap_bonus_enabled": true, "counts_for_secondary_points": true, "file": "carrera-r7-heat2.csv" },
+          { "name": "Consolation", "index": 4, "fastest_lap_bonus_enabled": true, "file": "carrera-r7-consolation.csv" },
+          { "name": "Feature", "index": 5, "fastest_lap_bonus_enabled": true, "default": true, "file": "carrera-r7-feature.csv" }
+        ],
+        "paintpack_url": "https://downloads.simpower.co.uk/carrera-cup/s1/paintpacks/Round%207/Round7_v1.0.zip",
+        "broadcast_url": "https://www.youtube.com/watch?v=RNKYvw3Esig&list=PL-wz-fxCI5TuQxVpVNVk1JDMmB58ePoXh&index=7",
+        "replay_url": "https://downloads.simpower.co.uk/carrera-cup/s1/replays/Round%207%20-%20Spa/Race.rpy"
+      }
+    ],
+    "teams": [
+      { "name": "Example Team", "logo": "", "url": "", "drivers": [
+        { "number": "911", "name": "Example Driver", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]}
+    ]
+  }},
   { "key": "f3-pro", "details": {
     "title": "Alkentech Formula Pro Championship",
     "menu_title": "Alkentech Formula Pro Championship",
@@ -789,190 +1226,6 @@
         { "number": "19", "name": "Stephen Grabrowski", "points": 17, "warnings": 0 },
         { "number": "4", "name": "William Paisley", "points": 14, "warnings": 0 },
         { "number": "8", "name": "Dries Vanderyt3", "points": 13, "warnings": 0 }
-      ]}
-    ]
-  }},
-  { "key": "f3-evo", "details": {
-    "title": "Alkentech Formula Evo Championship",
-    "menu_title": "Alkentech Formula Evo Championship",
-    "visible": true,
-    "description": "",
-    "promo_image": "f3poster_small.png",
-    "partners": [
-      { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" }
-    ],
-    "key_info": {
-      "car_classes": [
-        { 
-          "class": "Dallara F3",
-          "cars": [
-            { "name": "Dallara F3", "image": "" }
-          ]
-        }
-      ],
-      "event_type": "2 x 30 minute sprint races",
-      "broadcast": { "text": "Live on Simpower TV", "url": "" },
-      "nr_of_rounds": 8,
-      "overall_prize_pool": 400,
-      "entry_fee": 20
-    },
-    "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points" }, {"key": "wins", "label": "Wins" }
-    ],
-    "team_standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
-    ],
-    "driver_table_info": [
-      { "label": "#", "description": "Driver number" },
-      { "label": "Driver", "description": "Driver name" },
-      { "label": "Team", "description": "Driver is member of this team." },
-      { "label": "Points", "description": "Number of points the driver has scored during the season." },
-      { "label": "Wins", "description": "Number of races the driver has won this season." }
-    ],
-    "team_table_info": [
-      { "label": "Team", "description": "Team name"},
-      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
-    ],
-    "key_dates": [
-      { "date": "April 2, 2020", "event": "Registration opens" },
-      { "date": "April 26, 2020", "event": "Payment opens" },
-      { "date": "May 13, 2020", "event": "Payment deadline" },
-      { "date": "May 13, 2020", "event": "Paint submission deadline" },
-      { "date": "May 20, 2020", "event": "Round 1" },
-      { "date": "September 10, 2020", "event": "Prize payouts" }
-    ],
-    "schedule": [
-      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
-      { "time": "18:45 UTC", "broadcast": "", "session": "Qualifying" },
-      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
-      { "time": "19:10 UTC", "broadcast": "", "session": "Race 1" },
-      { "time": "19:50 UTC", "broadcast": "Interval", "session": "" },
-      { "time": "20:00 UTC", "broadcast": "Resumes", "session": "Race 2 session opens" },
-      { "time": "20:10 UTC", "broadcast": "", "session": "Race 2" },
-      { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
-    ],
-    "sessions": [
-      {
-        "type": "race",
-        "name": "Indianapolis GP",
-        "date": "May 20, 2020",
-        "simtime": "12:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Suzuka GP",
-        "date": "June 3, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Silverstone GP",
-        "date": "June 17, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Philip Island",
-        "date": "July 1, 2020",
-        "simtime": "11:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Nurburgring GP",
-        "date": "July 15, 2020",
-        "simtime": "16:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Monza GP",
-        "date": "July 29, 2020",
-        "simtime": "14:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round6.zip"
-      },
-      {
-        "type": "race",
-        "name": "Spa GP",
-        "date": "August 12, 2020",
-        "simtime": "06:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round7.zip"
-      },
-      {
-        "type": "race",
-        "name": "Interlagos",
-        "date": "August 26, 2020",
-        "simtime": "10:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round8.zip"
-      }
-    ],
-    "teams": [
-      { "name": "DataWire Racing", "logo": "datawire.png", "url": "", "drivers": [
-        { "number": "11", "name": "Dries Vanderyt", "points": 975, "warnings": 0 },
-        { "number": "3", "name": "Kristof Rampelberg", "points": 398, "warnings": 0 }
-      ]},
-      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "99", "name": "Josh Clogg", "points": 1347, "wins": 3, "warnings": 1 },
-        { "number": "", "name": "Taylor Lane", "points": 325, "warnings": 1 }
-      ]},
-      { "name": "Radar Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Patrick Charlton", "points": 480, "wins": 2, "warnings": 1 }
-      ]},
-      { "name": "Belgian iRacing Team", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Pierre Cousin", "points": 567, "warnings": 0 }
-      ]},
-      { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
-        { "number": "21", "name": "Michael Schieber", "points": 669, "warnings": 0 },
-        { "number": "6", "name": "Freddie Skitini", "points": 696, "warnings": 0 }
-      ]},
-      { "name": "T.C.R", "logo": "tcrlogored.png", "url": "", "drivers": [
-        { "number": "4", "name": "William Paisley", "points": 290, "warnings": 1 }
-      ]},
-      { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "22", "name": " Matthew Birkett", "points": 489, "warnings": 0 }
-      ]},
-      { "name": "Klub_Karacho", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 2 }
-      ]},
-      { "name": "Team OCA Racing", "logo": "", "url": "", "drivers": [
-        { "number": "66", "name": "Dan Ocaranza", "points": 295, "warnings": 0 }
-      ]},
-      { "name": "Ten-X Virtual Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Andrew Waddle", "points": 73, "warnings": 0 }
-      ]},
-      { "name": "Slow Squadron", "logo": "", "url": "", "drivers": [
-        { "number": "41", "name": "Tyler Hoffman", "points": 46, "warnings": 1 }
-      ]},
-      { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "28", "name": "Silas Krag-Volijk", "points": 1170, "wins": 5, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 1193, "wins": 5, "warnings": 1 },
-        { "number": "", "name": "Russell Barnes", "points": 897, "wins": 1, "warnings": 0 },
-        { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 1 },
-        { "number": "44", "name": "Stephen Grabowski", "points": 575, "warnings": 0 },
-        { "number": "", "name": "Konstantinos Sidiras", "points": 320, "warnings": 0 },
-        { "number": "", "name": "Micheal Les Wright", "points": 51, "warnings": 0 }
       ]}
     ]
   }}
