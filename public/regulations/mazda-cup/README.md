@@ -1,4 +1,4 @@
-# PorscheSport Carrera Cup Regulations
+# Simpower Cup Regulations
 
 
 ## Key Info
