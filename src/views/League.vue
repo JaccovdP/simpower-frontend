@@ -49,6 +49,10 @@
                       {{ car_class.class }}<br>
                     </span>
                   </div>
+                  <div class="mb-2" v-if="data.key_info.driver_classes">
+                    <strong>Driver classes</strong><br>
+                    {{ data.key_info.driver_classes }}
+                  </div>
                   <div class="mb-2">
                     <strong>Event type</strong><br>
                     {{ data.key_info.event_type }}
@@ -72,6 +76,10 @@
                   <div class="mb-2">
                     <strong>Overall prize pool <span v-if="data.key_info.race_prize_pool > 0">| Per race prize pool</span></strong><br>
                     &euro;{{ data.key_info.overall_prize_pool }} <span v-if="data.key_info.race_prize_pool > 0">| &euro;{{ data.key_info.race_prize_pool }}</span>
+                  </div>
+                  <div class="mb-2" v-if="data.key_info.other_prizes">
+                    <strong>Other prizes</strong><br>
+                    {{ data.key_info.other_prizes }}
                   </div>
                   <div class="mb-2">
                     <strong>Entry fee</strong><br>
@@ -306,7 +314,8 @@
                       {{ data.index + 1 }}
                     </template>
                     <template v-slot:cell(points)="row" v-if="data.automatic_standings">
-                      <span v-b-tooltip.hover :title="'Drop round points: ' + row.item.team_dropped">{{ row.item.points }}</span>
+                      <span v-if="data.team_include_drop_rounds" v-b-tooltip.hover :title="'Drop round points: ' + row.item.team_dropped">{{ row.item.points }}</span>
+                      <span v-if="!data.team_include_drop_rounds">{{ row.item.points + row.item.team_dropped }}</span>
                     </template>
                   </b-table>
                 </b-col>

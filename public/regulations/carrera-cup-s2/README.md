@@ -3,20 +3,149 @@
 
 ## Key Info
 
-Car class: Porsche 911 GT3 Cup  
-Event type: 2x Heat race, 1x Consolation 1x Feature  
-Broadcast: Live on Racespot TV  
-Races: TBD 
-Prize pool: TBD
-Entry fee: TBD  
+<table>
+  <tr>
+    <td>
+      Car class
+    </td>
+    <td>
+      Porsche 911 GT3 Cup
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Driver classes
+    </td>
+    <td>
+      PRO, AM (determined by Pre-Qualifying)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Event type
+    </td>
+    <td>
+      2x Heat race, 1x Consolation 1x Feature
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Broadcast 
+    </td>
+    <td>
+      Live on Racespot TV
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Races
+    </td>
+    <td>
+      7 rounds
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Prize pool
+    </td>
+    <td>
+      TBD
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Other prizes
+    </td>
+    <td>
+      Physical trophies for top 3 in class championship
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Entry fee
+    </td>
+    <td>
+      TBD
+    </td>
+  </tr>
+</table>
 
 ## Key Dates
-Registration opens: TBD  
-Payment opens: TBD   
-Payment deadline: TBD  
-Paint submission deadline: TBD  
-Round 1: TBD  
-Prizes awarded: TBD  
+
+<table>
+  <tr>
+    <th>
+      What
+    </th>
+    <th>
+      When
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Registration opens
+    </td>
+    <td>
+      February 3rd 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Pre-qualifying
+    </td>
+    <td>
+      March 1st 2021 - March 7th 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Entry list announcement
+    </td>
+    <td>
+      March 10th 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Payment opens
+    </td>
+    <td>
+      March 10th 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Payment deadline
+    </td>
+    <td>
+      March 14th 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Paint submission deadline
+    </td>
+    <td>
+      Thursday before each round
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Round 1
+    </td>
+    <td>
+      March 21st 2021
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Prizes awarded
+    </td>
+    <td>
+      June 20th 2021
+    </td>
+  </tr>
+</table>
 
 ## 1. Overview
 
@@ -26,8 +155,8 @@ Prizes awarded: TBD
 - Open setup
 - Pre Qualification round to decide grid and classes
 - Maximum 60 cars in championship
-- 3 Classes: Pro, Pro Am, Am 
-- Best TBD rounds count towards championship standings
+- Two classes: PRO and AM
+- Best 6 rounds count towards championship standings
 - Warm up: 55 minutes
 - Qualifying: 10 minutes, closed track
 - Races:
@@ -38,395 +167,362 @@ Prizes awarded: TBD
 - Track states will be carried over from each session in an event
 - Weather for the event will be generated and carried over from each session
 - No fast repairs, no full course cautions
-- Live Stewarding
+- Live stewarding during heat and consolation races, feature race incidents will be reviewed after the race
 
-### 1.3 Entry fee
+### 1.2 Entry fee
 An entry fee of TBD per driver is required to cover the prize pool, hosted sessions, administrators time and all broadcast fees that we incur.
 
-## 2. Prize pool breakdown
-Winner of the Championship: TBD  
-Second in the Championship: TBD  
-Third in the Championship: TBD  
+## 2. Prizes
+
+### 2.1 Prize pool breakdown
+Winner of the PRO Championship: TBD  
+Second in the PRO Championship: TBD  
+Third in the PRO Championship: TBD  
+
+Winner of the AM Championship: TBD  
+Second in the AM Championship: TBD  
+Third in the AM Championship: TBD  
 
 Each race will also have a feature race prize pool of TBD awarded as follows: TBD
 
-### 2.2 Claiming prize money
-- For a driver to claim overall prize money a minimum of 5 championship rounds must be attended.
-- The prize paying drivers in each championship standings will be awarded the prize money as detailed above to the PayPal account of their choice
+### 2.2 Trophies
+Physical trophies made by Alkentech will be awarded to the top 3 drivers of the PRO and AM championship.
 
-## 3. Calendar
+### 2.3 Claiming prize money
+- For a driver to claim overall prize money a minimum of 5 championship rounds must be attended
+- The prize winning drivers in each championship standings will be awarded the prize money as detailed above to the PayPal account of their choice
 
-### 3.1 Pre Qualification
-- Date: TBD
-- Multiple sessions will be available throughout the day.
-- Start times of the sessions: TBD
-- All sessions have the same static settings
-- Track: TBD
-- Practice session duration: TBD
-- Qualifying session duration: TBD
-- Time of day: TBD
-- Track state: 100%
-- Weather:
-- Temperature: TBD
-- Humidity: TBD
-- Wind speed: TBD
-- Wind direction: TBD
-- Sky: TBD
-- Dynamic Sky: OFF
-- Dynamic weather: OFF
+## 3 Pre-Qualifying
+Multiple 3 hour sessions will be hosted throughout the week starting March 1st 2021. Drivers are allowed to attend TBD sessions throughout the week. Each driver must complete a stint of at least five consecutive clean valid laps. The fastest five consecutive laps will serve as their time to be assesed by.
 
-Each driver must complete a stint of at least ten consecutive clean valid laps. The fastest ten consecutive laps will serve as their time to be assesed by. 
+The organisation reserves the right to enter drivers into the championship without them having to qualify. E.g. the top 5 drivers from last season receive automatic entry should they want to participate.
 
+### 3.1 Session information
 <table>
   <tr>
-   <td><strong>Date</strong>
-   </td>
-   <td><strong>Track</strong>
-   </td>
-   <td><strong>Sim Time</strong>
-   </td>
-   <td><strong>Date</strong>
-   </td>
-   <td><strong>Track</strong>
-   </td>
-   <td><strong>Sim Time</strong>
-   </td>
+    <td>
+      Sessions
+    </td>
+    <td>
+      12:00 UTC (Saturday, Sunday)<br>
+      20:00 UTC (All week)
+    </td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
+    <td>
+      Session duration
+    </td>
+    <td>
+      3 hours
+    </td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
+    <td>
+      Track
+    </td>
+    <td>
+      Oulton Park Intl w/out Brittens
+    </td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
+    <td>
+      Sim date and time
+    </td>
+    <td>
+      June 20th 2021, 2:00 pm
+    </td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
-   <td>TBD
-   </td>
+    <td>
+      Track state
+    </td>
+    <td>
+      100%
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Ambient temperature
+    </td>
+    <td>
+      25°C
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Humidity
+    </td>
+    <td>
+      40%
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Wind
+    </td>
+    <td>
+      4kph, N
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Sky
+    </td>
+    <td>
+      Clear
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Dynamic sky
+    </td>
+    <td>
+      OFF
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Dynamic weather
+    </td>
+    <td>
+      OFF
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Time progression
+    </td>
+    <td>
+      0x
+    </td>
   </tr>
 </table>
 
-**Weather:** Generated  
-
-## 4. Event schedule
-All times in UTC
+## 4. Championship Points
+Championship points are only awarded to drivers participating in either the consolation or the feature race.
 
 <table>
+<thead>
   <tr>
-   <td><strong>Time</strong>
-   </td>
-   <td><strong>Broadcast</strong>
-   </td>
-   <td><strong>Session</strong>
-   </td>
+    <th>Position</th>
+    <th>Points</th>
+    <th>Position</th>
+    <th>Points</th>
+</thead>
+<tbody>
+  <tr>
+    <td>P1</td>
+    <td>150</td>
+    <td>P31</td>
+    <td>50</td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>
-   </td>
-   <td>Session goes live
-   </td>
+    <td>P2</td>
+    <td>135</td>
+    <td>P32</td>
+    <td>48</td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>
-   </td>
-   <td>Qualifying
-   </td>
+    <td>P3</td>
+    <td>125</td>
+    <td>P33</td>
+    <td>46</td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>Begins
-   </td>
-   <td>
-   </td>
+    <td>P4</td>
+    <td>120</td>
+    <td>P34</td>
+    <td>44</td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>
-   </td>
-   <td>Heats begin
-   </td>
+    <td>P5</td>
+    <td>115</td>
+    <td>P35</td>
+    <td>42</td>
   </tr>
   <tr>
-   <td>TBD
-   </td>
-   <td>Wrap up/Interviews
-   </td>
-   <td>
-   </td>
+    <td>P6</td>
+    <td>110</td>
+    <td>P36</td>
+    <td>40</td>
   </tr>
+  <tr>
+    <td>P7</td>
+    <td>105</td>
+    <td>P37</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td>P8</td>
+    <td>100</td>
+    <td>P38</td>
+    <td>36</td>
+  </tr>
+  <tr>
+    <td>P9</td>
+    <td>96</td>
+    <td>P39</td>
+    <td>34</td>
+  </tr>
+  <tr>
+    <td>P10</td>
+    <td>92</td>
+    <td>P40</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td>P11</td>
+    <td>90</td>
+    <td>P41</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>P12</td>
+    <td>88</td>
+    <td>P42</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td>P13</td>
+    <td>86</td>
+    <td>P43</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>P14</td>
+    <td>84</td>
+    <td>P44</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>P15</td>
+    <td>82</td>
+    <td>P45</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>P16</td>
+    <td>80</td>
+    <td>P46</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>P17</td>
+    <td>78</td>
+    <td>P47</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>P18</td>
+    <td>76</td>
+    <td>P48</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>P19</td>
+    <td>74</td>
+    <td>P49</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>P20</td>
+    <td>72</td>
+    <td>P50</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>P21</td>
+    <td>70</td>
+    <td>P51</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>P22</td>
+    <td>68</td>
+    <td>P52</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>P23</td>
+    <td>66</td>
+    <td>P53</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>P24</td>
+    <td>64</td>
+    <td>P54</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>P25</td>
+    <td>62</td>
+    <td>P55</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>P26</td>
+    <td>60</td>
+    <td>P56</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>P27</td>
+    <td>58</td>
+    <td>P57</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>P28</td>
+    <td>56</td>
+    <td>P58</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>P29</td>
+    <td>54</td>
+    <td>P59</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>P30</td>
+    <td>52</td>
+    <td>P60</td>
+    <td>1</td>
+  </tr>
+</tbody>
 </table>
 
-## 5. Championship Points
-Championship points are only awarded to drivers in the feature and top 10 left in consolation
-
-
-<table>
-  <tr>
-   <td><strong>Feature 1st</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 21st</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 2nd</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 22nd</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 3rd</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 23rd</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 4th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 24th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 5th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 25th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 6th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 26th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 7th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 27th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 8th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 28th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 9th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 29th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 10th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Feature 30th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 11th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 11th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 12th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 12th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 13th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 13th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 14th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 14th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 15th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 15th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 16th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 16th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 17th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 17th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 18th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 18th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 19th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 19th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Feature 20th</strong>
-   </td>
-   <td>TBD
-   </td>
-   <td><strong>Consolation 20th</strong>
-   </td>
-   <td>TBD
-   </td>
-  </tr>
-</table>
-
-### 5.2 Bonus Points
+### 4.2 Bonus Points
 - Fastest Lap: In every heat race, consolation race and feature race, a driver can earn 1 bonus point for the fastest lap
 
-### 5.3 Teams Championship
-- There will be no prizes awarded for the winning team, this championship is for merit only
-- Each team can only consist of 2 drivers.
- - The 2 drivers must be decided before the start of the first round.
-  - If this isn't the case when the series starts then we will assign the two drivers with the most points after round 1
+### 4.3 Class championships
+All drivers score overall points as listed above. The class standings are simply a filter on the overall standings, in which only the PRO or AM class is shown.
 
-## 6. Protests and Sporting Code
+### 4.4 Teams Championship
+- There will be no prizes awarded for the winning team, this championship is for merit only
+- Teams have no drop rounds, all points from all team members count towards the team total.
+- Each team can only consist of 2 drivers and 1 reserve driver. Only 2 drivers can participate each round.
+
+## 5. Protests and Sporting Code
 As there is a prize pool, it’s very important that we have clean and fair racing in the championship.
 
-### 6.1 Sporting Rules
-TBD
+### 5.1 Sporting Rules
+- Avoid car contact where possible. All contact incidents involving a car leaving the race track will be reviewed by race stewards either during the event or if missed, afterwards.
+ - In the event that the stewards miss the incident, a protest form will be available through the league discord and it will be assessed after the event
+- Intentional excessive car contact will have a zero tolerance policy. Incidents such as this will result in disqualification from the race and in the most serious circumstances, disqualification from the championship. 
+- As previously mentioned, the protest form will be made available through the discord
+ - Protests must be made before the Tuesday after the event at 12:00 UTC
+ - Please provide as much information as you can so the stewards can correctly identify the incident (Lap number, corner) 
+- In the case that a protest occurs, the stewards will attempt to speak to both drivers before finalising their decision. Full explanations will be given in writing over discord.
+- It is completely at the stewards discretion what penalty is applied, please respect the decision
+- The following incident limit will be in place for this series
+ - First penalty at 20 incident points
+ - Penalty every 5 incident points after 20
+- If you enter the session with the incorrect car then you will be disqualified from the race
 
-### 6.2 Possible Penalties
+### 5.2 Connection quality
+All races will be hosted on iRacing servers in Germany. All drivers are responsible for their own connection. Connection issues resulting in dangerous situations on track can lead to a driver being disqualified from the session without warning.
+
+### 5.3 Possible Penalties
 TBD

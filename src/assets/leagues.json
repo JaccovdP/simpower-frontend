@@ -6,6 +6,7 @@
     "automatic_standings": true,
     "fastest_lap_bonus": 1,
     "use_secondary_points": true,
+    "team_include_drop_rounds": false,
     "description": "",
     "promo_image": "poster_small.jpeg",
     "license_logo": "carreracup.png",
@@ -23,11 +24,13 @@
           ]
         }
       ],
+      "driver_classes": "PRO, AM (determined by pre-qualifying)",
       "event_type": "2 heats, 1 consolation, 1 feature",
       "broadcast": { "text": "Live on Racespot TV", "url": "#" },
-      "nr_of_rounds": "TBD",
+      "nr_of_rounds": "7",
       "overall_prize_pool": "TBD",
       "race_prize_pool": "TBD",
+      "other_prizes": "Physical trophies for top 3 in class championship",
       "entry_fee": "TBD"
     },
     "standings_fields": [
@@ -53,12 +56,14 @@
       { "label": "Drop round", "description": "Hover (touch) the points to view the sum of the dropped points for the team."}
     ],
     "key_dates": [
-      { "date": "TBD", "event": "Season 2 registration opens" },
-      { "date": "TBD", "event": "Season 2 payment opens" },
-      { "date": "TBD", "event": "Season 2 payment deadline" },
-      { "date": "TBD", "event": "Season 2 paint submission deadline" },
-      { "date": "TBD", "event": "Season 2 round 1" },
-      { "date": "TBD", "event": "Season 2 prize payouts" }
+      { "date": "February 3, 2021", "event": "Registration opens" },
+      { "date": "March 1-7, 2021", "event": "Pre-qualifying" },
+      { "date": "March 10, 2021", "event": "Entry list announcement" },
+      { "date": "March 10, 2021", "event": "Payment opens" },
+      { "date": "March 14, 2021", "event": "Payment deadline" },
+      { "date": "March 18, 2021", "event": "Paint submission deadline" },
+      { "date": "March 21, 2021", "event": "Round 1" },
+      { "date": "June 20, 2021", "event": "Prizes awarded" }
     ],
     "schedule": [
       { "time": "TBD", "broadcast": "", "session": "Starts" },
@@ -313,6 +318,7 @@
     "automatic_standings": true,
     "fastest_lap_bonus": 1,
     "use_secondary_points": true,
+    "team_include_drop_rounds": true,
     "description": "",
     "promo_image": "poster_small.jpeg",
     "license_logo": "carreracup.png",
@@ -899,6 +905,7 @@
     "visible": true,
     "description": "",
     "fastest_lap_bonus": 1,
+    "team_include_drop_rounds": true,
     "automatic_standings": false,
     "promo_image": "f3poster_small.png",
     "partners": [

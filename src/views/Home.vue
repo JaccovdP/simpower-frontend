@@ -8,8 +8,8 @@
 
       </div>
       <b-container fluid="lg" class="leagues-container">
-        <b-row>
-          <b-col v-for="league in leagueData.slice(0,2)" :key="league.key" cols="12" md="6" class="mb-2">
+        <b-row align-h="center">
+          <b-col v-for="league in leagueData.slice(0,1)" :key="league.key" cols="12" md="6" class="center mb-2">
             <b-link :to="'/league/' + league.key + '/info'">
               <b-img fluid :src="require('../assets/images/' + league.details.promo_image)"></b-img>
             </b-link>
@@ -53,7 +53,7 @@
 
       <div class="quotes bg-dark mt-4">
         <b-container fluid="lg">
-          <b-row v-if="quotes">
+          <b-row v-if="quotes" align-h="center">
             <b-col v-for="quote in quotes.slice(0,3)" :key="quote.name" cols="12" md="4" class="mt-2 mb-2 text-center">
               <small><i>"{{ quote.quote }}"</i><br>
               &#9; - {{ quote.name }}</small>
