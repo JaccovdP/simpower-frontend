@@ -31,7 +31,7 @@
       "overall_prize_pool": "TBD",
       "race_prize_pool": "TBD",
       "other_prizes": "Physical trophies for top 3 in class championship",
-      "entry_fee": "TBD"
+      "entry_fee": "25"
     },
     "standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "secondary_points", "label": "ATT" }, { "key": "wins", "label": "Wins" }

@@ -65,7 +65,7 @@
       Entry fee
     </td>
     <td>
-      TBD
+      €25
     </td>
   </tr>
 </table>
