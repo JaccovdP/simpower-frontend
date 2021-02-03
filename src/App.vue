@@ -44,7 +44,9 @@
         <b-navbar-nav>        
           <b-nav-item class="nav-spacing" to="/">Home</b-nav-item>
 
-          <b-nav-item-dropdown class="nav-spacing" text="Leagues" left>
+          <b-nav-item class="nav-spacing" href="/league/carrera-cup-s2/info">PorscheSport Cup Season 2</b-nav-item>
+
+          <b-nav-item-dropdown class="nav-spacing" text="Other Leagues" left>
             <template v-for="league in leagueData">
               <b-dropdown-item 
                 :key="league.details.name" 

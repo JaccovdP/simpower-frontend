@@ -1,11 +1,324 @@
 [
-  { "key": "carrera-cup", "details": {
-    "title": "PorscheSport.com Carrera Cup",
-    "menu_title": "PorscheSport Carrera Cup",
+  { "key": "carrera-cup-s2", "details": {
+    "title": "PorscheSport.com Carrera Cup Season 2",
+    "menu_title": "PorscheSport Carrera Cup Season 2",
     "visible": true,
     "automatic_standings": true,
     "fastest_lap_bonus": 1,
     "use_secondary_points": true,
+    "team_include_drop_rounds": false,
+    "description": "",
+    "promo_image": "poster_small.jpeg",
+    "license_logo": "carreracup.png",
+    "partners": [
+      { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
+      { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" },
+      { "name": "Racespot TV", "url": "https://www.racespot.tv/", "image": "racespot.png" }
+    ],
+    "key_info": {
+      "car_classes": [
+        { 
+          "class": "Porsche 911 GT3 Cup",
+          "cars": [
+            { "name": "Porsche 911 GT3 Cup", "image": "" }
+          ]
+        }
+      ],
+      "driver_classes": "PRO, AM (determined by pre-qualifying)",
+      "event_type": "2 heats, 1 consolation, 1 feature",
+      "broadcast": { "text": "Live on Racespot TV", "url": "#" },
+      "nr_of_rounds": "7",
+      "overall_prize_pool": "TBD",
+      "race_prize_pool": "TBD",
+      "other_prizes": "Physical trophies for top 3 in class championship",
+      "entry_fee": "25"
+    },
+    "standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "secondary_points", "label": "ATT" }, { "key": "wins", "label": "Wins" }
+    ],
+    "team_standings_fields": [
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
+    ],
+    "driver_table_info": [
+      { "label": "#", "description": "Driver number" },
+      { "label": "Driver", "description": "Driver name" },
+      { "label": "Team", "description": "Driver is member of this team." },
+      { "label": "Points", "description": "Number of points the driver has scored during the season." },
+      { "label": "ATT", "description": "Points scored for the AlkenTech.com Simulation Trophy. Number of positions the driver has gained in heat races during the season. (AlkenTech.com Simulation Trophy)" },
+      { "label": "Wins", "description": "Number of races the driver has won this season." },
+      { "label": "Drop round", "description": "Between brackets after each points column is the drop round for the driver. That is, the round with the worst result (excluding disqualifications)."},
+      { "label": "Tie breakers", "description": "Feature wins -> Heat wins -> Average finishing position (excluding drop round) -> Highest finishing position -> Least lowest finishing position (excluding drop round)"},
+      { "label": "ATT tie breakers", "description": "Lowest average incident points in heat races"}
+    ],
+    "team_table_info": [
+      { "label": "Team", "description": "Team name"},
+      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."},
+      { "label": "Drop round", "description": "Hover (touch) the points to view the sum of the dropped points for the team."}
+    ],
+    "key_dates": [
+      { "date": "February 3, 2021", "event": "Registration opens" },
+      { "date": "March 1-7, 2021", "event": "Pre-qualifying" },
+      { "date": "March 10, 2021", "event": "Entry list announcement" },
+      { "date": "March 10, 2021", "event": "Payment opens" },
+      { "date": "March 14, 2021", "event": "Payment deadline" },
+      { "date": "March 18, 2021", "event": "Paint submission deadline" },
+      { "date": "March 21, 2021", "event": "Round 1" },
+      { "date": "June 20, 2021", "event": "Prizes awarded" }
+    ],
+    "schedule": [
+      { "time": "TBD", "broadcast": "", "session": "Starts" },
+      { "time": "TBD", "broadcast": "", "session": "Qualifying" },
+      { "time": "TBD", "broadcast": "Begins", "session": "" },
+      { "time": "TBD", "broadcast": "", "session": "Heats begin" },
+      { "time": "TBD", "broadcast": "Interviews", "session": "" }
+    ],
+    "sessions": [
+      {
+        "round": 1,
+        "type": "practice",
+        "name": "FP1: Round 1",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 1,
+        "type": "practice",
+        "name": "FP2: Round 2",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 1,
+        "type": "race",
+        "name": "Race: Round 1",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 2,
+        "type": "practice",
+        "name": "FP1: Round 2",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 2,
+        "type": "practice",
+        "name": "FP2: Round 2",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 2,
+        "type": "race",
+        "name": "Race: Round 2",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 3,
+        "type": "practice",
+        "name": "FP1: Round 3",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 3,
+        "type": "practice",
+        "name": "FP2: Round 3",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 3,
+        "type": "race",
+        "name": "Race: Round 3",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 4,
+        "type": "practice",
+        "name": "FP1: Round 4",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 4,
+        "type": "practice",
+        "name": "FP2: Round 4",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 4,
+        "type": "race",
+        "name": "Race: Round 4",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 5,
+        "type": "practice",
+        "name": "FP1: Round 5",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 5,
+        "type": "practice",
+        "name": "FP2: Round 5",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 5,
+        "type": "race",
+        "name": "Race: Round 5",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 6,
+        "type": "practice",
+        "name": "FP1: Round 6",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 6,
+        "type": "practice",
+        "name": "FP2: Round 6",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 6,
+        "type": "race",
+        "name": "Race: Round 6",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 7,
+        "type": "practice",
+        "name": "FP1: Round 7",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 7,
+        "type": "practice",
+        "name": "FP2: Round 7",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      },
+      {
+        "round": 7,
+        "type": "race",
+        "name": "Race: Round 7",
+        "date": "",
+        "time": "",
+        "simtime": "",
+        "weather": "Generated Weather",
+        "sky": "Dynamic Sky",
+        "results_files": []
+      }
+    ],
+    "teams": [
+      { "name": "Example Team", "logo": "", "url": "", "drivers": [
+        { "number": "911", "name": "Example Driver", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]}
+    ]
+  }},
+  { "key": "carrera-cup", "details": {
+    "title": "PorscheSport.com Carrera Cup Season 1",
+    "menu_title": "PorscheSport Carrera Cup Season 1",
+    "visible": true,
+    "automatic_standings": true,
+    "fastest_lap_bonus": 1,
+    "use_secondary_points": true,
+    "team_include_drop_rounds": true,
     "description": "",
     "promo_image": "poster_small.jpeg",
     "license_logo": "carreracup.png",
@@ -592,6 +905,7 @@
     "visible": true,
     "description": "",
     "fastest_lap_bonus": 1,
+    "team_include_drop_rounds": true,
     "automatic_standings": false,
     "promo_image": "f3poster_small.png",
     "partners": [
@@ -789,190 +1103,6 @@
         { "number": "19", "name": "Stephen Grabrowski", "points": 17, "warnings": 0 },
         { "number": "4", "name": "William Paisley", "points": 14, "warnings": 0 },
         { "number": "8", "name": "Dries Vanderyt3", "points": 13, "warnings": 0 }
-      ]}
-    ]
-  }},
-  { "key": "f3-evo", "details": {
-    "title": "Alkentech Formula Evo Championship",
-    "menu_title": "Alkentech Formula Evo Championship",
-    "visible": true,
-    "description": "",
-    "promo_image": "f3poster_small.png",
-    "partners": [
-      { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" }
-    ],
-    "key_info": {
-      "car_classes": [
-        { 
-          "class": "Dallara F3",
-          "cars": [
-            { "name": "Dallara F3", "image": "" }
-          ]
-        }
-      ],
-      "event_type": "2 x 30 minute sprint races",
-      "broadcast": { "text": "Live on Simpower TV", "url": "" },
-      "nr_of_rounds": 8,
-      "overall_prize_pool": 400,
-      "entry_fee": 20
-    },
-    "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, "name", "team", {"key": "points", "label": "Points" }, {"key": "wins", "label": "Wins" }
-    ],
-    "team_standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, "name", "points"
-    ],
-    "driver_table_info": [
-      { "label": "#", "description": "Driver number" },
-      { "label": "Driver", "description": "Driver name" },
-      { "label": "Team", "description": "Driver is member of this team." },
-      { "label": "Points", "description": "Number of points the driver has scored during the season." },
-      { "label": "Wins", "description": "Number of races the driver has won this season." }
-    ],
-    "team_table_info": [
-      { "label": "Team", "description": "Team name"},
-      { "label": "Points", "description": "Combined number of points the drivers in the team have scored during the season."}
-    ],
-    "key_dates": [
-      { "date": "April 2, 2020", "event": "Registration opens" },
-      { "date": "April 26, 2020", "event": "Payment opens" },
-      { "date": "May 13, 2020", "event": "Payment deadline" },
-      { "date": "May 13, 2020", "event": "Paint submission deadline" },
-      { "date": "May 20, 2020", "event": "Round 1" },
-      { "date": "September 10, 2020", "event": "Prize payouts" }
-    ],
-    "schedule": [
-      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
-      { "time": "18:45 UTC", "broadcast": "", "session": "Qualifying" },
-      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
-      { "time": "19:10 UTC", "broadcast": "", "session": "Race 1" },
-      { "time": "19:50 UTC", "broadcast": "Interval", "session": "" },
-      { "time": "20:00 UTC", "broadcast": "Resumes", "session": "Race 2 session opens" },
-      { "time": "20:10 UTC", "broadcast": "", "session": "Race 2" },
-      { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
-    ],
-    "sessions": [
-      {
-        "type": "race",
-        "name": "Indianapolis GP",
-        "date": "May 20, 2020",
-        "simtime": "12:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Suzuka GP",
-        "date": "June 3, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Silverstone GP",
-        "date": "June 17, 2020",
-        "simtime": "17:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Philip Island",
-        "date": "July 1, 2020",
-        "simtime": "11:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Nurburgring GP",
-        "date": "July 15, 2020",
-        "simtime": "16:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": []
-      },
-      {
-        "type": "race",
-        "name": "Monza GP",
-        "date": "July 29, 2020",
-        "simtime": "14:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round6.zip"
-      },
-      {
-        "type": "race",
-        "name": "Spa GP",
-        "date": "August 12, 2020",
-        "simtime": "06:30",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round7.zip"
-      },
-      {
-        "type": "race",
-        "name": "Interlagos",
-        "date": "August 26, 2020",
-        "simtime": "10:00",
-        "weather": "Generated Weather",
-        "sky": "Dynamic Sky",
-        "results_files": [],
-        "setup_url": "https://downloads.simpower.co.uk/alkentech-f3/s1/setups/Round8.zip"
-      }
-    ],
-    "teams": [
-      { "name": "DataWire Racing", "logo": "datawire.png", "url": "", "drivers": [
-        { "number": "11", "name": "Dries Vanderyt", "points": 975, "warnings": 0 },
-        { "number": "3", "name": "Kristof Rampelberg", "points": 398, "warnings": 0 }
-      ]},
-      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
-        { "number": "99", "name": "Josh Clogg", "points": 1347, "wins": 3, "warnings": 1 },
-        { "number": "", "name": "Taylor Lane", "points": 325, "warnings": 1 }
-      ]},
-      { "name": "Radar Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Patrick Charlton", "points": 480, "wins": 2, "warnings": 1 }
-      ]},
-      { "name": "Belgian iRacing Team", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Pierre Cousin", "points": 567, "warnings": 0 }
-      ]},
-      { "name": "4ELEMENTS Racing Team", "logo": "4elements.jpg", "url": "", "drivers": [
-        { "number": "21", "name": "Michael Schieber", "points": 669, "warnings": 0 },
-        { "number": "6", "name": "Freddie Skitini", "points": 696, "warnings": 0 }
-      ]},
-      { "name": "T.C.R", "logo": "tcrlogored.png", "url": "", "drivers": [
-        { "number": "4", "name": "William Paisley", "points": 290, "warnings": 1 }
-      ]},
-      { "name": "3 Boys Racing Team", "logo": "", "url": "", "drivers": [
-        { "number": "22", "name": " Matthew Birkett", "points": 489, "warnings": 0 }
-      ]},
-      { "name": "Klub_Karacho", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Maik Pflueckhahn", "points": 190, "warnings": 2 }
-      ]},
-      { "name": "Team OCA Racing", "logo": "", "url": "", "drivers": [
-        { "number": "66", "name": "Dan Ocaranza", "points": 295, "warnings": 0 }
-      ]},
-      { "name": "Ten-X Virtual Racing", "logo": "", "url": "", "drivers": [
-        { "number": "", "name": "Andrew Waddle", "points": 73, "warnings": 0 }
-      ]},
-      { "name": "Slow Squadron", "logo": "", "url": "", "drivers": [
-        { "number": "41", "name": "Tyler Hoffman", "points": 46, "warnings": 1 }
-      ]},
-      { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "28", "name": "Silas Krag-Volijk", "points": 1170, "wins": 5, "warnings": 0 },
-        { "number": "57", "name": "Jacco van der Plaat", "points": 1193, "wins": 5, "warnings": 1 },
-        { "number": "", "name": "Russell Barnes", "points": 897, "wins": 1, "warnings": 0 },
-        { "number": "19", "name": "Britton Smith", "points": 426, "warnings": 1 },
-        { "number": "44", "name": "Stephen Grabowski", "points": 575, "warnings": 0 },
-        { "number": "", "name": "Konstantinos Sidiras", "points": 320, "warnings": 0 },
-        { "number": "", "name": "Micheal Les Wright", "points": 51, "warnings": 0 }
       ]}
     ]
   }}

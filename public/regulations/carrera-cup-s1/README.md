@@ -1,4 +1,4 @@
-# PorscheSport Carrera Cup Regulations
+# PorscheSport Carrera Cup Season 1 Regulations
 
 
 ## Key Info
