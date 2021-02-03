@@ -14,7 +14,8 @@
     "partners": [
       { "name": "PorscheSport.com", "url": "https://www.porschesport.com/", "image": "porschesport.png" },
       { "name": "Alkentech.com", "url": "https://www.alkentech.com/", "image": "alkentech.png" },
-      { "name": "Racespot TV", "url": "https://www.racespot.tv/", "image": "racespot.png" }
+      { "name": "Racespot TV", "url": "https://www.racespot.tv/", "image": "racespot.png" },
+      { "name": "Clutch Customs", "url": "https://clutchcustoms.myportfolio.com/", "image": "ClutchCustoms.png"}
     ],
     "key_info": {
       "car_classes": [
