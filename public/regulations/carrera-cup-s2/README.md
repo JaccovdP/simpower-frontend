@@ -521,8 +521,11 @@ As there is a prize pool, it’s very important that we have clean and fair raci
  - Penalty every 5 incident points after 20
 - If you enter the session with the incorrect car then you will be disqualified from the race
 
-### 5.2 Connection quality
+### 5.2 Qualifying
+During qualifying sessions we expect all drivers to drive a normal outlap without exploiting any unrealistic tricks available in iRacing. This includes, but is not limited to, the 'brake dragging' method.
+
+### 5.3 Connection quality
 All races will be hosted on iRacing servers in Germany. All drivers are responsible for their own connection. Connection issues resulting in dangerous situations on track can lead to a driver being disqualified from the session without warning.
 
-### 5.3 Possible Penalties
+### 5.4 Possible Penalties
 TBD
