@@ -2,6 +2,7 @@
   { "key": "carrera-cup-s2", "details": {
     "title": "PorscheSport.com Carrera Cup Season 2",
     "menu_title": "PorscheSport Carrera Cup Season 2",
+    "signup_url": "https://forms.gle/DqzCw7U6HfQWeTNY8",
     "visible": true,
     "automatic_standings": true,
     "fastest_lap_bonus": 1,

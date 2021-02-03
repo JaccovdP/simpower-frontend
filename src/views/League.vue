@@ -11,7 +11,8 @@
             <b-nav-item to="schedule" :active="tabIndex == 1">Schedule</b-nav-item>
             <b-nav-item to="entries" :active="tabIndex == 2">Entries</b-nav-item>
             <b-nav-item to="standings" :active="tabIndex == 3">Standings</b-nav-item>
-            <b-nav-item to="signup" :active="tabIndex == 4" disabled>Sign up</b-nav-item>
+            <b-nav-item v-if="data.signup_url" :href="data.signup_url" target="_blank">Sign up</b-nav-item>
+            <b-nav-item v-if="!data.signup_url" disabled>Sign up</b-nav-item>
           </b-nav>
           <b-tabs pills content-class="mt-3" v-model="tabIndex" class="tabContainer">
             <b-tab title="Info" class="text-left">
