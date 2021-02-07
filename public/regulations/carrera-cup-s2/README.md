@@ -213,7 +213,8 @@ The organisation reserves the right to enter drivers into the championship witho
       Session duration
     </td>
     <td>
-      3 hours
+      30 minutes open practice<br>
+      3 hours lone qualifying
     </td>
   </tr>
   <tr>
@@ -296,7 +297,20 @@ The organisation reserves the right to enter drivers into the championship witho
       0x
     </td>
   </tr>
+  <tr>
+    <td>
+      Leave marbles on track
+    </td>
+    <td>
+      NO
+    </td>
+  </tr>
 </table>
+
+### 3.2 Classes
+Drivers will be entered into the PRO or AM class based on their fastest five consecutive clean laps done in pre-qualifying. However, stewards reserve the right to ignore the laptimes and place a driver in a different class when there exists a suspicion that a driver did not perform up to their normal standards.
+
+Drivers who finished in the overall top 5 of previous season will automatically be entered into the PRO class.
 
 ## 4. Championship Points
 Championship points are only awarded to drivers participating in either the consolation or the feature race.
@@ -502,12 +516,15 @@ All drivers score overall points as listed above. The class standings are simply
 ### 4.4 Teams Championship
 - There will be no prizes awarded for the winning team, this championship is for merit only
 - Teams have no drop rounds, all points from all team members count towards the team total.
-- Each team can only consist of 2 drivers and 1 reserve driver. Only 2 drivers can participate each round.
+- Each team can have a maximum of 2 drivers and 1 reserve driver. Only 2 drivers can participate each round. Teams consisting of a single driver are also allowed.
 
-## 5. Protests and Sporting Code
+## 5. Attendance
+To prevent the field being smaller than expected an attendance form will be used for each round. Every driver (including reserve drivers) should reply to this attendance form, indicating whether or not they will participate in the upcoming round. Failure to respond to the attendance form will result in the driver being moved to the top of the reserve list (in the case of a full season entry) or to the bottom of the reserve list (if the driver was already on the reserve list). Full season entries are only allowed to participate in the round if they responded 'Yes'. For any full season entry responding 'No' a reserve driver who responded 'Yes' will be allowed to drive in the round in question. Responding 'No' means you will not be allowed to race in the round in question. Responding 'Yes' and subsequently being unavailable will have the same result as not responding.
+
+## 6. Protests and Sporting Code
 As there is a prize pool, it’s very important that we have clean and fair racing in the championship.
 
-### 5.1 Sporting Rules
+### 6.1 Sporting Rules
 - Avoid car contact where possible. All contact incidents involving a car leaving the race track will be reviewed by race stewards either during the event or if missed, afterwards.
  - In the event that the stewards miss the incident, a protest form will be available through the league discord and it will be assessed after the event
 - Intentional excessive car contact will have a zero tolerance policy. Incidents such as this will result in disqualification from the race and in the most serious circumstances, disqualification from the championship. 
@@ -521,11 +538,11 @@ As there is a prize pool, it’s very important that we have clean and fair raci
  - Penalty every 5 incident points after 20
 - If you enter the session with the incorrect car then you will be disqualified from the race
 
-### 5.2 Qualifying
+### 6.2 Qualifying
 During qualifying sessions we expect all drivers to drive a normal outlap without exploiting any unrealistic tricks available in iRacing. This includes, but is not limited to, the 'brake dragging' method.
 
-### 5.3 Connection quality
+### 6.3 Connection quality
 All races will be hosted on iRacing servers in Germany. All drivers are responsible for their own connection. Connection issues resulting in dangerous situations on track can lead to a driver being disqualified from the session without warning.
 
-### 5.4 Possible Penalties
+### 6.4 Possible Penalties
 TBD

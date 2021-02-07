@@ -6,7 +6,7 @@
     "visible": true,
     "automatic_standings": true,
     "fastest_lap_bonus": 1,
-    "use_secondary_points": true,
+    "use_secondary_points": false,
     "team_include_drop_rounds": false,
     "description": "",
     "promo_image": "poster_small.jpeg",
@@ -36,7 +36,7 @@
       "entry_fee": "25"
     },
     "standings_fields": [
-      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "secondary_points", "label": "ATT" }, { "key": "wins", "label": "Wins" }
+      { "key": "index", "label": "", "stickyColumn": true }, { "key": "number", "label": "#" }, { "key": "name", "label": "Driver" }, { "key": "points", "label": "Points" }, { "key": "wins", "label": "Wins" }
     ],
     "team_standings_fields": [
       { "key": "index", "label": "", "stickyColumn": true }, { "key": "name", "label": "Team" }, { "key": "points", "label": "Points", "sortable": true }
@@ -76,10 +76,21 @@
     ],
     "sessions": [
       {
+        "round": 0,
+        "type": "preq",
+        "name": "Pre-qualifying: Oulton Park Intl w/out Brittens",
+        "date": "March 1-7, 2021",
+        "time": "20:00 UTC, 12:00 UTC (Sat, Sun)",
+        "simtime": "20-06-2021, 2:00pm (0x)",
+        "weather": "Weather fixed (25°C, 40%, 4kph N, clear)",
+        "sky": "Track 100% auto-clean",
+        "results_files": []
+      },
+      {
         "round": 1,
         "type": "practice",
-        "name": "FP1: Round 1",
-        "date": "",
+        "name": "FP1: Mid Ohio Full Course",
+        "date": "March 19, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -89,8 +100,8 @@
       {
         "round": 1,
         "type": "practice",
-        "name": "FP2: Round 2",
-        "date": "",
+        "name": "FP2: Mid Ohio Full Course",
+        "date": "March 20, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -100,8 +111,8 @@
       {
         "round": 1,
         "type": "race",
-        "name": "Race: Round 1",
-        "date": "",
+        "name": "Race: Mid Ohio Full Course",
+        "date": "March 21, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -111,8 +122,8 @@
       {
         "round": 2,
         "type": "practice",
-        "name": "FP1: Round 2",
-        "date": "",
+        "name": "FP1: Zolder GP",
+        "date": "April 2, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -122,8 +133,8 @@
       {
         "round": 2,
         "type": "practice",
-        "name": "FP2: Round 2",
-        "date": "",
+        "name": "FP2: Zolder GP",
+        "date": "April 3, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -133,8 +144,8 @@
       {
         "round": 2,
         "type": "race",
-        "name": "Race: Round 2",
-        "date": "",
+        "name": "Race: Zolder GP",
+        "date": "April 4, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -144,8 +155,8 @@
       {
         "round": 3,
         "type": "practice",
-        "name": "FP1: Round 3",
-        "date": "",
+        "name": "FP1: Imola GP",
+        "date": "April 16, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -155,8 +166,8 @@
       {
         "round": 3,
         "type": "practice",
-        "name": "FP2: Round 3",
-        "date": "",
+        "name": "FP2: Imola GP",
+        "date": "April 17, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -166,8 +177,8 @@
       {
         "round": 3,
         "type": "race",
-        "name": "Race: Round 3",
-        "date": "",
+        "name": "Race: Imola GP",
+        "date": "April 18, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -177,8 +188,8 @@
       {
         "round": 4,
         "type": "practice",
-        "name": "FP1: Round 4",
-        "date": "",
+        "name": "FP1: Nürburgring GP",
+        "date": "April 30, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -188,8 +199,8 @@
       {
         "round": 4,
         "type": "practice",
-        "name": "FP2: Round 4",
-        "date": "",
+        "name": "FP2: Nürburgring GP",
+        "date": "May 1, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -199,8 +210,8 @@
       {
         "round": 4,
         "type": "race",
-        "name": "Race: Round 4",
-        "date": "",
+        "name": "Race: Nürburgring GP",
+        "date": "May 2, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -210,8 +221,8 @@
       {
         "round": 5,
         "type": "practice",
-        "name": "FP1: Round 5",
-        "date": "",
+        "name": "FP1: Brands Hatch GP",
+        "date": "May 14, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -221,8 +232,8 @@
       {
         "round": 5,
         "type": "practice",
-        "name": "FP2: Round 5",
-        "date": "",
+        "name": "FP2: Brands Hatch GP",
+        "date": "May 15, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -232,8 +243,8 @@
       {
         "round": 5,
         "type": "race",
-        "name": "Race: Round 5",
-        "date": "",
+        "name": "Race: Brands Hatch GP",
+        "date": "May 16, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -243,8 +254,8 @@
       {
         "round": 6,
         "type": "practice",
-        "name": "FP1: Round 6",
-        "date": "",
+        "name": "FP1: Suzuka GP",
+        "date": "May 28, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -254,8 +265,8 @@
       {
         "round": 6,
         "type": "practice",
-        "name": "FP2: Round 6",
-        "date": "",
+        "name": "FP2: Suzuka GP",
+        "date": "May 29, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -265,8 +276,8 @@
       {
         "round": 6,
         "type": "race",
-        "name": "Race: Round 6",
-        "date": "",
+        "name": "Race: Suzuka GP",
+        "date": "May 30, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -276,8 +287,8 @@
       {
         "round": 7,
         "type": "practice",
-        "name": "FP1: Round 7",
-        "date": "",
+        "name": "FP1: Sebring International",
+        "date": "June 11, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -287,8 +298,8 @@
       {
         "round": 7,
         "type": "practice",
-        "name": "FP2: Round 7",
-        "date": "",
+        "name": "FP2: Sebring International",
+        "date": "June 12, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -298,8 +309,8 @@
       {
         "round": 7,
         "type": "race",
-        "name": "Race: Round 7",
-        "date": "",
+        "name": "Race: Sebring International",
+        "date": "June 13, 2021",
         "time": "",
         "simtime": "",
         "weather": "Generated Weather",
@@ -308,8 +319,11 @@
       }
     ],
     "teams": [
-      { "name": "Example Team", "logo": "", "url": "", "drivers": [
-        { "number": "911", "name": "Example Driver", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      { "name": "RaceKraft Esports", "logo": "racekraft.png", "url": "", "drivers": [
+        { "number": "43", "name": "Brian Lockwood", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
+      { "name": "Vendaval Simracing", "logo": "", "url": "", "drivers": [
+        { "number": "68", "name": "Dylan Birse", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]}
     ]
   }},

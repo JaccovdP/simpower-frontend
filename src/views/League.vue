@@ -117,9 +117,9 @@
                   <h3 class="text-left">Sessions <span style="float:right;"><b-button @click="hidePractice = !hidePractice" size="sm">{{ hidePractice ? "Show" : "Hide" }} practice</b-button></span></h3>
                   <b-card class="mb-2" v-for="session in filteredSessions" :key="session.name" 
                     header-tag="header" 
-                    :border-variant="session.type == 'race' ? 'primary' : 'none'" 
-                    :header-bg-variant="session.type == 'race' ? 'primary' : 'none'"
-                    :header-text-variant="session.type == 'race' ? 'white' : 'none'">
+                    :border-variant="session.type == 'race' ? 'primary' : session.type == 'preq' ? 'info' : 'none'" 
+                    :header-bg-variant="session.type == 'race' ? 'primary' : session.type == 'preq' ? 'info' : 'none'"
+                    :header-text-variant="session.type == 'race' ? 'white' : session.type == 'preq' ? 'white' : 'none'">
                     <template v-slot:header>
                       <h5 class="mb-0">{{ session.name }}</h5>
                     </template>
@@ -205,7 +205,12 @@
             <b-tab title="Entries">
               <b-row class="text-left">
                 <b-col>
-                  <h3>Entries</h3>
+                  <h3>Entries
+                    <span style="float:right;">
+                      <b-button style="background-color:#000; border-color:#000;" size="sm" class="ml-2">PRO</b-button>
+                      <b-button style="background-color:#ca2627; border-color:#ca2627;" size="sm" class="ml-2 mr-2">AM</b-button>
+                    </span>
+                  </h3>
                   <b-container class="mt-2" v-if="resultsLoading">
                     <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
                   </b-container>
@@ -220,6 +225,9 @@
                             <b-card-body :title="team.name">
                               <b-card-text>
                                 <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                                  <template v-slot:cell(number)="row">
+                                    <span class="number" :class="row.item.class == 'PRO' ? 'sp_pro' : row.item.class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
+                                  </template>
                                   <template v-slot:cell(name)="row">
                                     <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                                   </template>
@@ -257,12 +265,22 @@
             <b-tab title="Standings">
               <b-row class="text-left">
                 <b-col align-self="stretch" cols="12" lg="8" md="12">
-                  <h3>Driver standings <span style="float:right;"><b-button v-b-modal.driverTableInfo size="sm">Table info</b-button></span></h3>
+                  <h3>
+                    Driver standings {{ standingsFilter }}
+                    <span style="float:right;">
+                      <b-button v-b-modal.driverTableInfo size="sm">Table info</b-button>
+                      <b-button @click="standingsFilter=null" :pressed="!standingsFilter" variant="info" size="sm" class="ml-2">Overall</b-button>
+                      <b-button @click="standingsFilter='PRO'" :pressed="standingsFilter == 'PRO'" style="background-color:#000; border-color:#000;" size="sm" class="ml-2">PRO</b-button>
+                      <b-button @click="standingsFilter='AM'" :pressed="standingsFilter == 'AM'" style="background-color:#ca2627; border-color:#ca2627;" size="sm" class="ml-2">AM</b-button>
+                    </span>
+                  </h3>
                   <b-container class="mt-2" v-if="resultsLoading">
                     <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
                   </b-container>
                   <b-table
                     v-if="!resultsLoading"
+                    :filter="standingsFilter"
+                    filter-on="class"
                     striped 
                     small 
                     outlined
@@ -281,6 +299,9 @@
                     </template>
                     <template v-slot:cell(index)="data">
                       {{ data.index + 1 }}
+                    </template>
+                    <template v-slot:cell(number)="row">
+                      <span class="number" :class="row.item.class == 'PRO' ? 'sp_pro' : row.item.class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
                     </template>
                     <template v-slot:cell(name)="row">
                       <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link><br>
@@ -433,7 +454,7 @@
 
             <b-row>
               <b-col lg="12">
-                <div class="license_footer">
+                <div :class="selectedDriver.class == 'PRO' ? 'license_footer sp_pro' : 'license_footer sp_am'">
                   #{{ selectedDriver.number }} {{ selectedDriver.name }} - {{ selectedDriver.team ? selectedDriver.team : entries[this.getDriverIndexByNumber(selectedDriver.number).teamIndex].name }}
                 </div>
               </b-col>
@@ -728,6 +749,7 @@ export default {
           driver_standings.push({
             number: driver.number,
             name: driver.name,
+            class: driver.class,
             team: team.name,
             team_logo: team.logo,
             wins: driver.wins,
@@ -843,7 +865,7 @@ export default {
       let sessions = this.data.sessions
       if (this.hidePractice) {
         return sessions.filter(function(session) {
-          return session.type == "race"
+          return session.type == "race" || session.type == 'preq'
         })
       } else{
         return sessions
@@ -1125,6 +1147,7 @@ export default {
       tabIndex: 0,
       resultsTabIndex: 0,
       visibleResults: [],
+      standingsFilter: null,
       tabDict: {
         0: "info",
         1: "schedule",
@@ -1188,10 +1211,22 @@ export default {
 
   .license_footer {
     min-height: 40px;
-    background: #c92526;
     padding: 5px 5px 5px 5px;
     font-size: 1em;
-    color: #fff;
+  }
+
+  .sp_am {
+    background: #c92526;
+    color: #fff; 
+  }
+
+  .sp_pro {
+    background: #000;
+    color: #fff; 
+  }
+
+  .number {
+    padding:5px;
   }
 
   @media (min-width: 992px) {
