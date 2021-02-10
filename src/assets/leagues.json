@@ -319,6 +319,9 @@
       }
     ],
     "teams": [
+      { "name": "Porsche24 Driven by Redline", "logo": "", "url": "", "drivers": [
+        { "number": "1", "name": "Alexander Thiebe", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      ]},
       { "name": "RaceKraft Esports", "logo": "racekraft.png", "url": "", "drivers": [
         { "number": "43", "name": "Brian Lockwood", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
       ]},
