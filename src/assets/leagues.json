@@ -68,11 +68,11 @@
       { "date": "June 20, 2021", "event": "Prizes awarded" }
     ],
     "schedule": [
-      { "time": "TBD", "broadcast": "", "session": "Starts" },
-      { "time": "TBD", "broadcast": "", "session": "Qualifying" },
-      { "time": "TBD", "broadcast": "Begins", "session": "" },
-      { "time": "TBD", "broadcast": "", "session": "Heats begin" },
-      { "time": "TBD", "broadcast": "Interviews", "session": "" }
+      { "time": "18:00 UTC", "broadcast": "", "session": "Starts" },
+      { "time": "18:55 UTC", "broadcast": "", "session": "Qualifying" },
+      { "time": "19:00 UTC", "broadcast": "Begins", "session": "" },
+      { "time": "19:05 UTC", "broadcast": "", "session": "Heats begin" },
+      { "time": "20:45 UTC", "broadcast": "Interviews", "session": "" }
     ],
     "sessions": [
       {
