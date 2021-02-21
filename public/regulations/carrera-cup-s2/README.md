@@ -46,10 +46,12 @@
   </tr>
   <tr>
     <td>
-      Prize pool
+      Prize pools
     </td>
     <td>
-      TBD
+      PRO Championship: €425<br>
+      AM Championship: €120<br>
+      Races: €315<br>
     </td>
   </tr>
   <tr>
@@ -170,20 +172,28 @@
 - Live stewarding during heat and consolation races, feature race incidents will be reviewed after the race
 
 ### 1.2 Entry fee
-An entry fee of TBD per driver is required to cover the prize pool, hosted sessions, administrators time and all broadcast fees that we incur.
+An entry fee of €25 per driver is required to cover the prize pool, hosted sessions, administrators time and all broadcast fees that we incur.
 
 ## 2. Prizes
 
 ### 2.1 Prize pool breakdown
-Winner of the PRO Championship: TBD  
-Second in the PRO Championship: TBD  
-Third in the PRO Championship: TBD  
+#### 2.1.1 Championship prize pool (€545)
+Winner of the PRO Championship: €250  
+Second in the PRO Championship: €100  
+Third in the PRO Championship: €75  
 
-Winner of the AM Championship: TBD  
-Second in the AM Championship: TBD  
-Third in the AM Championship: TBD  
+Winner of the AM Championship: €60  
+Second in the AM Championship: €40  
+Third in the AM Championship: €20
 
-Each race will also have a feature race prize pool of TBD awarded as follows: TBD
+#### 2.1.2 Feature races prize pool (€45)
+PRO P1: €15  
+PRO P2: €10  
+PRO P3: €8  
+
+AM P1: €6  
+AM P2: €4  
+AM P3: €2
 
 ### 2.2 Trophies
 Physical trophies made by Alkentech will be awarded to the top 3 drivers of the PRO and AM championship.
@@ -193,7 +203,7 @@ Physical trophies made by Alkentech will be awarded to the top 3 drivers of the 
 - The prize winning drivers in each championship standings will be awarded the prize money as detailed above to the PayPal account of their choice
 
 ## 3 Pre-Qualifying
-Multiple 3 hour sessions will be hosted throughout the week starting March 1st 2021. Drivers are allowed to attend TBD sessions throughout the week. Each driver must complete a stint of at least five consecutive clean valid laps. The fastest five consecutive laps will serve as their time to be assesed by.
+Multiple 3 hour sessions will be hosted throughout the week starting March 1st 2021. Drivers are allowed to attend as many sessions as they like. However, to ensure that drivers who have not participated yet will be able to get a slot, you're not allowed to join a session during practice when you have already participated in a previous session. Each driver must complete a stint of at least five consecutive clean valid laps. The fastest five consecutive laps will serve as their time to be assesed by.
 
 The organisation reserves the right to enter drivers into the championship without them having to qualify. E.g. the top 5 drivers from last season receive automatic entry should they want to participate.
 
@@ -532,11 +542,10 @@ As there is a prize pool, it’s very important that we have clean and fair raci
  - Protests must be made before the Tuesday after the event at 12:00 UTC
  - Please provide as much information as you can so the stewards can correctly identify the incident (Lap number, corner) 
 - In the case that a protest occurs, the stewards will attempt to speak to both drivers before finalising their decision. Full explanations will be given in writing over discord.
-- It is completely at the stewards discretion what penalty is applied, please respect the decision
+- It is completely at the stewards discretion what penalty is applied, please respect the decision. Appealing a decision is not possible.
 - The following incident limit will be in place for this series
  - First penalty at 20 incident points
  - Penalty every 5 incident points after 20
-- If you enter the session with the incorrect car then you will be disqualified from the race
 
 ### 6.2 Qualifying
 During qualifying sessions we expect all drivers to drive a normal outlap without exploiting any unrealistic tricks available in iRacing. This includes, but is not limited to, the 'brake dragging' method.
@@ -545,4 +554,59 @@ During qualifying sessions we expect all drivers to drive a normal outlap withou
 All races will be hosted on iRacing servers in Germany. All drivers are responsible for their own connection. Connection issues resulting in dangerous situations on track can lead to a driver being disqualified from the session without warning.
 
 ### 6.4 Possible Penalties
-TBD
+
+<table>
+  <tr>
+    <th>
+      Description
+    </th>
+    <th>
+      Possible penalties
+    </th>
+    <th>
+      Penalty points
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Minor incident
+    </td>
+    <td>
+      Warning, DTP<br>
+      Time penalty
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Moderate incident<br>
+      Unsafe rejoin
+    </td>
+    <td>
+      DTP, Stop&Go<br>
+      Time penalty
+    </td>
+    <td>
+      2
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Major incident<br>
+      Unsafe rejoin resulting in contact
+    </td>
+    <td>
+      Stop&Go, Stop&Hold<br>
+      Time penalty
+    </td>
+    <td>
+      3
+    </td>
+  </tr>
+</table>
+
+Should a driver reach a total of 5 incident points, they will be banned from qualifying in the next round they attend. Every attended round in which a driver does not receive any penalty points, 1 penalty point will be deducted from their total until it reaches 0.
+
+Note that the list above is not exhaustive, it is fully at the discretion of the stewards what penalty is applied.
