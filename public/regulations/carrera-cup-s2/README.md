@@ -223,7 +223,7 @@ The organisation reserves the right to enter drivers into the championship witho
       Session duration
     </td>
     <td>
-      30 minutes open practice<br>
+      30 minutes lone practice<br>
       3 hours lone qualifying
     </td>
   </tr>
