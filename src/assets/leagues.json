@@ -290,7 +290,7 @@
         "name": "FP1: Sebring International",
         "date": "June 11, 2021",
         "time": "18:00 UTC",
-        "simtime": "06:00",
+        "simtime": "",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -301,7 +301,7 @@
         "name": "FP2: Sebring International",
         "date": "June 12, 2021",
         "time": "18:00 UTC",
-        "simtime": "06:00",
+        "simtime": "",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -312,7 +312,7 @@
         "name": "Race: Sebring International",
         "date": "June 13, 2021",
         "time": "18:00 UTC",
-        "simtime": "06:00",
+        "simtime": "",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
