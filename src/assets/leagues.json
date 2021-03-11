@@ -326,7 +326,7 @@
         { "number": "43", "name": "Brian Lockwood", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "12", "name": "Kane Halliburton", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Vendaval Simracing", "logo": "", "url": "", "drivers": [
+      { "name": "Vendaval Simracing", "logo": "vendaval.png", "url": "", "drivers": [
         { "number": "68", "name": "Dylan Birse", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "HM Engineering", "logo": "hmengineering.png", "url": "", "drivers": [
@@ -340,11 +340,11 @@
         { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "47", "name": "Florian Lebigre", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Team Anatolia", "logo": "", "url": "", "drivers": [
+      { "name": "Team Anatolia", "logo": "anatolia.jpg", "url": "", "drivers": [
         { "number": "5", "name": "Gunonso Tasdelen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "8", "name": "Cenk Inceoglu", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "AXA SimSport", "logo": "", "url": "", "drivers": [
+      { "name": "AXA SimSport", "logo": "axa.png", "url": "", "drivers": [
         { "number": "3", "name": "Kevin Nielsen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "48", "name": "Alexander Lauritzen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
@@ -355,7 +355,7 @@
         { "number": "28", "name": "Sam Kuitert", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "99", "name": "Suellio Almeida", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "AXA SimSport #2", "logo": "", "url": "", "drivers": [
+      { "name": "AXA SimSport #2", "logo": "axa.png", "url": "", "drivers": [
         { "number": "24", "name": "Casper Lund", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "138", "name": "Matias Birk", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
@@ -423,7 +423,7 @@
       { "name": "Apex Racing Team", "logo": "", "url": "", "drivers": [
         { "number": "122", "name": "Jake Robertson", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Team Eleven", "logo": "", "url": "", "drivers": [
+      { "name": "Team Eleven", "logo": "eleven.png", "url": "", "drivers": [
         { "number": "197", "name": "Lewis Ward", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
@@ -441,7 +441,7 @@
       { "name": "Fuga SimSport #3", "logo": "", "url": "", "drivers": [
         { "number": "177", "name": "Mark Jones", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "AXA SimSport #3", "logo": "", "url": "", "drivers": [
+      { "name": "AXA SimSport #3", "logo": "axa.png", "url": "", "drivers": [
         { "number": "104", "name": "Magnus Terkildsen", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Kairos Competition", "logo": "kairos.png", "url": "", "drivers": [
