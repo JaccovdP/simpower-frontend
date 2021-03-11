@@ -91,8 +91,8 @@
         "type": "practice",
         "name": "FP1: Mid Ohio Full Course",
         "date": "March 19, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 2nd, 10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -102,8 +102,8 @@
         "type": "practice",
         "name": "FP2: Mid Ohio Full Course",
         "date": "March 20, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 3, 10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -113,8 +113,8 @@
         "type": "race",
         "name": "Race: Mid Ohio Full Course",
         "date": "March 21, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 4, 10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -124,8 +124,8 @@
         "type": "practice",
         "name": "FP1: Zolder GP",
         "date": "April 2, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 9, 14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -135,8 +135,8 @@
         "type": "practice",
         "name": "FP2: Zolder GP",
         "date": "April 3, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 10, 14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -146,8 +146,8 @@
         "type": "race",
         "name": "Race: Zolder GP",
         "date": "April 4, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "April 11, 14:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -157,8 +157,8 @@
         "type": "practice",
         "name": "FP1: Imola GP",
         "date": "April 16, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -168,8 +168,8 @@
         "type": "practice",
         "name": "FP2: Imola GP",
         "date": "April 17, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -179,8 +179,8 @@
         "type": "race",
         "name": "Race: Imola GP",
         "date": "April 18, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -190,8 +190,8 @@
         "type": "practice",
         "name": "FP1: Nürburgring GP",
         "date": "April 30, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "18:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -201,8 +201,8 @@
         "type": "practice",
         "name": "FP2: Nürburgring GP",
         "date": "May 1, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "18:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -212,8 +212,8 @@
         "type": "race",
         "name": "Race: Nürburgring GP",
         "date": "May 2, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "18:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -223,8 +223,8 @@
         "type": "practice",
         "name": "FP1: Brands Hatch GP",
         "date": "May 14, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -234,8 +234,8 @@
         "type": "practice",
         "name": "FP2: Brands Hatch GP",
         "date": "May 15, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -245,8 +245,8 @@
         "type": "race",
         "name": "Race: Brands Hatch GP",
         "date": "May 16, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -256,8 +256,8 @@
         "type": "practice",
         "name": "FP1: Suzuka GP",
         "date": "May 28, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -267,8 +267,8 @@
         "type": "practice",
         "name": "FP2: Suzuka GP",
         "date": "May 29, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -278,8 +278,8 @@
         "type": "race",
         "name": "Race: Suzuka GP",
         "date": "May 30, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "10:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -289,8 +289,8 @@
         "type": "practice",
         "name": "FP1: Sebring International",
         "date": "June 11, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "06:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -300,8 +300,8 @@
         "type": "practice",
         "name": "FP2: Sebring International",
         "date": "June 12, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "06:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
@@ -311,22 +311,155 @@
         "type": "race",
         "name": "Race: Sebring International",
         "date": "June 13, 2021",
-        "time": "",
-        "simtime": "",
+        "time": "18:00 UTC",
+        "simtime": "06:00",
         "weather": "Generated Weather",
         "sky": "Dynamic Sky",
         "results_files": []
       }
     ],
     "teams": [
-      { "name": "Porsche24 Driven by Redline", "logo": "", "url": "", "drivers": [
-        { "number": "1", "name": "Alexander Thiebe", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+      { "name": "CoRe SimRacing", "logo": "core.png", "url": "", "drivers": [
+        { "number": "29", "name": "Maxim Ramsteijn", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "RaceKraft Esports", "logo": "racekraft.png", "url": "", "drivers": [
-        { "number": "43", "name": "Brian Lockwood", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "43", "name": "Brian Lockwood", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "12", "name": "Kane Halliburton", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Vendaval Simracing", "logo": "", "url": "", "drivers": [
-        { "number": "68", "name": "Dylan Birse", "class": "PRO", "wins": 0, "points": 0, "secondary_points": 0, "prize_money": 0 }
+        { "number": "68", "name": "Dylan Birse", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "HM Engineering", "logo": "hmengineering.png", "url": "", "drivers": [
+        { "number": "74", "name": "Jeremy Lamier", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "95", "name": "Anton S Güllich", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "R8G eSports", "logo": "", "url": "", "drivers": [
+        { "number": "25", "name": "Nicolas Varrone", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "R8G Junior eSports", "logo": "r8g_junior.jpg", "url": "", "drivers": [
+        { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "47", "name": "Florian Lebigre", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Team Anatolia", "logo": "", "url": "", "drivers": [
+        { "number": "5", "name": "Gunonso Tasdelen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "8", "name": "Cenk Inceoglu", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "AXA SimSport", "logo": "", "url": "", "drivers": [
+        { "number": "3", "name": "Kevin Nielsen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "48", "name": "Alexander Lauritzen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "EVOLVE Racing", "logo": "", "url": "", "drivers": [
+        { "number": "96", "name": "Kamil Grabowski", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "RaceKraft Esports #2", "logo": "racekraft.png", "url": "", "drivers": [
+        { "number": "28", "name": "Sam Kuitert", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "99", "name": "Suellio Almeida", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "AXA SimSport #2", "logo": "", "url": "", "drivers": [
+        { "number": "24", "name": "Casper Lund", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "138", "name": "Matias Birk", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Fiercely Forward", "logo": "fiercelyforward.png", "url": "", "drivers": [
+        { "number": "15", "name": "Rebecca Pauline", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "153", "name": "Damien Owen Harris", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Impulse Racing", "logo": "impulse.png", "url": "", "drivers": [
+        { "number": "23", "name": "Pascal Costa", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "69", "name": "Marco Jager", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Volante Racing", "logo": "", "url": "", "drivers": [
+        { "number": "45", "name": "Vince Peeters", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "44", "name": "Oscar Wilkens", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Urano eSports", "logo": "urano.jpg", "url": "", "drivers": [
+        { "number": "33", "name": "Alexey Nesov", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "RaceKraft Esports #3", "logo": "racekraft.png", "url": "", "drivers": [
+        { "number": "53", "name": "Andrew Procario", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "199", "name": "Nick Harwood", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Fuga SimSport", "logo": "", "url": "", "drivers": [
+        { "number": "91", "name": "Maik Wiesekopsieker", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "142", "name": "Tahj Edwards", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "PorscheSport", "logo": "porschesport.png", "url": "", "drivers": [
+        { "number": "38", "name": "Gavin Halls", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "XVR SIM RACING", "logo": "xvr.png", "url": "", "drivers": [
+        { "number": "21", "name": "Steve Le-Vallee", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "145", "name": "Wayne Sanderson", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Wild Animals", "logo": "wildanimals.png", "url": "", "drivers": [
+        { "number": "55", "name": "Kirill Kolobuxov", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "RSR Esports", "logo": "", "url": "", "drivers": [
+        { "number": "107", "name": "David Plasman", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "TRITON Racing", "logo": "", "url": "", "drivers": [
+        { "number": "171", "name": "Pawel Szymanek", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Optimal Simracing", "logo": "", "url": "", "drivers": [
+        { "number": "123", "name": "Gaetan Anger", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "102", "name": "Guilhem Piepers", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Virtualdrivers by TX3", "logo": "", "url": "", "drivers": [
+        { "number": "103", "name": "Thomas Guldalian", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Fuga SimSport #2", "logo": "", "url": "", "drivers": [
+        { "number": "114", "name": "Jan Schmitz", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "112", "name": "Jeffrey Garzotto", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Monaco Esports", "logo": "monaco.jpg", "url": "", "drivers": [
+        { "number": "98", "name": "Laurent Benso", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "198", "name": "Bastien Mattler", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Impulse Racing #2", "logo": "impulse.png", "url": "", "drivers": [
+        { "number": "163", "name": "Marcel Jochheim", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "183", "name": "Alexander Hetmank", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Gray Wolf Racing", "logo": "", "url": "", "drivers": [
+        { "number": "105", "name": "Miroslaw Nastalczyk", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Apex Racing Team", "logo": "", "url": "", "drivers": [
+        { "number": "122", "name": "Jake Robertson", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Team Eleven", "logo": "", "url": "", "drivers": [
+        { "number": "197", "name": "Lewis Ward", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
+        { "number": "155", "name": "Hendryk Lichtenhagen", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "iRacing UK", "logo": "", "url": "", "drivers": [
+        { "number": "110", "name": "James Parker", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Full Speed Ahead", "logo": "fsa.png", "url": "", "drivers": [
+        { "number": "117", "name": "David De Wit", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Fastr E-Sports", "logo": "", "url": "", "drivers": [
+        { "number": "169", "name": "David Ward", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Fuga SimSport #3", "logo": "", "url": "", "drivers": [
+        { "number": "177", "name": "Mark Jones", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "AXA SimSport #3", "logo": "", "url": "", "drivers": [
+        { "number": "104", "name": "Magnus Terkildsen", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Kairos Competition", "logo": "kairos.png", "url": "", "drivers": [
+        { "number": "136", "name": "Dane Baird", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "AyeAyeRon Races", "logo": "", "url": "", "drivers": [
+        { "number": "172", "name": "Aaron Folkerts", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "KAST", "logo": "", "url": "", "drivers": [
+        { "number": "118", "name": "Martin Donati", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Optimal Simracing #2", "logo": "", "url": "", "drivers": [
+        { "number": "119", "name": "Nelson Costa De Sousa", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
+      { "name": "Privateer", "logo": "", "url": "", "drivers": [
+        { "number": "82", "name": "Tobi Soriano", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
+        { "number": "113", "name": "Jaime Fierro", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]}
     ]
   }},

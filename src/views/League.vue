@@ -226,7 +226,7 @@
                               <b-card-text>
                                 <b-table small borderless :items="team.drivers" :fields="team_card_fields">
                                   <template v-slot:cell(number)="row">
-                                    <span class="number" :class="row.item.class == 'PRO' ? 'sp_pro' : row.item.class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
+                                    <span class="number" :class="row.item.driver_class == 'PRO' ? 'sp_pro' : row.item.driver_class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
                                   </template>
                                   <template v-slot:cell(name)="row">
                                     <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
@@ -248,6 +248,9 @@
                             <b-card-body :title="team.name">
                               <b-card-text>
                                 <b-table small borderless :items="team.drivers" :fields="team_card_fields">
+                                    <template v-slot:cell(number)="row">
+                                      <span class="number" :class="row.item.driver_class == 'PRO' ? 'sp_pro' : row.item.driver_class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
+                                    </template>
                                     <template v-slot:cell(name)="row">
                                       <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link>
                                     </template>
@@ -278,9 +281,7 @@
                     <b-icon icon="three-dots" animation="cylon" font-scale="4"></b-icon>
                   </b-container>
                   <b-table
-                    v-if="!resultsLoading"
-                    :filter="standingsFilter"
-                    filter-on="class"
+                    v-if="!resultsLoading && sortedDriverStandings"
                     striped 
                     small 
                     outlined
@@ -301,7 +302,7 @@
                       {{ data.index + 1 }}
                     </template>
                     <template v-slot:cell(number)="row">
-                      <span class="number" :class="row.item.class == 'PRO' ? 'sp_pro' : row.item.class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
+                      <span class="number" :class="row.item.driver_class == 'PRO' ? 'sp_pro' : row.item.driver_class == 'AM' ? 'sp_am' : ''">{{ row.item.number }}</span>
                     </template>
                     <template v-slot:cell(name)="row">
                       <b-link @click="showLicense(row.item)">{{ row.item.name }}</b-link><br>
@@ -454,7 +455,7 @@
 
             <b-row>
               <b-col lg="12">
-                <div :class="selectedDriver.class == 'PRO' ? 'license_footer sp_pro' : 'license_footer sp_am'">
+                <div :class="selectedDriver.driver_class == 'PRO' ? 'license_footer sp_pro' : 'license_footer sp_am'">
                   #{{ selectedDriver.number }} {{ selectedDriver.name }} - {{ selectedDriver.team ? selectedDriver.team : entries[this.getDriverIndexByNumber(selectedDriver.number).teamIndex].name }}
                 </div>
               </b-col>
@@ -749,7 +750,7 @@ export default {
           driver_standings.push({
             number: driver.number,
             name: driver.name,
-            class: driver.class,
+            driver_class: driver.driver_class,
             team: team.name,
             team_logo: team.logo,
             wins: driver.wins,
@@ -840,13 +841,13 @@ export default {
     },
     sortedDriverStandings() {
       if(this.driverStandingsSort == 'points') {
-        return this.sortedDriversPoints
+        return this.sortedDriversPoints.filter(x => this.standingsFilter == null || x.driver_class == this.standingsFilter)
       } else if (this.driverStandingsSort == 'secondary_points') {
-        return this.sortedDriversSecondaryPoints
+        return this.sortedDriversSecondaryPoints.filter(x => this.standingsFilter == null || x.driver_class == this.standingsFilter)
       } else if (this.driverStandingsSort == 'wins') {
-        return this.sortedDriversWins
+        return this.sortedDriversWins.filter(x => this.standingsFilter == null || x.driver_class == this.standingsFilter)
       } else {
-        return this.standings.driver
+        return this.standings.driver.filter(x => this.standingsFilter == null || x.driver_class == this.standingsFilter)
       }
     },
     teams () {
@@ -1227,6 +1228,9 @@ export default {
 
   .number {
     padding:5px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
   }
 
   @media (min-width: 992px) {
