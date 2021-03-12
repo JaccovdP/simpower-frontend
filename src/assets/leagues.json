@@ -333,11 +333,7 @@
         { "number": "74", "name": "Jeremy Lamier", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "95", "name": "Anton S Güllich", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "R8G eSports", "logo": "", "url": "", "drivers": [
-        { "number": "25", "name": "Nicolas Varrone", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
-      ]},
       { "name": "R8G Junior eSports", "logo": "r8g_junior.jpg", "url": "", "drivers": [
-        { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "47", "name": "Florian Lebigre", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Team Anatolia", "logo": "anatolia.jpg", "url": "", "drivers": [
@@ -348,7 +344,7 @@
         { "number": "3", "name": "Kevin Nielsen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "48", "name": "Alexander Lauritzen", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "EVOLVE Racing", "logo": "", "url": "", "drivers": [
+      { "name": "EVOLVE Racing", "logo": "evolve.png", "url": "", "drivers": [
         { "number": "96", "name": "Kamil Grabowski", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "RaceKraft Esports #2", "logo": "racekraft.png", "url": "", "drivers": [
@@ -378,9 +374,9 @@
         { "number": "53", "name": "Andrew Procario", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "199", "name": "Nick Harwood", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Fuga SimSport", "logo": "", "url": "", "drivers": [
+      { "name": "Fuga SimSport", "logo": "fuga.png", "url": "", "drivers": [
         { "number": "91", "name": "Maik Wiesekopsieker", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
-        { "number": "142", "name": "Tahj Edwards", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+        { "number": "42", "name": "Tahj Edwards", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "PorscheSport", "logo": "porschesport.png", "url": "", "drivers": [
         { "number": "38", "name": "Gavin Halls", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
@@ -395,7 +391,7 @@
       { "name": "RSR Esports", "logo": "", "url": "", "drivers": [
         { "number": "107", "name": "David Plasman", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "TRITON Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Szimo Racing Team", "logo": "", "url": "", "drivers": [
         { "number": "171", "name": "Pawel Szymanek", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Optimal Simracing", "logo": "", "url": "", "drivers": [
@@ -405,7 +401,7 @@
       { "name": "Virtualdrivers by TX3", "logo": "", "url": "", "drivers": [
         { "number": "103", "name": "Thomas Guldalian", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Fuga SimSport #2", "logo": "", "url": "", "drivers": [
+      { "name": "Fuga SimSport #2", "logo": "fuga.png", "url": "", "drivers": [
         { "number": "114", "name": "Jan Schmitz", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "112", "name": "Jeffrey Garzotto", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
@@ -429,7 +425,7 @@
       { "name": "Panda Racing Team", "logo": "prt.jpg", "url": "", "drivers": [
         { "number": "155", "name": "Hendryk Lichtenhagen", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "iRacing UK", "logo": "", "url": "", "drivers": [
+      { "name": "iRacing UK", "logo": "iracing_uk.png", "url": "", "drivers": [
         { "number": "110", "name": "James Parker", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Full Speed Ahead", "logo": "fsa.png", "url": "", "drivers": [
@@ -438,7 +434,7 @@
       { "name": "Fastr E-Sports", "logo": "", "url": "", "drivers": [
         { "number": "169", "name": "David Ward", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Fuga SimSport #3", "logo": "", "url": "", "drivers": [
+      { "name": "Fuga SimSport #3", "logo": "fuga.png", "url": "", "drivers": [
         { "number": "177", "name": "Mark Jones", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "AXA SimSport #3", "logo": "axa.png", "url": "", "drivers": [
@@ -450,13 +446,17 @@
       { "name": "AyeAyeRon Races", "logo": "", "url": "", "drivers": [
         { "number": "172", "name": "Aaron Folkerts", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "KAST", "logo": "", "url": "", "drivers": [
+      { "name": "KAST", "logo": "kast.png", "url": "", "drivers": [
         { "number": "118", "name": "Martin Donati", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Optimal Simracing #2", "logo": "", "url": "", "drivers": [
         { "number": "119", "name": "Nelson Costa De Sousa", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
+      { "name": "Satellite Racing", "logo": "", "url": "", "drivers": [
+        { "number": "116", "name": "Nick Rowland", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
+        { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "82", "name": "Tobi Soriano", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "113", "name": "Jaime Fierro", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
