@@ -364,7 +364,7 @@
         { "number": "23", "name": "Pascal Costa", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "69", "name": "Marco Jager", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Volante Racing", "logo": "volante.png", "url": "", "drivers": [
+      { "name": "SimRacingLoft.com Volante Racing", "logo": "volante.png", "url": "", "drivers": [
         { "number": "45", "name": "Vince Peeters", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "44", "name": "Oscar Wilkens", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
@@ -448,7 +448,7 @@
         { "number": "172", "name": "Aaron Folkerts", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "KAST", "logo": "kast.png", "url": "", "drivers": [
-        { "number": "118", "name": "Martin Donati", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+        { "number": "118", "name": "Martin Donati", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "137", "name": "Clément Andrieu", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Optimal Simracing #2", "logo": "", "url": "", "drivers": [
@@ -457,8 +457,10 @@
       { "name": "Satellite Racing", "logo": "", "url": "", "drivers": [
         { "number": "116", "name": "Nick Rowland", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
+      { "name": "SimRacingLoft.com Volante Racing 2", "logo": "volante.png", "url": "", "drivers": [
+        { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+      ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "113", "name": "Jaime Fierro", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]}
     ]
