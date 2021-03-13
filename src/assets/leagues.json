@@ -449,6 +449,7 @@
       ]},
       { "name": "KAST", "logo": "kast.png", "url": "", "drivers": [
         { "number": "118", "name": "Martin Donati", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
+        { "number": "137", "name": "Clément Andrieu", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Optimal Simracing #2", "logo": "", "url": "", "drivers": [
         { "number": "119", "name": "Nelson Costa De Sousa", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
@@ -457,7 +458,6 @@
         { "number": "116", "name": "Nick Rowland", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "82", "name": "Tobi Soriano", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "113", "name": "Jaime Fierro", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]}
