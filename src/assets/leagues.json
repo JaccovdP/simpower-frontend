@@ -367,7 +367,7 @@
         { "number": "45", "name": "Vince Peeters", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "44", "name": "Oscar Wilkens", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Urano eSports", "logo": "urano.jpg", "url": "", "drivers": [
+      { "name": "URANO eSports", "logo": "urano.jpg", "url": "", "drivers": [
         { "number": "33", "name": "Alexey Nesov", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "RaceKraft Esports #3", "logo": "racekraft.png", "url": "", "drivers": [
@@ -413,7 +413,7 @@
         { "number": "163", "name": "Marcel Jochheim", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "183", "name": "Alexander Hetmank", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Gray Wolf Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Gray Wolf Racing", "logo": "fastdriveschool.png", "url": "", "drivers": [
         { "number": "105", "name": "Miroslaw Nastalczyk", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Apex Racing Team", "logo": "", "url": "", "drivers": [
