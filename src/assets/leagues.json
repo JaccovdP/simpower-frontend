@@ -334,6 +334,7 @@
         { "number": "95", "name": "Anton S Güllich", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "R8G Junior eSports", "logo": "r8g_junior.jpg", "url": "", "drivers": [
+        { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "47", "name": "Florian Lebigre", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Team Anatolia", "logo": "anatolia.jpg", "url": "", "drivers": [
@@ -363,7 +364,7 @@
         { "number": "23", "name": "Pascal Costa", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "69", "name": "Marco Jager", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
-      { "name": "Volante Racing", "logo": "", "url": "", "drivers": [
+      { "name": "Volante Racing", "logo": "volante.png", "url": "", "drivers": [
         { "number": "45", "name": "Vince Peeters", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "44", "name": "Oscar Wilkens", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
@@ -456,7 +457,6 @@
         { "number": "116", "name": "Nick Rowland", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
       ]},
       { "name": "Privateer", "logo": "", "url": "", "drivers": [
-        { "number": "17", "name": "Quentin Vialatte", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "82", "name": "Tobi Soriano", "driver_class": "PRO", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "188", "name": "Justin Rehm", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 },
         { "number": "113", "name": "Jaime Fierro", "driver_class": "AM", "wins": 0, "points": 0, "penalty_points": 0 }
